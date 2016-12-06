@@ -17,6 +17,9 @@
 		Take note that for now, our current production build is only sending the video file to the owner's email address.
 
 	</p>
+	<p><b><H3>System Diagram</H3></b><br>
+	</p>
+		<p><img src="/documentation/ProjectDiagram.png" alt="schema" style="width:100px height:300px"></p>
 	<p><b><H3>Bills of Material / Budget</H3></b><br>
 	<table>
 			<tbody>
@@ -29,25 +32,25 @@
 				<tr>
 				<td>Raspberry Pi 3 Starter Kit</td>
 				<td>1</td>
-				<td align ="right">$99.99</td>
+				<td align ="right">$89.99</td>
 				</tr>
 				
 				<tr>
-				<td>Pi Camera Module w/ Fish Eye Module</td>
+				<td>Pi Camera Module</td>
 				<td>1</td>
-				<td align ="right">$38.45</td>
+				<td align ="right">$38.79</td>
 				</tr>
 				
 				<tr>
-				<td>Vibration Sensor</td>
+				<td>Piezo Buzzer Element (Vibration Sensor)</td>
 				<td>2</td>
-				<td align ="right">$19.50</td>
+				<td align ="right">$5.19</td>
 				</tr>
 				
 				<tr>
 				<td>Camera Module Case</td>
 				<td>1</td>
-				<td align ="right">$25.99</td>
+				<td align ="right">$25.28</td>
 				</tr>
 				
 				<tr>
@@ -66,6 +69,12 @@
 				<td>Full Sized Breadboard</td>
 				<td>1 </td>
 				<td align ="right">$8.81</td>
+				</tr>
+				
+				<tr>
+				<td>USB GPS Dongle</td>
+				<td>1 </td>
+				<td align ="right">$50.00</td>
 				</tr>
 				
 				<tr>
@@ -95,15 +104,13 @@
 					
 				<tr>	
 				<td>Raspberry Pi 3 power up</td>
-				<td align ="right">(30 mins) Depends if you 
-					already have the software ready in your SD card.</td>
+				<td align ="right">(30 mins) I will take around 30 min to set up the raspberry Pi. You have to install the OS and connect it to the internet.</td>
 				</tr>
 				
 				<tr>
 				<td>PCB Soldering</td>
 				<td align ="right">1~2 hours for schematics and soldering. 
-					Printing the PCB could take 1 hour. Though not implemented in the project, 
-					it can be used for lighting up the LED. </td>
+					Printing the PCB could take 1 hour. And 30 min to solder it.  </td>
 				</tr>
 				
 				<tr>
@@ -119,14 +126,10 @@
 				
 				<tr>
 				<td>Running Code</td>
-				<td align ="right">5-10 mins, this depends how fast the video file get sent to
-					your email.</td>
+				<td align ="right">5-10 mins, depends on the length of the video. The longer it is, the more time it needs to perform. </td>
 				</tr>
 				
-				<tr>
-				<td>Unit testing for errors</td>
-				<td align ="right">Unknown</td>
-				</tr>
+				
 			</tbody>
 		</table>
 		<p><i>Table 2: Required time for building the project.</i></p>		
@@ -134,13 +137,13 @@
  	<p><b><H3>Mechanical Assembly</H3></b><br></p>
 	<p>This shows the circuit you have to build for the sensor to detect a vibration coming from tapping it. 
 		The LED will blink if the video file was sent to your email. </p>
-	<p><img src="Documentation/teleSchema.png" alt="schema" style="width:100px height:300px">
+	<p><img src="/documentation/teleSchema.png" alt="schema" style="width:100px height:300px">
 		<br>JP1 --- 2 is for the inner side of the buzzer. Positive. <br> --- 1 outer part of the buzzer. Negative.
 		
 		<p> Following the diagram and placing each components in a breadboard would ensure a working vibration sensor program </p>
 	
 	<p> Connect the particular camera module that I listed above to your Raspberry Pi 3.
-		<img src="Documentation/cameramodule.png" alt="schema" style="width:100px height:100px">
+		<img src="/documentation/cameramodule.png" alt="schema" style="width:100px height:100px">
 		 <a href="https://www.raspberrypi.org/learning/getting-started-with-picamera/">Check this out to ensure you have a working camera for
 			 raspberry pi!</a>
 		
@@ -186,8 +189,8 @@
 		</p>
 	
 	<p> Or you can just download the files here 
-	<br><a href="Documentation/unit test/camera.py">camera.py</a>
-	<br><a href="Documentation/unit test/basicSensor.py">basicSensor.py</a></p>
+	<br><a href="/documentation/unit test/camera.py">camera.py</a>
+	<br><a href="/documentation/unit test/basicSensor.py">basicSensor.py</a></p>
 	
 	<p><b><H3>Production Testing</H3></b><br>
 		<p>We wanted the video file recorded to be sent to a file server, but as of now , it is being sent to your email.
@@ -334,9 +337,9 @@ def recVideo( sNum ):
 "</pre></code>
 		
 	<p> Or you can just download the files here 
-	<br><a href="Documentation/production test/cameraCode.py">cameraCode.py</a>
-	<br><a href="Documentation/production test/alertnoise.py">alertnoise.py</a>
-	<br><a href="Documentation/production test/testDrive.py">testDrive.py</a></p>
+	<br><a href="/documentation/production test/cameraCode.py">cameraCode.py</a>
+	<br><a href="/documentation/production test/alertnoise.py">alertnoise.py</a>
+	<br><a href="/documentation/production test/testDrive.py">testDrive.py</a></p>
 	
 	<p>Since raspberry pi can only play video files of type h264 you
 		might have some issue with your video conversion to mp4 if you don't have a premade mp4 file. Just create "hello.mp4"
