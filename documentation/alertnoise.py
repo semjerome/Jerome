@@ -47,7 +47,7 @@ def sendAlert(vidName):
     # Security function needed to connect to the Gmail server to protect the password.
     server.starttls()
     #Password of Raspberry Pi's Email
-    server.login(raspaddress, "P@$$W0RD")
+    server.login(raspaddress, passwordoftheemail)
     #Sending the email
     text = msg.as_string()
     server.sendmail(raspaddress, useraddress, text)
