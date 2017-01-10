@@ -5,6 +5,18 @@ https://semjerome.github.io
 
 Table Content
 ==========================
+1.  [This File](#this-file)
+
+2.  [Humber Sense Hat](#humber-sense-hat)
+
+3.  [Humber Raspberry Pi Image Creation](#humber-raspberry-pi-image-creation)
+
+4.  [Enterprise Wi-Fi](#enterprise-wi-fi)
+
+5.  [References (generated when this file is
+    exported)](#references-generated-when-this-file-is-exported)
+
+
 
 This is a school project.
 
