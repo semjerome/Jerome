@@ -21,13 +21,14 @@ Our project is based on http://www.instructables.com/id/Raspberry-Pi-Touch-Scree
 I have searched for prior art via Humber’s IEEE subscription selecting “My Subscribed Content”[1] and have found and read [2] which provides insight into similar efforts.
 
 In the Computer Engineering Technology program we have learned about the following topics from the respective relevant courses:
-•	Java Docs from CENG 212 Programming Techniques In Java,
-•	Construction of circuits from CENG 215 Digital And Interfacing Systems,
-•	Rapid application development and Gantt charts from CENG 216 Intro to Software Engineering,
-•	Micro computing from CENG 252 Embedded Systems,
-•	SQL from CENG 254 Database With Java,
-•	Web access of databases from CENG 256 Internet Scripting; and,
-•	Wireless protocols such as 802.11 from TECH152 Telecom Networks.
+
+* Java Docs from CENG 212 Programming Techniques In Java
+* Construction of circuits from CENG 215 Digital And Interfacing Systems,
+* Rapid application development and Gantt charts from CENG 216 Intro to Software Engineering,
+* Micro computing from CENG 252 Embedded Systems,
+* SQL from CENG 254 Database With Java,
+* Web access of databases from CENG 256 Internet Scripting; and,
+* Wireless protocols such as 802.11 from TECH152 Telecom Networks.
 
 This knowledge and skill set will enable me to build the subsystems and integrate them together as my capstone project.
 
