@@ -120,11 +120,4 @@ This proposal presents a plan for providing an IoT solution for mini computer an
 
 **References**
 
-[1] Institute of Electrical and Electronics Engineers. (2015, August 28). IEEE Xplore Digital Library [Online]. Available: https://ieeexplore.ieee.org/search/advsearch.jsp
-
-[2] Segura-Garcia, J.; Felici-Castell, S.; Perez-Solano, J.J.; Cobos, M.; Navarro, J.M., "Low-Cost Alternatives for Urban Noise Nuisance Monitoring Using Wireless Sensor Networks," Sensors Journal, IEEE, vol.15, no.2, pp.836,844, Feb. 2015 doi: 10.1109/JSEN.2014.2356342
-
-[3] Creatron. (2015, August 28). Part Number:  RASPI-004499 [Online]. Available: https://www.creatroninc.com/product/raspberry-pi-2-media-starter-kit/
-
-[4] Upton, Liz. (2015, August 28). Raspberry Pi colocation [Online]. Available: http://raspberrycolocation.com/
 
