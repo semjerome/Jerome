@@ -1,6 +1,8 @@
-| **apa** | **bibliography**    |
-|---------|---------------------|
-| apa.csl | GNoiseCitations.bib |
+---
+csl: apa.csl
+bibliography: GNoiseCitations.bib
+---
+
 
 Submission September 13, 2016
 
