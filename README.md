@@ -1,3 +1,7 @@
+| **apa** | **bibliography**    |
+|---------|---------------------|
+| apa.csl | GNoiseCitations.bib |
+
 Submission September 13, 2016
 
 **Proposal for the development of Collision Detector**
