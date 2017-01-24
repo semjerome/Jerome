@@ -39,11 +39,8 @@ captured image/video in a black box The database will store the timestamp and
 the folder location of the video that were saved in the blackbox. The mobile
 device functionality will include notifying the car owner of an accident
 happening and if possible, an image or video capture of the accident and will be
-further detailed in the mobile application proposal. I will be collaborating
-with the following company/department \_____________. In the winter semester I
-plan to form a group with the following students, who are also building similar
-hardware this term and working on the mobile application with Jerome Aganon and
-Jaewoong Kang. The hardware will be completed in CENG 317 Hardware Production
+further detailed in the mobile application proposal. We will be collaborating
+with the following company/department \_____________. The hardware will be completed in CENG 317 Hardware Production
 Techniques independently and the application will be completed in CENG 319
 Software Project. These will be integrated together in the subsequent term in
 CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
