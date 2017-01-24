@@ -308,10 +308,12 @@ System interface for our project includes: collision detector hardware, database
 
 ####2.3.2 Database
 
-We are going to use the GoDaddy's database to store the information about the user, the accident, driver and the car. For the user infomration, we are going to store the username password and its user's id. For the password, we are going to encrypt the user's password using MD5 to protect the password just in case someone tries to hack our system. In 
+We are going to use the GoDaddy's database to store the information about the user, the accident, the driver they had an accident with and the car that the other driver was using. For the user infomration, we are going to store the username password and its user's id. For the password, we are going to encrypt the user's password using MD5 to protect the password just in case someone tries to hack our system. In accident table, we are going to the store the reporrtId, incident date, video name, longitude and latitude. In the driver table, we are going to store the other driver's license, first name,, last name, gender and insurance number.  In the car's table, we are goint ot store the other driver' car information such as plate number, brand, model and the year it was manufactured. 
 
 
 ####2.3.3 Hardware
+
+Our hardware is a collision detector. Once the car has start up, the hardware will start running immediately. It will start recording as soon as it is start up. It will have loop and lock functionality. With the loop functionality, the hardware will replace the old video with a new video, which prevents the hardware from using too much memory. The lock functionality will lock up the video file if the hardware detects any collision. It will lock up the file until the hard is connected to the Internet. Once it is connected, it will upload the file to the server and store the date that the video was captured, the location and the name of the video.
 
 ####2.3.4 Mobile Application
 
