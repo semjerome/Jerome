@@ -9,11 +9,6 @@ Table Content
 
 
 
-3.  [Humber Raspberry Pi Image Creation](#humber-raspberry-pi-image-creation)
-
-
-
-4.  [Enterprise Wi-Fi](#enterprise-wi-fi)
 
 Proposal
 ---------
@@ -197,3 +192,13 @@ described by [3]. I request approval of this project.
 
 SRS
 ---------
+
+**HardWare Present**
+
+**Skeleton with SRS completed**
+
+**Database and work breakdown identified**
+
+**Application and work breakdown identified**
+
+**Web and work breakdown identified**
