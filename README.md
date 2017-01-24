@@ -197,8 +197,6 @@ Abstract (Executive Summary)
 Table of Contents
 =================
 
-[Declaration of Sole
-Authorship](#proposal)
 
 [Approved 
 ](#proposal)
@@ -210,7 +208,7 @@ Introduction](#introduction)
 (SRS)]
 
 [2.1 Technology
-Introduction]
+Introduction](#technology-introduction)
 
 2.1.1 Purpose
 
@@ -219,7 +217,7 @@ Introduction]
 2.1.3 Targeted Audience Group
 
 [2.2 Product
-Information]
+Information](#product-information)
 
 2.2.1 Main Functionality
 
@@ -228,7 +226,7 @@ Information]
 2.2.3 Best Performance
 
 [2.3 Overall
-Description]
+Description](#overall-description)
 
 2.3.1 Database
 
@@ -237,7 +235,7 @@ Description]
 2.3.3 Mobile Application
 
 [2.4 Future
-Considerations]
+Considerations](#future-consideration)
 
 2.4.1 Operating Environment
 
@@ -246,20 +244,43 @@ Considerations]
 2.4.3 Future Additions
 
 [3.
-Conclusions]
+Conclusions](#conclusion)
 
 [4.
-Recommendations]
+Recommendations](#recommendations)
 
 [5. 
-Progress Reports]
+Progress Reports](#progress-reports)
 
 
 1. Introduction
 -----------------
 
+
+
 2. Software Requirements Specification (SRS)
 -----------------------------------------------
+
+2.1 Technology Introduction
+-----------------------------------------------
+
+2.2 Product Information
+----------------------------------------------
+
+2.3 Overall Description
+-----------------------------------------
+
+2.4 Future Considerations
+----------------------------------------
+
+3. Conclusion
+-------------------------------------------
+
+4. Recommendations
+-------------------------------------
+
+5.Progress Reports
+-------------------------
 
 
 Reference
