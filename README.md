@@ -202,13 +202,13 @@ Table of Contents
 ](#proposal)
 
 [1.
-Introduction](#introduction)
+Introduction](#1-introduction)
 
 [2. Software Requirements Specification
-(SRS)](#software-requirements-pecification)
+(SRS)](#2-software-requirements-pecification)
 
 [2.1 Technology
-Introduction](#technology-introduction)
+Introduction](#21-technology-introduction)
 
 2.1.1 Purpose
 
@@ -217,7 +217,7 @@ Introduction](#technology-introduction)
 2.1.3 Targeted Audience Group
 
 [2.2 Product
-Information](#product-information)
+Information](#22-product-information)
 
 2.2.1 Main Functionality
 
@@ -226,7 +226,7 @@ Information](#product-information)
 2.2.3 Best Performance
 
 [2.3 Overall
-Description](#overall-description)
+Description](#23-overall-description)
 
 2.3.1 Database
 
@@ -235,7 +235,7 @@ Description](#overall-description)
 2.3.3 Mobile Application
 
 [2.4 Future
-Considerations](#future-consideration)
+Considerations](#24-future-consideration)
 
 2.4.1 Operating Environment
 
@@ -244,13 +244,13 @@ Considerations](#future-consideration)
 2.4.3 Future Additions
 
 [3.
-Conclusions](#conclusion)
+Conclusions](#3-conclusion)
 
 [4.
-Recommendations](#recommendations)
+Recommendations](#4-recommendations)
 
 [5. 
-Progress Reports](#progress-reports)
+Progress Reports](#5-progress-reports)
 
 
 1. Introduction
