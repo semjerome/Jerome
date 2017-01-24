@@ -205,7 +205,7 @@ Table of Contents
 Introduction](#introduction)
 
 [2. Software Requirements Specification
-(SRS)]
+(SRS)](#software-requirements-pecification)
 
 [2.1 Technology
 Introduction](#technology-introduction)
