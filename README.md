@@ -268,6 +268,15 @@ Progress Reports](#5-progress-reports)
 2.1 Technology Introduction
 -----------------------------------------------
 
+####2.1.1 Purpose
+
+The purpose of our software is to provide an automated service for drivers that notifies them of any accidents or damages that may have occurred to their car. With the use of mobile application, the owner will have the data of the location and video feed of the accident. It will also serve as a data storage regarding the accident for the owner. They will be able to input additional information about the driver, the car, as well as information needed for the insurance company. A website will be available for the user to register an account for them to use the mobile application.
+
+#### 2.1.2 Product Overview
+
+The product will have piezo vibration sensors that will detect if there are any collisions detected. Raspberry Pi camera module will also be used to record video.
+
+
 2.2 Product Information
 ----------------------------------------------
 
