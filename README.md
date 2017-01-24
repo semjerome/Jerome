@@ -228,11 +228,13 @@ Information](#22-product-information)
 [2.3 Overall
 Description](#23-overall-description)
 
-2.3.1 Database
+2.3.1 System Interface
 
-2.3.2 Hardware
+2.3.2 Database
 
-2.3.3 Mobile Application
+2.3.3 Hardware
+
+2.3.4 Mobile Application
 
 [2.4 Future
 Considerations](#24-future-consideration)
