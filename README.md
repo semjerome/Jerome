@@ -1,3 +1,9 @@
+---
+bibliography: GNoiseCitations.bib
+csl: apa.csl
+---
+
+
 Table Content
 ==========================
 
@@ -9,14 +15,16 @@ Table Content
 
 
 
+3.  [Reference](#reference)
+
+
+
 
 Proposal
 ---------
 
----
-bibliography: GNoiseCitations.bib
-csl: apa.csl
----
+
+
 
 Submission January 17, 2017
 
@@ -202,3 +210,9 @@ SRS
 **Application and work breakdown identified**
 
 **Web and work breakdown identified**
+
+
+Reference
+------------
+
+**References (Generated in pdf)**
