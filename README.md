@@ -29,8 +29,8 @@ https://semjerome.github.io
 
 **Executive Summary**
 
-As a student in the Computer Engineering Technology program, I will be
-integrating the knowledge and skills I have learned from our program into this
+As students in the Computer Engineering Technology program, we will be
+integrating the knowledge and skills we have learned from our program into this
 Internet of Things themed capstone project. This proposal requests the approval
 to build the hardware portion that will connect to a database as well as to a
 mobile device application. The internet connected hardware will include a custom
@@ -40,7 +40,7 @@ the folder location of the video that were saved in the blackbox. The mobile
 device functionality will include notifying the car owner of an accident
 happening and if possible, an image or video capture of the accident and will be
 further detailed in the mobile application proposal. We will be collaborating
-with the following company/department \_____________. The hardware will be completed in CENG 317 Hardware Production
+with the following company/department Engineering Club. The hardware will be completed in CENG 317 Hardware Production
 Techniques independently and the application will be completed in CENG 319
 Software Project. These will be integrated together in the subsequent term in
 CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
@@ -57,7 +57,7 @@ such thing happens, the police will have to look around and see if a CCTV has
 captured the accident.
 
 I have searched for prior art via Humber’s IEEE subscription selecting “My
-Subscribed Content”[1] and have found and read [2] which provides insight into
+Subscribed Content” and have found and read which provides insight into
 similar efforts.
 
 The first journal that we found presents “ the approach to use smartphones as a
@@ -170,7 +170,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | Materials to improve functionality, fit, and finish of project.                           |                |                                                                                                                                                      |
 | **Phase 2 Total**                                                                         | **TBD**        |                                                                                                                                                      |
 | **Phase 3**                                                                               |                |                                                                                                                                                      |
-| Off campus colocation                                                                     | \<\$100.00     | An example: [4].                                                                                                                                     |
+| Off campus colocation                                                                     | \<\$100.00     | An example: .                                                                                                                                     |
 | *Shipping*                                                                                | *TBD*          |                                                                                                                                                      |
 | *Tax*                                                                                     | *TBD*          |                                                                                                                                                      |
 | *Duty*                                                                                    | *TBD*          |                                                                                                                                                      |
@@ -182,7 +182,7 @@ This proposal presents a plan for providing an IoT solution for mini computer
 and black box for car. This is an opportunity to integrate the knowledge and
 skills developed in our program to create a collaborative IoT capstone project
 demonstrating my ability to learn how to support projects such as the initiative
-described by [3]. I request approval of this project.
+described by our professor. I request approval of this project.
 
 **References (Generated in pdf)**
 
@@ -291,21 +291,20 @@ System interface for our project includes: collision detector hardware, database
 
 ####2.3.2 Database
 
-We are going to use the GoDaddy's database to store the information about the user, the accident, the driver they had an accident with and the car that the other driver was using. For the user infomration, we are going to store the username password and its user's id. For the password, we are going to encrypt the user's password using MD5 to protect the password just in case someone tries to hack our system. In accident table, we are going to the store the reporrtId, incident date, video name, longitude and latitude. In the driver table, we are going to store the other driver's license, first name,, last name, gender and insurance number.  In the car's table, we are goint ot store the other driver' car information such as plate number, brand, model and the year it was manufactured. 
+We are going to use the GoDaddy's database to store the information about the user, the accident, the driver they had an accident with and the car that the other driver was using. For the user infomration, we are going to store the username password and its user's id. For the password, we are going to encrypt the user's password using MD5 to protect the password just in case someone tries to hack our system. In accident table, we are going to the store the reporrtId, incident date, video name, longitude and latitude. In the driver table, we are going to store the other driver's license, first name,, last name, gender and insurance number.  In the car's table, we are goint ot store the other driver' car information such as plate number, brand, model and the year it was manufactured. (Worked on by: Jerome, Jabneel)
 
 
 ####2.3.3 Hardware
 
-Our hardware is a collision detector. Once the car has start up, the hardware will start running immediately. It will start recording as soon as it is start up. It will have loop and lock functionality. With the loop functionality, the hardware will replace the old video with a new video, which prevents the hardware from using too much memory. The lock functionality will lock up the video file if the hardware detects any collision. It will lock up the file until the hard is connected to the Internet. Once it is connected, it will upload the file to the server and store the date that the video was captured, the location and the name of the video.
+Our hardware is a collision detector. Once the car has start up, the hardware will start running immediately. It will start recording as soon as it is start up. It will have loop and lock functionality. With the loop functionality, the hardware will replace the old video with a new video, which prevents the hardware from using too much memory. The lock functionality will lock up the video file if the hardware detects any collision. It will lock up the file until the hard is connected to the Internet. Once it is connected, it will upload the file to the server and store the date that the video was captured, the location and the name of the video.(Worked on by: Jerome, Jaewoong)
 
 ####2.3.4 Mobile Application
 
-Our mobile application is called AutAcc Report and is exclusive to Android. With the mobile app, the user is able to retrieve any incident related to the user. Once it is able to retrieve an incident report, the user will be able to add more information about the driver that he/she had an accident with and the car he/she was using.  The application has playback functionality where it can watch the video that was captured during the incident.  It also has map functionality where it will pinpoint the exact location of the incident by using Google map. The mobile app also has functionality where the user can contact his/her insurance agent where he/she can report the incident.  
+Our mobile application is called AutAcc Report and is exclusive to Android. With the mobile app, the user is able to retrieve any incident related to the user. Once it is able to retrieve an incident report, the user will be able to add more information about the driver that he/she had an accident with and the car he/she was using.  The application has playback functionality where it can watch the video that was captured during the incident.  It also has map functionality where it will pinpoint the exact location of the incident by using Google map. The mobile app also has functionality where the user can contact his/her insurance agent where he/she can report the incident. (Worked on by: Jerome, Jabneel) 
 
 ####2.3.5 Web Application
 
-For our project, we will also provide a website. In the website, the user will be able to register. If the user is already registered, he/she will be able to review the information related to his/her account. He/she will also be able to delete an incident or modify any information related to that incident. The user can also change their password.
-
+For our project, we will also provide a website. In the website, the user will be able to register. If the user is already registered, he/she will be able to review the information related to his/her account. He/she will also be able to delete an incident or modify any information related to that incident. The user can also change their password. (Worked on by: Jerome, Jabneel, Jaewoong)
 
 
 
