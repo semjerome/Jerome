@@ -206,7 +206,7 @@ Authorship](#proposal)
 [1.
 Introduction](#introduction)
 
-[2. Software Requirements Specifications
+[2. Software Requirements Specification
 (SRS)]
 
 [2.1 Technology
@@ -255,7 +255,7 @@ Recommendations]
 Progress Reports]
 
 
-Introduction
+1. Introduction
 -----------------
 
 
