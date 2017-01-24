@@ -317,6 +317,7 @@ Our hardware is a collision detector. Once the car has start up, the hardware wi
 
 ####2.3.4 Mobile Application
 
+Our mobile application is called AutAcc Report and is exclusive to Android. With the mobile app, the user is able to retrieve any incident related to the user. Once it is able to retrieve an incident report, the user will be able to add more information about the driver that he/she had an accident with and the car he/she was using.  The application has playback functionality where it can watch the video that was captured during the incident.  It also has map functionality where it will pinpoint the exact location of the incident by using Google map. The mobile app also has functionality where the user can contact his/her insurance agent where he/she can report the incident. Since 
 
 2.4 Future Considerations
 ----------------------------------------
