@@ -4,31 +4,22 @@ csl: apa.csl
 ---
 
 
-Table Content
+Telematics
 ==========================
 
-1.  [Proposal](#proposal)
 
 
-
-2.  [SRS (requirements specification)](#srs)
-
-
-
-3.  [Reference](#reference)
 
 
 
 
 Proposal
----------
+==========================
 
 
 
 
 Submission January 17, 2017
-
-**Proposal for the development of Collision Detector**
 
 Prepared by Galaxy Noise (Jerome, Jabneel, Jaewoong)
 
@@ -198,18 +189,79 @@ described by [3]. I request approval of this project.
 
 **References (Generated in pdf)**
 
-SRS
----------
+Abstract (Executive Summary)
+============================
 
-**HardWare Present**
+ 
 
-**Skeleton with SRS completed**
+Table of Contents
+=================
 
-**Database and work breakdown identified**
+[Declaration of Sole
+Authorship](#proposal)
 
-**Application and work breakdown identified**
+[Approved
+Proposal](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#approved-proposal)
 
-**Web and work breakdown identified**
+[Abstract](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#abstract-executive-summary)
+
+[Illustrations and
+Diagrams](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#illustrations-and-diagrams)
+
+[1.
+Introduction](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#1-introduction)
+
+[2. Software Requirements Specifications
+(SRS)](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#2-software-requirements-specifications-srs)
+
+[2.1 Technology
+Introduction](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#21-technology-introduction)
+
+2.1.1 Purpose
+
+2.1.2 Product Overview
+
+2.1.3 Targeted Audience Group
+
+[2.2 Product
+Information](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#22-product-information)
+
+2.2.1 Main Functionality
+
+2.2.2 Extra Requirements
+
+2.2.3 Best Performance
+
+[2.3 Overall
+Description](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#23-overall-description)
+
+2.3.1 Database
+
+2.3.2 Hardware
+
+2.3.3 Mobile Application
+
+[2.4 Future
+Considerations](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#24-future-considerations)
+
+2.4.1 Operating Environment
+
+2.4.2 Safety Considerations
+
+2.4.3 Future Additions
+
+[3.
+Conclusions](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#3-conclusions)
+
+[4.
+Recommendations](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#4-recommendations)
+
+[5. 
+Progress Reports](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#5-progress-reports)
+
+
+
+
 
 
 Reference
