@@ -272,16 +272,49 @@ Progress Reports](#5-progress-reports)
 
 The purpose of our software is to provide an automated service for drivers that notifies them of any accidents or damages that may have occurred to their car. With the use of mobile application, the owner will have the data of the location and video feed of the accident. It will also serve as a data storage regarding the accident for the owner. They will be able to input additional information about the driver, the car, as well as information needed for the insurance company. A website will be available for the user to register an account for them to use the mobile application.
 
-#### 2.1.2 Product Overview
+####2.1.2 Product Overview
 
 The product will have piezo vibration sensors that will detect if there are any collisions detected. Raspberry Pi camera module will also be used to record video.
+
+####2.1.3 Targeted Audience Group:
+
+Our target audience is any person that has a car and insurance company for they will be able to use the video feed as a proof of an incident.
+
 
 
 2.2 Product Information
 ----------------------------------------------
 
+####2.2.1 Main Functionality
+
+The main functionality of our system is to provide an incident report on user's mobile device in case of an accident. Information that the user saves on the application can then be used by them for their insurance company. The hardware will provide the video feed as well as the coordinates of the report.
+
+
+####2.2.2 Extra Requirements
+
+Internet connection is needed for the hardware device for it to be able to send the report, video and location, to the database. Implementation of battery powered raspberry pi will also be needed for it to be placed inside the car. (Jerome please confirm)
+
+####2.2.3 Best Performance
+
+To achieve best performance of the product, we recommend sharing a stable wifi internet connection with the device.
+
+
 2.3 Overall Description
 -----------------------------------------
+
+####2.3.1 System Interface
+
+System interface for our project includes: collision detector hardware, database server, and mobile application. If an accident is detected from the hardware, it sends an accident report to the server. The user through the use of mobile application in which he/she can retrieve the video file and location of the accident can then access this report. The user will also be able to delete the report (in case of false report), as well as add information to the report.
+
+####2.3.2 Database
+
+We are going to use the GoDaddy's database to store the information about the user, the accident, driver and the car. For the user infomration, we are going to store the username password and its user's id. For the password, we are going to encrypt the user's password using MD5 to protect the password just in case someone tries to hack our system. In 
+
+
+####2.3.3 Hardware
+
+####2.3.4 Mobile Application
+
 
 2.4 Future Considerations
 ----------------------------------------
