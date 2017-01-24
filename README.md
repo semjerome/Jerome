@@ -200,8 +200,8 @@ Table of Contents
 [Declaration of Sole
 Authorship](#proposal)
 
-[Approved
-Proposal](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#approved-proposal)
+[Approved 
+](#proposal)
 
 [Abstract](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#abstract-executive-summary)
 
