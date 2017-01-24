@@ -203,19 +203,14 @@ Authorship](#proposal)
 [Approved 
 ](#proposal)
 
-[Abstract](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#abstract-executive-summary)
-
-[Illustrations and
-Diagrams](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#illustrations-and-diagrams)
-
 [1.
-Introduction](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#1-introduction)
+Introduction](#introduction)
 
 [2. Software Requirements Specifications
-(SRS)](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#2-software-requirements-specifications-srs)
+(SRS)]
 
 [2.1 Technology
-Introduction](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#21-technology-introduction)
+Introduction]
 
 2.1.1 Purpose
 
@@ -224,7 +219,7 @@ Introduction](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#21-tech
 2.1.3 Targeted Audience Group
 
 [2.2 Product
-Information](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#22-product-information)
+Information]
 
 2.2.1 Main Functionality
 
@@ -233,7 +228,7 @@ Information](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#22-produ
 2.2.3 Best Performance
 
 [2.3 Overall
-Description](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#23-overall-description)
+Description]
 
 2.3.1 Database
 
@@ -242,7 +237,7 @@ Description](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#23-overa
 2.3.3 Mobile Application
 
 [2.4 Future
-Considerations](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#24-future-considerations)
+Considerations]
 
 2.4.1 Operating Environment
 
@@ -251,16 +246,17 @@ Considerations](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#24-fu
 2.4.3 Future Additions
 
 [3.
-Conclusions](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#3-conclusions)
+Conclusions]
 
 [4.
-Recommendations](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#4-recommendations)
+Recommendations]
 
 [5. 
-Progress Reports](https://github.com/EugeneHasJeans/EugeneHasJeans.github.io#5-progress-reports)
+Progress Reports]
 
 
-
+Introduction
+-----------------
 
 
 
