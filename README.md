@@ -238,23 +238,7 @@ Description](#23-overall-description)
 
 2.3.5 Web Application
 
-[2.4 Future
-Considerations](#24-future-consideration)
 
-2.4.1 Operating Environment
-
-2.4.2 Safety Considerations
-
-2.4.3 Future Additions
-
-[3.
-Conclusions](#3-conclusion)
-
-[4.
-Recommendations](#4-recommendations)
-
-[5. 
-Progress Reports](#5-progress-reports)
 
 
 1. Introduction
@@ -326,17 +310,6 @@ Our mobile application is called AutAcc Report and is exclusive to Android. With
 For our project, we will also provide a website. In the website, the user will be able to register. If the user is already registered, he/she will be able to review the information related to his/her account. He/she will also be able to delete an incident or modify any information related to that incident. The user can also change their password.
 
 
-2.4 Future Considerations
-----------------------------------------
-
-3. Conclusion
--------------------------------------------
-
-4. Recommendations
--------------------------------------
-
-5.Progress Reports
--------------------------
 
 
 Reference
