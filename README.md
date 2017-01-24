@@ -5,7 +5,7 @@ Table Content
 
 
 
-2.  [Humber Sense Hat](#humber-sense-hat)
+2.  [SRS (requirements specification)](#srs)
 
 
 
@@ -195,4 +195,5 @@ described by [3]. I request approval of this project.
 
 **References (Generated in pdf)**
 
- 
+SRS
+---------
