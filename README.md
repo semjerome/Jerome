@@ -198,7 +198,7 @@ Table of Contents
 =================
 
 
-[Approved 
+[Proposal 
 ](#proposal)
 
 [1.
@@ -255,19 +255,7 @@ Progress Reports](#progress-reports)
 
 1. Introduction
 -----------------
-sadasbanjbasbhasdbasddbk
-asd
-asd
-asasd
-dsa
-sd
-ads
-sd
-das
-das
-adsdas
-ads
-asd
+
 
 
 2. Software Requirements Specification (SRS)
