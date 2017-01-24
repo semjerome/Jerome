@@ -56,6 +56,10 @@ people will try to change their story in order for them to get away with it. If
 such thing happens, the police will have to look around and see if a CCTV has
 captured the accident.
 
+I have searched for prior art via Humber’s IEEE subscription selecting “My
+Subscribed Content”[1] and have found and read [2] which provides insight into
+similar efforts.
+
 The first journal that we found presents “ the approach to use smartphones as a
 multi sensor platform in a field operational test respectively a naturalistic
 driving study”. [@6758745]
@@ -64,10 +68,6 @@ The second journal talks about optical camera used for vehicles. [@7801077]
 
 For the last journal, it then talks about inevitable accidents that can happen
 with motorcycles and automobiles. [@7410053]
-
-I have searched for prior art via Humber’s IEEE subscription selecting “My
-Subscribed Content”[1] and have found and read [2] which provides insight into
-similar efforts.
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
