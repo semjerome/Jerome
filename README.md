@@ -236,6 +236,8 @@ Description](#23-overall-description)
 
 2.3.4 Mobile Application
 
+2.3.5 Web Application
+
 [2.4 Future
 Considerations](#24-future-consideration)
 
@@ -317,7 +319,12 @@ Our hardware is a collision detector. Once the car has start up, the hardware wi
 
 ####2.3.4 Mobile Application
 
-Our mobile application is called AutAcc Report and is exclusive to Android. With the mobile app, the user is able to retrieve any incident related to the user. Once it is able to retrieve an incident report, the user will be able to add more information about the driver that he/she had an accident with and the car he/she was using.  The application has playback functionality where it can watch the video that was captured during the incident.  It also has map functionality where it will pinpoint the exact location of the incident by using Google map. The mobile app also has functionality where the user can contact his/her insurance agent where he/she can report the incident. Since 
+Our mobile application is called AutAcc Report and is exclusive to Android. With the mobile app, the user is able to retrieve any incident related to the user. Once it is able to retrieve an incident report, the user will be able to add more information about the driver that he/she had an accident with and the car he/she was using.  The application has playback functionality where it can watch the video that was captured during the incident.  It also has map functionality where it will pinpoint the exact location of the incident by using Google map. The mobile app also has functionality where the user can contact his/her insurance agent where he/she can report the incident.  
+
+####2.3.5 Web Application
+
+For our project, we will also provide a website. In the website, the user will be able to register. If the user is already registered, he/she will be able to review the information related to his/her account. He/she will also be able to delete an incident or modify any information related to that incident. The user can also change their password.
+
 
 2.4 Future Considerations
 ----------------------------------------
