@@ -242,7 +242,8 @@ Description](#23-overall-description)
 -----------------
 
 
-
+Content
+=================
 2. Software Requirements Specification (SRS)
 -----------------------------------------------
 
@@ -291,20 +292,27 @@ System interface for our project includes: collision detector hardware, database
 
 ####2.3.2 Database
 
-We are going to use the GoDaddy's database to store the information about the user, the accident, the driver they had an accident with and the car that the other driver was using. For the user infomration, we are going to store the username password and its user's id. For the password, we are going to encrypt the user's password using MD5 to protect the password just in case someone tries to hack our system. In accident table, we are going to the store the reporrtId, incident date, video name, longitude and latitude. In the driver table, we are going to store the other driver's license, first name,, last name, gender and insurance number.  In the car's table, we are goint ot store the other driver' car information such as plate number, brand, model and the year it was manufactured. (Worked on by: Jerome, Jabneel)
+We are going to use the GoDaddy's database to store the information about the user, the accident, the driver they had an accident with and the car that the other driver was using. For the user infomration, we are going to store the username password and its user's id. For the password, we are going to encrypt the user's password using MD5 to protect the password just in case someone tries to hack our system. In accident table, we are going to the store the reporrtId, incident date, video name, longitude and latitude. In the driver table, we are going to store the other driver's license, first name,, last name, gender and insurance number.  In the car table, we are going to store the other driver's car information such as plate number, brand, model and the year it was manufactured. (Jerome)
 
+A separate database will be created for car makes and models, which is then going to be used for the mobile application. It will be used for drop-down spinners of both car makes and models. (Jabneel)
 
 ####2.3.3 Hardware
 
-Our hardware is a collision detector. Once the car has start up, the hardware will start running immediately. It will start recording as soon as it is start up. It will have loop and lock functionality. With the loop functionality, the hardware will replace the old video with a new video, which prevents the hardware from using too much memory. The lock functionality will lock up the video file if the hardware detects any collision. It will lock up the file until the hard is connected to the Internet. Once it is connected, it will upload the file to the server and store the date that the video was captured, the location and the name of the video.(Worked on by: Jerome, Jaewoong)
+Our hardware is a collision detector. Once the car has start up, the hardware will start running immediately. It will start recording as soon as it is start up. It will have loop and lock functionality. With the loop functionality, the hardware will replace the old video with a new video, which prevents the hardware from using too much memory. The lock functionality will lock up the video file if the hardware detects any collision. It will lock up the file until the hard is connected to the Internet.(Jerome)
+
+Once it is connected, it will upload the file to the server and store the date that the video was captured, the location and the name of the video. It will also have a GUI(Graphic USer Interface so that it will be easy to use for new user.(Jaewoong)
 
 ####2.3.4 Mobile Application
 
-Our mobile application is called AutAcc Report and is exclusive to Android. With the mobile app, the user is able to retrieve any incident related to the user. Once it is able to retrieve an incident report, the user will be able to add more information about the driver that he/she had an accident with and the car he/she was using.  The application has playback functionality where it can watch the video that was captured during the incident.  It also has map functionality where it will pinpoint the exact location of the incident by using Google map. The mobile app also has functionality where the user can contact his/her insurance agent where he/she can report the incident. (Worked on by: Jerome, Jabneel) 
+Our mobile application is called AutAcc Report and is exclusive to Android. With the mobile app, the user is able to retrieve any incident related to the user. Once it is able to retrieve an incident report, the user will be able to add more information about the driver that he/she had an accident with and the car he/she was using.  The application has playback functionality where it can watch the video that was captured during the incident.  It also has map functionality where it will pinpoint the exact location of the incident by using Google map. (Jabneel)
+
+The mobile app also has functionality where the user can contact his/her insurance agent where he/she can report the incident. User accounts and having access to different reports is also a requirement. (Jerome)
 
 ####2.3.5 Web Application
 
-For our project, we will also provide a website. In the website, the user will be able to register. If the user is already registered, he/she will be able to review the information related to his/her account. He/she will also be able to delete an incident or modify any information related to that incident. The user can also change their password. (Worked on by: Jerome, Jabneel, Jaewoong)
+For our project, we will also provide a website. The front-end design and user interface of the website will be worked on by Jabneel and Achille. Usability and design of the website will require. Developed by (Jabneel) and user testing done by (Achille).
+
+In the website, the user will be able to register. If the user is already registered, he/she will be able to review the information related to his/her account. He/she will also be able to delete an incident or modify any information related to that incident. The user can also change their password. This will be worked on by (Jerome).
 
 
 
