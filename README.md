@@ -9,6 +9,8 @@ Telematics
 
 
 
+Declaration of Sole Authorship
+==========================
 
 
 
@@ -189,14 +191,21 @@ described by our professor. I request approval of this project.
 Abstract (Executive Summary)
 ============================
 
- 
+
 
 Table of Contents
 =================
 
 
+[Declaration of sole Authorship
+](#declaration-of-sole-authorship)
+
+
 [Proposal 
 ](#proposal)
+
+[Abstract 
+](#abstract)
 
 [1.
 Introduction](#1-introduction)
