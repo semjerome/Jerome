@@ -9,17 +9,16 @@ Telematics
 
 
 
-Declaration of Sole Authorship
+Declaration of Joint Authorship
 ==========================
 
-We, the Galaxy Noise, confirm that this work submitted for assessment is our own and is expressed i our own words. Any uses that was used in this documents that came from any other author are acknowledge where their works were used. A list of references are included in this document.
+We, the Galaxy Noise, confirm that this work submitted for assessment is our own and is expressed in our own words. Any uses that was used in this documents that came from any other authors were acknowledged where their works were used. A list of references are included in this document.
 
 
 
 
 
-
-Signed: [insert signature]
+Galaxy Noise: Jerome Aganon, Jabneel Cruz, Jaewhoong Kang, Achille Mattapullit
 
 
 Date: February 6, 2017
