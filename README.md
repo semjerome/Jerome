@@ -202,6 +202,7 @@ described by our professor. I request approval of this project.
 Abstract (Executive Summary)
 ============================
 
+In today’s society, car has been part of our daily life. Based on National Safety Council, around 27,000 accidents occur everyday in United States alone but only 0.3 percent of it result in a fatality. The problem solved by our project is not to prevent any accident, but to get evidence if an accident happened. Having a dash cam does not mean that if an accident happened there would be footage of what happened. Sometimes, accident happens on the side or back of the car. In the event that such thing happened, the people will rely on the story of a witness or the victims. Sometimes the people will try to change their story in order for them to get away with it. If such thing happens, the police will have to look around and see if a CCTV has captured the accident. With our project, it will help the police or the Insurance Company to determine who is at fault if an accident occurs without any hassle. And at the same time, it will encourage the driver to abide the road rules since this project can be used against them if they do not. 
 
 
 Table of Contents
