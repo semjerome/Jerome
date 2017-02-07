@@ -268,7 +268,7 @@ Description](#23-overall-description)
 1.1 Purpose
 ------------------------------
 
-The purpose of this documentation is to give a detailed description of the requirements for the "Telematics" hardware and all of the software that comes with it. It will show the purpose and complete declaration for the development if system. It will also explain system constrain, interface and interactions with other external applications. This documentation is primarily intended to our professor for his approval and a reference for developing the system.
+The purpose of this documentation is to give a detailed description of the requirements for the "Telematics" hardware and all of the software that comes with it. It will show the purpose and complete declaration for the development of the system. It will also explain system constrain, interface and interactions with other external applications. This documentation is primarily intended to our professor for his approval and a reference for developing the system.
 
 1.2 Scope
 ------------------------
