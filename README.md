@@ -18,7 +18,7 @@ We, the Galaxy Noise, confirm that this work submitted for assessment is our own
 
 
 
-Galaxy Noise: Jerome Aganon, Jabneel Cruz, Jaewhoong Kang, Achille Mattapullit
+Galaxy Noise: Jerome Aganon, Jabneel Cruz, Jaewhoong Kang, Achille Mattapullut
 
 
 Date: February 6, 2017
