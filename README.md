@@ -281,6 +281,18 @@ Furthermore, the user will be able to access the information to through their an
 
 
 
+1.3 Definitions, acronyms, and abbreviations
+----------------------------------------------
+
+| Term        | Definition           | 
+| ------------- |:-------------:| 
+| Telematics    | Name of the hardware. | 
+| User          | Someone who interacts with the web or sfotware appplication   |   
+| GPS           | Global Positioning System     |
+| Official Website           | http://autaccreport.com/   |
+
+
+
 2. Software Requirements Specification (SRS)
 =============================================
 
