@@ -260,10 +260,10 @@ Description](#23-overall-description)
 2.3.5 Web Application
 
 [Conclusion
-](#conclusion)
+](#3-conclusion)
 
 [Recommendation
-](#recommendation)
+](#4-recommendation)
 
 1. Introduction
 ==========================
@@ -365,6 +365,10 @@ For our project, we will also provide a website. The front-end design and user i
 
 In the website, the user will be able to register. If the user is already registered, he/she will be able to review the information related to his/her account. He/she will also be able to delete an incident or modify any information related to that incident. The user can also change their password. This will be worked on by (Jerome).
 
+[3.
+Conclusion](#3-conclusion)
+[4.
+Recommendations](#4-recommendation)
 
 
 Reference
