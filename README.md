@@ -196,7 +196,7 @@ skills developed in our program to create a collaborative IoT capstone project
 demonstrating my ability to learn how to support projects such as the initiative
 described by our professor. I request approval of this project.
 
-**References (Generated in pdf)**
+
 
 Abstract (Executive Summary)
 ============================
@@ -259,8 +259,11 @@ Description](#23-overall-description)
 
 2.3.5 Web Application
 
+[Conclusion
+](#conclusion)
 
-
+[Recommendation
+](#recommendation)
 
 1. Introduction
 ==========================
@@ -268,15 +271,15 @@ Description](#23-overall-description)
 1.1 Purpose
 ------------------------------
 
-The purpose of this documentation is to give a detailed description of the requirements for the "Telematics" hardware and all of the software that comes with it. It will show the purpose and complete declaration for the development of the system. It will also explain system constraints, system interface and interactions with other external applications. This documentation is primarily intended for our professor and his approval as well as reference for developing the system.
+The purpose of this documentation is to give a detailed description of the requirements for the "Telematics" hardware and all of the software that comes with it. It will explain system constraints, system interface and interactions with other external applications. This documentation is primarily intended for our professor and his approval as well as reference for developing the system.
 
 1.2 Scope
 ------------------------
-The "Telematics" is a hardware that helps the police, insurance companies and drivers to determine the cause of a car incident. The hardware will have 3 cameras (one on each side and one on the rear). It will also have an Android application where the user can review any previous incident that has happened and add more information if needed. 
+The "Telematics" is a hardware that helps the police, insurance companies and drivers to determine the cause of a car incident. The hardware will have 3 cameras (one on each side and one on the rear). Although in this prototype, it will only have one camera because the raspberry pi3 can only support 1 raspberry pi camera at at ime. It will also have an Android application where the user can review any previous incident that has happened and add more information if needed. 
 
 Upon installing the hardware, the user has to register through the official website and enter the appropriate information and product key. From then on, the hardware will be able to send any information to the database once it is connected to the internet. The hardware does not need to maintain a network connection in order to work. Once the car starts, it will start recording and will replace the old file with a new file until it detects an accident. Once the hardware detects an incident, it will lock the file and will not be able to be overwritten until it is successfully uploaded to the server. Once the hardware is connected to the network, it will upload the video to the server and any information related to incident such as date and the location of the incident.
 
-Furthermore, the user will be able to access the information to through their Android phone. From the app, they will need to log in in order to retrieve the information related to their account. The user can then review the incident and add information about the incident such as, the car and driver's information. If the user does not have an android phone, they can do everything that was mentioned above through the official website.
+Furthermore, the user will be able to access the information to through their Android phone. From the moblie application, they will need to log in in order to retrieve the information related to their account. The user can then review the incident and add information about the incident such as, the car and driver's information. If the user does not have an android phone, they can do everything that was mentioned above through the official website.
 
 
 
