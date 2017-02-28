@@ -439,7 +439,7 @@ The project will be able to detect car collision and save the recorded video int
 |Full Sized Breadboard| 1 | $8.81|
 |USB GPS Dongle| 1 | $50.00|
 |LED| 1|$0.25|
-|Total| ||$193.24|
+|Total| |$193.24|
 
 
 
