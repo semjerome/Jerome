@@ -422,11 +422,11 @@ We are planning on creating a new case for the hardware since we are planning on
 
 The project will be able to detect car collision and save the recorded video into a file server to be used by the android application. The goal of this project is to notify the car owner of an accident happening. The owner should be able to access the video of the recorded accident using their mobile application. We are using a vibration sensor (buzzer) to detect an impact signal that will be sent to the raspberry pi which then would run the camera to record a 20 second video that will be sent to the server. This video file can then be accessesed by the owner by using an android application. Take note that for now, our current production build is only sending the video file to the owner's email address.
 
-####2.5.1 System Diagram
+####2.5.2 System Diagram
 
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/Diagram.png "Diagram")
 
-####2.5.2 Bills of Material / Budget
+####2.5.3 Bills of Material / Budget
 
 | Equipment        | Quantity           |  Cost With tax |
 | ------------- |------------- |:-------------:| 
@@ -441,7 +441,7 @@ The project will be able to detect car collision and save the recorded video int
 |LED| 1|$0.25|
 |Total| |$193.24|
 
-####2.5.3 Time Commitment
+####2.5.4 Time Commitment
 
 | Todo        | time Required           | 
 | -------------|:-------------:| 
@@ -452,7 +452,7 @@ The project will be able to detect car collision and save the recorded video int
 |Running Code|5-10 mins, depends on the length of the video. The longer it is, the more time it needs to perform|
 
 
-####2.5.4 Mechanical Assembly
+####2.5.5 Mechanical Assembly
 
 This shows the circuit you have to build for the sensor to detect a vibration coming from tapping it. The LED will blink if the video file was sent to your email.
 
@@ -468,11 +468,11 @@ Connect the particular camera module that I listed above to your Raspberry Pi 3.
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/cameramodule.png "Logo Title Text 1")
 
 
-####2.5.5 PCB/Soldering
+####2.5.6 PCB/Soldering
 
 We tried implementing our working circuit to a PCB but it didn't work.
 
-####2.5.6 Unit Testing
+####2.5.7 Unit Testing
 
 You can use these programs for testing your Camera and Vibration Sensor if they are working properly.
 
@@ -506,7 +506,7 @@ You can use these programs for testing your Camera and Vibration Sensor if they 
             	print("VIbrated")
  	    	sleep(1)   
 		"
-####2.5.7 Production Testing
+####2.5.8 Production Testing
 
 We wanted the video file recorded to be sent to a file server, but as of now , it is being sent to your email.
 
@@ -669,7 +669,7 @@ def recVideo( sNum ):
 "
 ```
 
-####2.5.8 Reproducibility Based on Instructions
+####2.5.9 Reproducibility Based on Instructions
 
 Currently, the it is possible to reproduce the project by following the codes. On the other hand, if you print out the PCB, It will not work because there is an issue with the connections.
 
