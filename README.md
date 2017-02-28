@@ -259,6 +259,36 @@ Description](#23-overall-description)
 
 2.3.5 Web Application
 
+[2.4 Future
+Consideration](#24-future-consideration)
+
+2.4.1 Operating Environment
+
+2.4.2 Safety consideration
+
+2.4.3 Future Additions
+
+[2.5 Build
+Instruction](#25-build-instruction)
+
+2.5.1 Introduction
+
+2.5.2 System Diagram
+
+2.5.3 Bill of Material/Budget
+
+2.5..4 Time Commitment
+
+2.5.5 Mechanical Assembly
+
+2.5.6 PCB/Soldering
+
+2.5.7 Unit Testing
+
+2.5.8 Production Testing
+
+2.5.9 Reproducibility Based on Instructions
+
 [Conclusion
 ](#3-conclusion)
 
@@ -364,6 +394,21 @@ The mobile app also has functionality where the user can contact his/her insuran
 For our project, we will also provide a website. The front-end design and user interface of the website will be worked on by Jabneel and Achille. Usability and design of the website will require. Developed by (Jabneel) and user testing done by (Achille).
 
 In the website, the user will be able to register. If the user is already registered, he/she will be able to review the information related to his/her account. He/she will also be able to delete an incident or modify any information related to that incident. The user can also change their password. This will be worked on by (Jerome).
+
+
+2.4 Future Consideration
+-----------------------------------------
+
+
+####2.4.1 Operating Environment
+
+In order to use this product, you will need a wokring car and an android phone or tablet and has android API 19 (Android 4.4 KitKat) or above. Although it is not required to have an immediate Internet connection, you will need one when trying to synchronize the hardware with the database.
+
+####2.4.2 Safety Consideration
+
+Safety precaution that has to be considered when using the hardware:
+
+    * When using the hardware, make sure that 
 
 
 3. Conclusion
