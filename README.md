@@ -441,7 +441,15 @@ The project will be able to detect car collision and save the recorded video int
 |LED| 1|$0.25|
 |Total| |$193.24|
 
+####2.5.3 Time Commitment
 
+| Todo        | time Required           | 
+| -------------|:-------------:| 
+|Raspberry Pi 3 power up|(30 mins) I will take around 30 min to set up the raspberry Pi. You have to install the OS and connect it to the internet.|
+|PCB Soldering|1~2 hours for schematics and soldering. Printing the PCB could take 1 hour. And 30 min to solder it.|
+|Project Wiring|15~30 mins|
+|Importing Codes|1 hour, depends if you have all the required packages for using the camera and accessing email.|
+|Running Code|5-10 mins, depends on the length of the video. The longer it is, the more time it needs to perform|
 
 3. Conclusion
 ==========================
