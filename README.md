@@ -458,6 +458,15 @@ This shows the circuit you have to build for the sensor to detect a vibration co
 
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/teleSchema.png "Schematic")
 
+JP1 --- 2 is for the inner side of the buzzer. Positive. 
+--- 1 outer part of the buzzer. Negative.
+
+Following the diagram and placing each components in a breadboard would ensure a working vibration sensor program
+
+Connect the particular camera module that I listed above to your Raspberry Pi 3.
+
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/cameramodule.png "Logo Title Text 1")
+
 3. Conclusion
 ==========================
 
