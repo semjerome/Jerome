@@ -636,8 +636,11 @@ def sendAlert(vidName):
     server.sendmail(raspaddress, useraddress, text)
     server.quit()
 			    "
-			    ```
-			    
+ ```
+
+
+
+
 Records the video for 20 seconds. Can be adjusted by changing the value of sleep 
 
 
