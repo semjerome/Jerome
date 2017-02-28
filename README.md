@@ -451,6 +451,13 @@ The project will be able to detect car collision and save the recorded video int
 |Importing Codes|1 hour, depends if you have all the required packages for using the camera and accessing email.|
 |Running Code|5-10 mins, depends on the length of the video. The longer it is, the more time it needs to perform|
 
+
+####2.5.4 Mechanical Assembly
+
+This shows the circuit you have to build for the sensor to detect a vibration coming from tapping it. The LED will blink if the video file was sent to your email.
+
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/teleSchema.png "Schematic")
+
 3. Conclusion
 ==========================
 
