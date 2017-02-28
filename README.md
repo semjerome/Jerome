@@ -402,7 +402,7 @@ In the website, the user will be able to register. If the user is already regist
 
 ####2.4.1 Operating Environment
 
-In order to use this product, you will need a wokring car and an android phone or tablet and has android API 19 (Android 4.4 KitKat) or above. Although it is not required to have an immediate Internet connection, you will need one when trying to synchronize the hardware with the database.
+To fully utilize this product you will need an Android device (Tablet or phone) on the OS android 4.4 KitKat and above (API 19 and above). This product does not require constant internet connection. An Internet connection is only required when you need to synchronize the hardware with the database.
 
 ####2.4.2 Safety Consideration
 
