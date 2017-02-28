@@ -424,7 +424,23 @@ The project will be able to detect car collision and save the recorded video int
 
 ####2.5.1 System Diagram
 
-![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/Diagram.png "Logo Title Text 1")
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/Diagram.png "Diagram")
+
+####2.5.2 Bills of Material / Budget
+
+| Equipment        | Quantity           |  Cost With tax |
+| ------------- |------------- |:-------------:| 
+|Raspberry Pi 3 Starter Kit|1   | $89.99|
+|Pi Camera Module|  1|        $38.79  |
+|Piezo Buzzer Element (Vibration Sensor)|2 |    	$5.19|
+|Camera Module Case |1      | $25.28|
+| 1 Mega Ohm Resistor|1|$0.35|
+|330 Ohm Resistor| 1| $0.25|
+|Full Sized Breadboard| 1 | $8.81|
+|USB GPS Dongle| 1 | $50.00|
+|LED| 1|$0.25|
+|Total| ||$193.24|
+
 
 
 3. Conclusion
