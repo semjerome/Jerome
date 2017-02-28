@@ -408,7 +408,12 @@ In order to use this product, you will need a wokring car and an android phone o
 
 Safety precaution that has to be considered when using the hardware:
 
-    * When using the hardware, make sure that 
+   * When using the hardware, make sure that the hardware is properly plugged in before turning on the car.
+   * Avoid sunlight exposure
+   
+####2.4.3 Future Additions
+
+We are planning on creating a new case for the hardware since we are planning on adding a touchscreen capability on our hardware. 
 
 
 3. Conclusion
