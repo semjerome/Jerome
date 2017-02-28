@@ -415,6 +415,17 @@ Safety precaution that has to be considered when using the hardware:
 
 We are planning on creating a new case for the hardware since we are planning on adding a touchscreen capability on our hardware. 
 
+2.5 Build Instruction
+-----------------------------------------
+
+####2.5.1 Introduction
+
+The project will be able to detect car collision and save the recorded video into a file server to be used by the android application. The goal of this project is to notify the car owner of an accident happening. The owner should be able to access the video of the recorded accident using their mobile application. We are using a vibration sensor (buzzer) to detect an impact signal that will be sent to the raspberry pi which then would run the camera to record a 20 second video that will be sent to the server. This video file can then be accessesed by the owner by using an android application. Take note that for now, our current production build is only sending the video file to the owner's email address.
+
+####2.5.1 System Diagram
+
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/Diagram.png "Logo Title Text 1")
+
 
 3. Conclusion
 ==========================
