@@ -269,7 +269,7 @@ Consideration](#24-future-consideration)
 2.4.3 Future Additions
 
 [2.5 Build
-Instruction](#25-build-instruction)
+Instructions](#25-build-instructions)
 
 2.5.1 Introduction
 
@@ -287,13 +287,15 @@ Instruction](#25-build-instruction)
 
 2.5.8 Production Testing
 
-2.5.9 Reproducibility Based on Instructions
 
 [Conclusion
 ](#3-conclusion)
 
 [Recommendation
 ](#4-recommendation)
+
+[Reference
+](#5-reference)
 
 1. Introduction
 ==========================
@@ -415,7 +417,7 @@ Safety precaution that has to be considered when using the hardware:
 
 We are planning on creating a new case for the hardware since we are planning on adding a touchscreen capability on our hardware. 
 
-2.5 Build Instruction
+2.5 Build Instructions
 -----------------------------------------
 
 ####2.5.1 Introduction
@@ -669,7 +671,7 @@ def recVideo( sNum ):
 "
 ```
 
-####2.5.9 Reproducibility Based on Instructions
+####Reproducibility Based on Instructions
 
 Currently, it is possible to reproduce the project by following the codes. On the other hand, if you print out the PCB, It will not work because there is an issue with the connections.
 
@@ -681,7 +683,7 @@ Currently, it is possible to reproduce the project by following the codes. On th
 ==========================
 
 
-Reference
-------------
+5. Reference
+==========================
 
 **References (Generated in pdf)**
