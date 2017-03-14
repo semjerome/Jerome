@@ -671,9 +671,6 @@ def recVideo( sNum ):
 "
 ```
 
-####Reproducibility Based on Instructions
-
-Currently, it is possible to reproduce the project by following the codes. On the other hand, if you print out the PCB, It will not work because there is an issue with the connections.
 
 
 3. Conclusion
