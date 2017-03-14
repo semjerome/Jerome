@@ -673,25 +673,15 @@ def recVideo( sNum ):
 
 
 
-
-3.Conclusion
+3. Conclusion
 ==========================
 
 
-In this report, we wrote the purpose of this telematics and how to reproduce it. By following the instructions, you should be able to reproduce it and should run on how it is supposed to. On the other hand, it is not possible to create a working PCB as there are some connection issues.
-
-
-4.Recommendation
+4. Recommendation
 ==========================
+Improvements that can be made on Android Mobile Application are the following: Have each fragments for video, location, driver and car in separate page fragments. 
 
-
-When reproducing this hardware, it is recommended to get a Raspberry Pi 3 or later version. It is not recommended to use an earlier version because it does not have any built-in wi-fi or bluetooth capability. 
-
-To increase the reliability of the hardware, it is advicable to use Gravity sensor instead of vibration sensor. By using Gravity sensor, the video will only be lock when there is a disruption on the movememnt of the car. On the other hand, vibration sensor will lock the video everytime it sense a vibration. 
-
-
-
-5.Reference
+5. Reference
 ==========================
 
 **References (Generated in pdf)**
