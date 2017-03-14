@@ -673,17 +673,15 @@ def recVideo( sNum ):
 
 
 
-3. Conclusion
-==========================
 
-3. Conclusion
+3.Conclusion
 ==========================
 
 
 In this report, we wrote the purpose of this telematics and how to reproduce it. By following the instructions, you should be able to reproduce it and should run on how it is supposed to. On the other hand, it is not possible to create a working PCB as there are some connection issues.
 
 
-4. Recommendation
+4.Recommendation
 ==========================
 
 
@@ -693,7 +691,7 @@ To increase the reliability of the hardware, it is advicable to use Gravity sens
 
 
 
-5. Reference
+5.Reference
 ==========================
 
 **References (Generated in pdf)**
