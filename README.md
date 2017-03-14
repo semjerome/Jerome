@@ -673,6 +673,7 @@ def recVideo( sNum ):
 
 
 
+
 3. Conclusion
 ==========================
 
@@ -683,9 +684,12 @@ In this report, we wrote the purpose of this telematics and how to reproduce it.
 4. Recommendation
 ==========================
 
+
 When reproducing this hardware, it is recommended to get a Raspberry Pi 3 or later version. It is not recommended to use an earlier version because it does not have any built-in wi-fi or bluetooth capability. 
 
 To increase the reliability of the hardware, it is advicable to use Gravity sensor instead of vibration sensor. By using Gravity sensor, the video will only be lock when there is a disruption on the movememnt of the car. On the other hand, vibration sensor will lock the video everytime it sense a vibration. 
+
+
 
 5. Reference
 ==========================
