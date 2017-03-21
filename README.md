@@ -8,7 +8,7 @@ Telematics
 ==========================
 
 
-/pagebreak
+\pagebreak
 
 
 Declaration of Joint Authorship
@@ -26,7 +26,7 @@ Galaxy Noise: Jerome Aganon, Jabneel Cruz, Jaewhoong Kang, Achille Mattapullut
 Date: February 6, 2017
 
 
-/pagebreak
+\pagebreak
 
 
 Proposal
