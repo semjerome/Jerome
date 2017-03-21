@@ -1,39 +1,30 @@
 ---
-bibliography: GNoiseCitations.bib
 csl: apa.csl
+bibliography: GNoiseCitations.bib
 ---
 
-
 Telematics
-==========================
-
+==========
 
 \pagebreak
 
-
 Declaration of Joint Authorship
-==========================
+===============================
 
-We, the Galaxy Noise, confirm that this work submitted for assessment is our own and is expressed in our own words. Any uses that was used in this documents that came from any other authors were acknowledged where their works were used. A list of references are included in this document and the work breakdown can be find on Overall Description Section 2.3.
-
-
-
-
+We, the Galaxy Noise, confirm that this work submitted for assessment is our own
+and is expressed in our own words. Any uses that was used in this documents that
+came from any other authors were acknowledged where their works were used. A
+list of references are included in this document and the work breakdown can be
+find on Overall Description Section 2.3.
 
 Galaxy Noise: Jerome Aganon, Jabneel Cruz, Jaewhoong Kang, Achille Mattapullut
 
-
 Date: February 6, 2017
-
 
 \pagebreak
 
-
 Proposal
-==========================
-
-
-
+========
 
 Submission January 17, 2017
 
@@ -56,10 +47,11 @@ the folder location of the video that were saved in the blackbox. The mobile
 device functionality will include notifying the car owner of an accident
 happening and if possible, an image or video capture of the accident and will be
 further detailed in the mobile application proposal. We will be collaborating
-with the following company/department Engineering Club. The hardware will be completed in CENG 317 Hardware Production
-Techniques independently and the application will be completed in CENG 319
-Software Project. These will be integrated together in the subsequent term in
-CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
+with the following company/department Engineering Club. The hardware will be
+completed in CENG 317 Hardware Production Techniques independently and the
+application will be completed in CENG 319 Software Project. These will be
+integrated together in the subsequent term in CENG 355 Computer Systems Project
+as a member of a 2 or 3 student group.
 
 **Background**
 
@@ -73,8 +65,8 @@ such thing happens, the police will have to look around and see if a CCTV has
 captured the accident.
 
 I have searched for prior art via Humber’s IEEE subscription selecting “My
-Subscribed Content” and have found and read which provides insight into
-similar efforts.
+Subscribed Content” and have found and read which provides insight into similar
+efforts.
 
 The first journal that we found presents “ the approach to use smartphones as a
 multi sensor platform in a field operational test respectively a naturalistic
@@ -104,7 +96,7 @@ following topics from the respective relevant courses:
 -   Wireless protocols such as 802.11 from TECH152 Telecom Networks.
 
 This knowledge and skill set will enable me to build the subsystems and
-integrate them together as my capstone project.
+integrate them together as my capstone project. \pagebreak
 
 **Methodology**
 
@@ -186,7 +178,7 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | Materials to improve functionality, fit, and finish of project.                           |                |                                                                                                                                                      |
 | **Phase 2 Total**                                                                         | **TBD**        |                                                                                                                                                      |
 | **Phase 3**                                                                               |                |                                                                                                                                                      |
-| Off campus colocation                                                                     | \<\$100.00     | An example: .                                                                                                                                     |
+| Off campus colocation                                                                     | \<\$100.00     | An example: .                                                                                                                                        |
 | *Shipping*                                                                                | *TBD*          |                                                                                                                                                      |
 | *Tax*                                                                                     | *TBD*          |                                                                                                                                                      |
 | *Duty*                                                                                    | *TBD*          |                                                                                                                                                      |
@@ -200,30 +192,38 @@ skills developed in our program to create a collaborative IoT capstone project
 demonstrating my ability to learn how to support projects such as the initiative
 described by our professor. I request approval of this project.
 
-
+\pagebreak
 
 Abstract (Executive Summary)
 ============================
 
-In today’s society, car has been part of our daily life. Based on National Safety Council, around 27,000 accidents occur everyday in United States alone but only 0.3 percent of it result in a fatality. The problem solved by our project is not to prevent any accident, but to get evidence if an accident happened. Having a dash cam does not mean that if an accident happened there would be footage of what happened. Sometimes, accident happens on the side or back of the car. In the event that such thing happened, the people will rely on the story of a witness or the victims. Sometimes the people will try to change their story in order for them to get away with it. If such thing happens, the police will have to look around and see if a CCTV has captured the accident. With our project, it will help the police or the Insurance Company to determine who is at fault if an accident occurs without any hassle. And at the same time, it will encourage the driver to abide the road rules since this project can be used against them if they do not. 
+In today’s society, car has been part of our daily life. Based on National
+Safety Council, around 27,000 accidents occur everyday in United States alone
+but only 0.3 percent of it result in a fatality. The problem solved by our
+project is not to prevent any accident, but to get evidence if an accident
+happened. Having a dash cam does not mean that if an accident happened there
+would be footage of what happened. Sometimes, accident happens on the side or
+back of the car. In the event that such thing happened, the people will rely on
+the story of a witness or the victims. Sometimes the people will try to change
+their story in order for them to get away with it. If such thing happens, the
+police will have to look around and see if a CCTV has captured the accident.
+With our project, it will help the police or the Insurance Company to determine
+who is at fault if an accident occurs without any hassle. And at the same time,
+it will encourage the driver to abide the road rules since this project can be
+used against them if they do not.
 
+\pagebreak
 
 Table of Contents
 =================
 
+[Declaration of sole Authorship](#declaration-of-sole-authorship)
 
-[Declaration of sole Authorship
-](#declaration-of-sole-authorship)
+[Proposal](#proposal)
 
+[Abstract](#abstract-executive-summary)
 
-[Proposal 
-](#proposal)
-
-[Abstract 
-](#abstract-executive-summary)
-
-[1.
-Introduction](#1-introduction)
+[1. Introduction](#1-introduction)
 
 1.1 Purpose
 
@@ -232,8 +232,7 @@ Introduction](#1-introduction)
 [2. Software Requirements Specification
 (SRS)](#2-software-requirements-pecification)
 
-[2.1 Technology
-Introduction](#21-technology-introduction)
+[2.1 Technology Introduction](#21-technology-introduction)
 
 2.1.1 Purpose
 
@@ -241,8 +240,7 @@ Introduction](#21-technology-introduction)
 
 2.1.3 Targeted Audience Group
 
-[2.2 Product
-Information](#22-product-information)
+[2.2 Product Information](#22-product-information)
 
 2.2.1 Main Functionality
 
@@ -250,8 +248,7 @@ Information](#22-product-information)
 
 2.2.3 Best Performance
 
-[2.3 Overall
-Description](#23-overall-description)
+[2.3 Overall Description](#23-overall-description)
 
 2.3.1 System Interface
 
@@ -263,8 +260,7 @@ Description](#23-overall-description)
 
 2.3.5 Web Application
 
-[2.4 Future
-Consideration](#24-future-consideration)
+[2.4 Future Consideration](#24-future-consideration)
 
 2.4.1 Operating Environment
 
@@ -272,8 +268,7 @@ Consideration](#24-future-consideration)
 
 2.4.3 Future Additions
 
-[2.5 Build
-Instructions](#25-build-instructions)
+[2.5 Build Instructions](#25-build-instructions)
 
 2.5.1 Introduction
 
@@ -291,236 +286,330 @@ Instructions](#25-build-instructions)
 
 2.5.8 Production Testing
 
+[Conclusion](#3-conclusion)
 
-[Conclusion
-](#3-conclusion)
+[Recommendation](#4-recommendation)
 
-[Recommendation
-](#4-recommendation)
-
-[Reference
-](#5-reference)
+[Reference](#5-reference)
 
 1. Introduction
-==========================
+===============
 
 1.1 Purpose
-------------------------------
+-----------
 
-The purpose of this documentation is to give a detailed description of the requirements for the "Telematics" hardware and all of the software that comes with it. It will explain system constraints, system interface and interactions with other external applications. This documentation is primarily intended for our professor and his approval as well as reference for developing the system.
+The purpose of this documentation is to give a detailed description of the
+requirements for the "Telematics" hardware and all of the software that comes
+with it. It will explain system constraints, system interface and interactions
+with other external applications. This documentation is primarily intended for
+our professor and his approval as well as reference for developing the system.
 
 1.2 Scope
-------------------------
-The "Telematics" is a hardware that helps the police, insurance companies and drivers to determine the cause of a car incident. The hardware will have 3 cameras (one on each side and one on the rear). Although in this prototype, it will only have one camera because the raspberry pi3 can only support 1 raspberry pi camera at at ime. It will also have an Android application where the user can review any previous incident that has happened and add more information if needed. 
+---------
 
-Upon installing the hardware, the user has to register through the official website and enter the appropriate information and product key. From then on, the hardware will be able to send any information to the database once it is connected to the internet. The hardware does not need to maintain a network connection in order to work. Once the car starts, it will start recording and will replace the old file with a new file until it detects an accident. Once the hardware detects an incident, it will lock the file and will not be able to be overwritten until it is successfully uploaded to the server. Once the hardware is connected to the network, it will upload the video to the server and any information related to incident such as date and the location of the incident.
+The "Telematics" is a hardware that helps the police, insurance companies and
+drivers to determine the cause of a car incident. The hardware will have 3
+cameras (one on each side and one on the rear). Although in this prototype, it
+will only have one camera because the raspberry pi3 can only support 1 raspberry
+pi camera at at ime. It will also have an Android application where the user can
+review any previous incident that has happened and add more information if
+needed.
 
-Furthermore, the user will be able to access the information to through their Android phone. From the moblie application, they will need to log in in order to retrieve the information related to their account. The user can then review the incident and add information about the incident such as, the car and driver's information. If the user does not have an android phone, they can do everything that was mentioned above through the official website.
+Upon installing the hardware, the user has to register through the official
+website and enter the appropriate information and product key. From then on, the
+hardware will be able to send any information to the database once it is
+connected to the internet. The hardware does not need to maintain a network
+connection in order to work. Once the car starts, it will start recording and
+will replace the old file with a new file until it detects an accident. Once the
+hardware detects an incident, it will lock the file and will not be able to be
+overwritten until it is successfully uploaded to the server. Once the hardware
+is connected to the network, it will upload the video to the server and any
+information related to incident such as date and the location of the incident.
 
-
+Furthermore, the user will be able to access the information to through their
+Android phone. From the moblie application, they will need to log in in order to
+retrieve the information related to their account. The user can then review the
+incident and add information about the incident such as, the car and driver's
+information. If the user does not have an android phone, they can do everything
+that was mentioned above through the official website.
 
 1.3 Definitions, acronyms, and abbreviations
-----------------------------------------------
+--------------------------------------------
 
-| Term        | Definition           | 
-| ------------- |:-------------:| 
-| Telematics    | Name of the hardware. | 
-| User          | Someone who interacts with the web or sfotware appplication   |   
-| GPS           | Global Positioning System     |
-| Official Website           | http://autaccreport.com/   |
+| Term             | Definition                                                  |
+|------------------|-------------------------------------------------------------|
+| Telematics       | Name of the hardware.                                       |
+| User             | Someone who interacts with the web or sfotware appplication |
+| GPS              | Global Positioning System                                   |
+| Official Website | http://autaccreport.com/                                    |
 
-
+\pagebreak
 
 2. Software Requirements Specification (SRS)
-=============================================
-
-
+============================================
 
 2.1 Technology Introduction
------------------------------------------------
+---------------------------
 
-####2.1.1 Purpose
+#### 2.1.1 Purpose
 
-The purpose of our software is to provide an automated service for drivers that notifies them of any accidents or damages that may have occurred to their car. With the use of mobile application, the owner will have the data of the location and video feed of the accident. It will also serve as a data storage regarding the accident for the owner. They will be able to input additional information about the driver, the car, as well as information needed for the insurance company. A website will be available for the user to register an account for them to use the mobile application.
+The purpose of our software is to provide an automated service for drivers that
+notifies them of any accidents or damages that may have occurred to their car.
+With the use of mobile application, the owner will have the data of the location
+and video feed of the accident. It will also serve as a data storage regarding
+the accident for the owner. They will be able to input additional information
+about the driver, the car, as well as information needed for the insurance
+company. A website will be available for the user to register an account for
+them to use the mobile application.
 
-####2.1.2 Product Overview
+#### 2.1.2 Product Overview
 
-The product will have piezo vibration sensors that will detect if there are any collisions detected. Raspberry Pi camera module will also be used to record video.
+The product will have piezo vibration sensors that will detect if there are any
+collisions detected. Raspberry Pi camera module will also be used to record
+video.
 
-####2.1.3 Targeted Audience Group:
+#### 2.1.3 Targeted Audience Group:
 
-Our target audience is any person that has a car and insurance company for they will be able to use the video feed as a proof of an incident.
-
-
+Our target audience is any person that has a car and insurance company for they
+will be able to use the video feed as a proof of an incident.
 
 2.2 Product Information
-----------------------------------------------
+-----------------------
 
-####2.2.1 Main Functionality
+#### 2.2.1 Main Functionality
 
-The main functionality of our system is to provide an incident report on user's mobile device in case of an accident. Information that the user saves on the application can then be used by them for their insurance company. The hardware will provide the video feed as well as the coordinates of the report.
+The main functionality of our system is to provide an incident report on user's
+mobile device in case of an accident. Information that the user saves on the
+application can then be used by them for their insurance company. The hardware
+will provide the video feed as well as the coordinates of the report.
 
+#### 2.2.2 Extra Requirements
 
-####2.2.2 Extra Requirements
+Internet connection is needed for the hardware device for it to be able to send
+the report, video and location, to the database. Implementation of battery
+powered raspberry pi will also be needed for it to be placed inside the car.
+(Jerome please confirm)
 
-Internet connection is needed for the hardware device for it to be able to send the report, video and location, to the database. Implementation of battery powered raspberry pi will also be needed for it to be placed inside the car. (Jerome please confirm)
+#### 2.2.3 Best Performance
 
-####2.2.3 Best Performance
-
-To achieve best performance of the product, we recommend sharing a stable wifi internet connection with the device.
-
+To achieve best performance of the product, we recommend sharing a stable wifi
+internet connection with the device.
 
 2.3 Overall Description
------------------------------------------
+-----------------------
 
-####2.3.1 System Interface
+#### 2.3.1 System Interface
 
-System interface for our project includes: collision detector hardware, database server, and mobile application. If an accident is detected from the hardware, it sends an accident report to the server. The user through the use of mobile application in which he/she can retrieve the video file and location of the accident can then access this report. The user will also be able to delete the report (in case of false report), as well as add information to the report.
+System interface for our project includes: collision detector hardware, database
+server, and mobile application. If an accident is detected from the hardware, it
+sends an accident report to the server. The user through the use of mobile
+application in which he/she can retrieve the video file and location of the
+accident can then access this report. The user will also be able to delete the
+report (in case of false report), as well as add information to the report.
 
-####2.3.2 Database
+#### 2.3.2 Database
 
-We are going to use the GoDaddy's database to store the information about the user, the accident, the driver they had an accident with and the car that the other driver was using. For the user infomration, we are going to store the username password and its user's id. For the password, we are going to encrypt the user's password using MD5 to protect the password just in case someone tries to hack our system. In accident table, we are going to the store the reporrtId, incident date, video name, longitude and latitude. In the driver table, we are going to store the other driver's license, first name,, last name, gender and insurance number.  In the car table, we are going to store the other driver's car information such as plate number, brand, model and the year it was manufactured. (Jerome)
+We are going to use the GoDaddy's database to store the information about the
+user, the accident, the driver they had an accident with and the car that the
+other driver was using. For the user infomration, we are going to store the
+username password and its user's id. For the password, we are going to encrypt
+the user's password using MD5 to protect the password just in case someone tries
+to hack our system. In accident table, we are going to the store the reporrtId,
+incident date, video name, longitude and latitude. In the driver table, we are
+going to store the other driver's license, first name,, last name, gender and
+insurance number. In the car table, we are going to store the other driver's car
+information such as plate number, brand, model and the year it was manufactured.
+(Jerome)
 
-A separate database will be created for car makes and models, which is then going to be used for the mobile application. It will be used for drop-down spinners of both car makes and models. (Jabneel)
+A separate database will be created for car makes and models, which is then
+going to be used for the mobile application. It will be used for drop-down
+spinners of both car makes and models. (Jabneel)
 
-####2.3.3 Hardware
+#### 2.3.3 Hardware
 
-Our hardware is a collision detector. Once the car has start up, the hardware will start running immediately. It will start recording as soon as it is start up. It will have loop and lock functionality. With the loop functionality, the hardware will replace the old video with a new video, which prevents the hardware from using too much memory. The lock functionality will lock up the video file if the hardware detects any collision. It will lock up the file until the hard is connected to the Internet.(Jerome)
+Our hardware is a collision detector. Once the car has start up, the hardware
+will start running immediately. It will start recording as soon as it is start
+up. It will have loop and lock functionality. With the loop functionality, the
+hardware will replace the old video with a new video, which prevents the
+hardware from using too much memory. The lock functionality will lock up the
+video file if the hardware detects any collision. It will lock up the file until
+the hard is connected to the Internet.(Jerome)
 
-Once it is connected, it will upload the file to the server and store the date that the video was captured, the location and the name of the video. It will also have a GUI(Graphic USer Interface so that it will be easy to use for new user.(Jaewoong)
+Once it is connected, it will upload the file to the server and store the date
+that the video was captured, the location and the name of the video. It will
+also have a GUI(Graphic USer Interface so that it will be easy to use for new
+user.(Jaewoong)
 
-####2.3.4 Mobile Application
+#### 2.3.4 Mobile Application
 
-Our mobile application is called AutAcc Report and is exclusive to Android. With the mobile app, the user is able to retrieve any incident related to the user. Once it is able to retrieve an incident report, the user will be able to add more information about the driver that he/she had an accident with and the car he/she was using.  The application has playback functionality where it can watch the video that was captured during the incident.  It also has map functionality where it will pinpoint the exact location of the incident by using Google map. (Jabneel)
+Our mobile application is called AutAcc Report and is exclusive to Android. With
+the mobile app, the user is able to retrieve any incident related to the user.
+Once it is able to retrieve an incident report, the user will be able to add
+more information about the driver that he/she had an accident with and the car
+he/she was using. The application has playback functionality where it can watch
+the video that was captured during the incident. It also has map functionality
+where it will pinpoint the exact location of the incident by using Google map.
+(Jabneel)
 
-The mobile app also has functionality where the user can contact his/her insurance agent where he/she can report the incident. User accounts and having access to different reports is also a requirement. (Jerome)
+The mobile app also has functionality where the user can contact his/her
+insurance agent where he/she can report the incident. User accounts and having
+access to different reports is also a requirement. (Jerome)
 
-####2.3.5 Web Application
+#### 2.3.5 Web Application
 
-For our project, we will also provide a website. The front-end design and user interface of the website will be worked on by Jabneel and Achille. Usability and design of the website will require. Developed by (Jabneel) and user testing done by (Achille).
+For our project, we will also provide a website. The front-end design and user
+interface of the website will be worked on by Jabneel and Achille. Usability and
+design of the website will require. Developed by (Jabneel) and user testing done
+by (Achille).
 
-In the website, the user will be able to register. If the user is already registered, he/she will be able to review the information related to his/her account. He/she will also be able to delete an incident or modify any information related to that incident. The user can also change their password. This will be worked on by (Jerome).
-
+In the website, the user will be able to register. If the user is already
+registered, he/she will be able to review the information related to his/her
+account. He/she will also be able to delete an incident or modify any
+information related to that incident. The user can also change their password.
+This will be worked on by (Jerome).
 
 2.4 Future Consideration
------------------------------------------
+------------------------
 
+#### 2.4.1 Operating Environment
 
-####2.4.1 Operating Environment
+To fully utilize this product you will need an Android device (Tablet or phone)
+on the OS android 4.4 KitKat and above (API 19 and above). This product does not
+require constant internet connection. An Internet connection is only required
+when you need to synchronize the hardware with the database.
 
-To fully utilize this product you will need an Android device (Tablet or phone) on the OS android 4.4 KitKat and above (API 19 and above). This product does not require constant internet connection. An Internet connection is only required when you need to synchronize the hardware with the database.
-
-####2.4.2 Safety Consideration
+#### 2.4.2 Safety Consideration
 
 Safety precaution that has to be considered when using the hardware:
 
-   * When using the hardware, make sure that the hardware is properly plugged in before turning on the car.
-   * Avoid sunlight exposure
-   
-####2.4.3 Future Additions
+-   When using the hardware, make sure that the hardware is properly plugged in
+    before turning on the car.
 
-We are planning on creating a new case for the hardware since we are planning on adding a touchscreen capability on our hardware. 
+-   Avoid sunlight exposure
+
+#### 2.4.3 Future Additions
+
+We are planning on creating a new case for the hardware since we are planning on
+adding a touchscreen capability on our hardware.
 
 2.5 Build Instructions
------------------------------------------
+----------------------
 
-####2.5.1 Introduction
+#### 2.5.1 Introduction
 
-The project will be able to detect car collision and save the recorded video into a file server to be used by the android application. The goal of this project is to notify the car owner of an accident happening. The owner should be able to access the video of the recorded accident using their mobile application. We are using a vibration sensor (buzzer) to detect an impact signal that will be sent to the raspberry pi which then would run the camera to record a 20 second video that will be sent to the server. This video file can then be accessesed by the owner by using an android application. Take note that for now, our current production build is only sending the video file to the owner's email address.
+The project will be able to detect car collision and save the recorded video
+into a file server to be used by the android application. The goal of this
+project is to notify the car owner of an accident happening. The owner should be
+able to access the video of the recorded accident using their mobile
+application. We are using a vibration sensor (buzzer) to detect an impact signal
+that will be sent to the raspberry pi which then would run the camera to record
+a 20 second video that will be sent to the server. This video file can then be
+accessesed by the owner by using an android application. Take note that for now,
+our current production build is only sending the video file to the owner's email
+address.
 
-####2.5.2 System Diagram
+#### 2.5.2 System Diagram
 
-![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/Diagram.png "Diagram")
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/Diagram.png)
 
-####2.5.3 Bills of Material / Budget
+#### 2.5.3 Bills of Material / Budget
 
-| Equipment        | Quantity           |  Cost With tax |
-| ------------- |------------- |:-------------:| 
-|Raspberry Pi 3 Starter Kit|1   | $89.99|
-|Pi Camera Module|  1|        $38.79  |
-|Piezo Buzzer Element (Vibration Sensor)|2 |    	$5.19|
-|Camera Module Case |1      | $25.28|
-| 1 Mega Ohm Resistor|1|$0.35|
-|330 Ohm Resistor| 1| $0.25|
-|Full Sized Breadboard| 1 | $8.81|
-|USB GPS Dongle| 1 | $50.00|
-|LED| 1|$0.25|
-|Total| |$193.24|
+| Equipment                               | Quantity | Cost With tax |
+|-----------------------------------------|----------|---------------|
+| Raspberry Pi 3 Starter Kit              | 1        | \$89.99       |
+| Pi Camera Module                        | 1        | \$38.79       |
+| Piezo Buzzer Element (Vibration Sensor) | 2        | \$5.19        |
+| Camera Module Case                      | 1        | \$25.28       |
+| 1 Mega Ohm Resistor                     | 1        | \$0.35        |
+| 330 Ohm Resistor                        | 1        | \$0.25        |
+| Full Sized Breadboard                   | 1        | \$8.81        |
+| USB GPS Dongle                          | 1        | \$50.00       |
+| LED                                     | 1        | \$0.25        |
+| Total                                   |          | \$193.24      |
 
-####2.5.4 Time Commitment
+#### 2.5.4 Time Commitment
 
-| Todo        | time Required           | 
-| -------------|:-------------:| 
-|Raspberry Pi 3 power up|(30 mins) I will take around 30 min to set up the raspberry Pi. You have to install the OS and connect it to the internet.|
-|PCB Soldering|1~2 hours for schematics and soldering. Printing the PCB could take 1 hour. And 30 min to solder it.|
-|Project Wiring|15~30 mins|
-|Importing Codes|1 hour, depends if you have all the required packages for using the camera and accessing email.|
-|Running Code|5-10 mins, depends on the length of the video. The longer it is, the more time it needs to perform|
+| Todo                    | time Required                                                                                                              |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Raspberry Pi 3 power up | (30 mins) I will take around 30 min to set up the raspberry Pi. You have to install the OS and connect it to the internet. |
+| PCB Soldering           | 1\~2 hours for schematics and soldering. Printing the PCB could take 1 hour. And 30 min to solder it.                      |
+| Project Wiring          | 15\~30 mins                                                                                                                |
+| Importing Codes         | 1 hour, depends if you have all the required packages for using the camera and accessing email.                            |
+| Running Code            | 5-10 mins, depends on the length of the video. The longer it is, the more time it needs to perform                         |
 
+#### 2.5.5 Mechanical Assembly
 
-####2.5.5 Mechanical Assembly
+This shows the circuit you have to build for the sensor to detect a vibration
+coming from tapping it. The LED will blink if the video file was sent to your
+email.
 
-This shows the circuit you have to build for the sensor to detect a vibration coming from tapping it. The LED will blink if the video file was sent to your email.
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/teleSchema.png)
 
-![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/teleSchema.png "Schematic")
+JP1 --- 2 is for the inner side of the buzzer. Positive. --- 1 outer part of the
+buzzer. Negative.
 
-JP1 --- 2 is for the inner side of the buzzer. Positive. 
---- 1 outer part of the buzzer. Negative.
-
-Following the diagram and placing each components in a breadboard would ensure a working vibration sensor program
+Following the diagram and placing each components in a breadboard would ensure a
+working vibration sensor program
 
 Connect the particular camera module that I listed above to your Raspberry Pi 3.
 
-![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/cameramodule.png "Logo Title Text 1")
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/cameramodule.png)
 
-
-####2.5.6 PCB/Soldering
+#### 2.5.6 PCB/Soldering
 
 We tried implementing our working circuit to a PCB but it didn't work.
 
-####2.5.7 Unit Testing
+#### 2.5.7 Unit Testing
 
-You can use these programs for testing your Camera and Vibration Sensor if they are working properly.
+You can use these programs for testing your Camera and Vibration Sensor if they
+are working properly.
 
-#####Camera
+##### Camera
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"
+    from picamera import PiCamera
+    from time import sleep
+
+    camera = PiCamera()
+
+    camera.start_preview()
+    camera.start_recording('/home/pi/Desktop/Camera/video1.h264')
+    sleep(5)
+    camera.stop_recording()
+    camera.stop_preview()
     "
-		from picamera import PiCamera
-		from time import sleep
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-		camera = PiCamera()
+##### Vibration Sensor
 
-		camera.start_preview()
-		camera.start_recording('/home/pi/Desktop/Camera/video1.h264')
-		sleep(5)
-		camera.stop_recording()
-		camera.stop_preview()
-		"
-#####Vibration Sensor
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"
+    from time import sleep
+    import RPi.GPIO as GPIO
 
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_DOWN )
+    sleep(1)
+
+    while True:
+        result = GPIO.input(5)
+        if result == 1:
+            print("VIbrated")
+        sleep(1)   
     "
-		from time import sleep
-		import RPi.GPIO as GPIO
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-		GPIO.setmode(GPIO.BCM)
-		GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_DOWN )
-		sleep(1)
+#### 2.5.8 Production Testing
 
-		while True:
-       		result = GPIO.input(5)
-        	if result == 1:
-            	print("VIbrated")
- 	    	sleep(1)   
-		"
-####2.5.8 Production Testing
+We wanted the video file recorded to be sent to a file server, but as of now ,
+it is being sent to your email.
 
-We wanted the video file recorded to be sent to a file server, but as of now , it is being sent to your email.
+Main program
 
-Main program 
+##### testDrive.py
 
-#####testDrive.py
-
-```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     "
     from time import sleep
     import RPi.GPIO as GPIO
@@ -563,29 +652,26 @@ Main program
                 isTrig =True
                 vidName = time.strftime("%d%m%Y")+time.strftime("%I%M%S")
                 recVideo(vidName)
- 	        sleep(1)
- 	        hname = vidName+"video.h264"
- 	        mname = vidName+"video.mp4"
- 	        print("Converting video file h264 to MP4");
- 	        commands = "sudo MP4Box -add" + " "+hname + " " +mname
- 	        os.system(commands)
+            sleep(1)
+            hname = vidName+"video.h264"
+            mname = vidName+"video.mp4"
+            print("Converting video file h264 to MP4");
+            commands = "sudo MP4Box -add" + " "+hname + " " +mname
+            os.system(commands)
                 print("Sending video file to email");
- 	        sendAlert(vidName)
- 	        print("File sent");
-			    "
-```
-			   
-			    
-			    
-			    
-NOTE: make sure to fill the values for raspaddress and useraddress. I removed it for obvious privacy reason.
+            sendAlert(vidName)
+            print("File sent");
+                "
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Program that sends the recorded video file to your email 
+NOTE: make sure to fill the values for raspaddress and useraddress. I removed it
+for obvious privacy reason.
 
+Program that sends the recorded video file to your email
 
+##### alertnoise.py
 
-#####alertnoise.py
-```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
 #Libraries necessary to send email using python
 import smtplib
@@ -599,7 +685,7 @@ from email import encoders
 raspaddress = ""
 
 #User's Email address
-useraddress = ""	
+useraddress = ""    
 
 #Structure of the email
 msg = MIMEMultipart()
@@ -641,15 +727,14 @@ def sendAlert(vidName):
     text = msg.as_string()
     server.sendmail(raspaddress, useraddress, text)
     server.quit()
-			    "
-```
+                "
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Records the video for 20 seconds. Can be adjusted by changing the value of sleep
 
-Records the video for 20 seconds. Can be adjusted by changing the value of sleep 
+##### cameraCode.py
 
-#####cameraCode.py
-
-```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
 from picamera import PiCamera
 from time import sleep
@@ -665,33 +750,47 @@ def stopVideo():
         camera.stop_preview()
 
 def recVideo( sNum ):
-	dest = '/home/pi/Desktop/Final Presentation/'+str(sNum)+'video.h264'
-	camera.start_preview()
-	camera.start_recording(dest)
-	sleep(20)
-	camera.stop_recording()
-	camera.stop_preview()
-	return;
+    dest = '/home/pi/Desktop/Final Presentation/'+str(sNum)+'video.h264'
+    camera.start_preview()
+    camera.start_recording(dest)
+    sleep(20)
+    camera.stop_recording()
+    camera.stop_preview()
+    return;
 "
-```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+\pagebreak
 
 3.Conclusion
-==========================
+============
 
-In this report, we wrote the purpose of this telematics and how to reproduce it. By following the instructions, you should be able to reproduce it and should run on how it is supposed to. On the other hand, it is not possible to create a working PCB as there are some connection issues.
+In this report, we wrote the purpose of this telematics and how to reproduce it.
+By following the instructions, you should be able to reproduce it and should run
+on how it is supposed to. On the other hand, it is not possible to create a
+working PCB as there are some connection issues.
+
+\pagebreak
 
 4.Recommendation
-==========================
-When reproducing this hardware, it is recommended to get a Raspberry Pi 3 or later version. It is not recommended to use an earlier version because it does not have any built-in wi-fi or bluetooth capability.
+================
 
-To increase the reliability of the hardware, it is advicable to use Gravity sensor instead of vibration sensor. By using Gravity sensor, the video will only be lock when there is a disruption on the movememnt of the car. On the other hand, vibration sensor will lock the video everytime it sense a vibration.
+When reproducing this hardware, it is recommended to get a Raspberry Pi 3 or
+later version. It is not recommended to use an earlier version because it does
+not have any built-in wi-fi or bluetooth capability.
 
+To increase the reliability of the hardware, it is advicable to use Gravity
+sensor instead of vibration sensor. By using Gravity sensor, the video will only
+be lock when there is a disruption on the movememnt of the car. On the other
+hand, vibration sensor will lock the video everytime it sense a vibration.
 
-Improvements that can be made on Android Mobile Application are the following: Have each fragments for video, location, driver and car in separate page fragments. 
+Improvements that can be made on Android Mobile Application are the following:
+Have each fragments for video, location, driver and car in separate page
+fragments.
+
+\pagebreak
 
 5.Reference
-==========================
+===========
 
 **References (Generated in pdf)**
