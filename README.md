@@ -366,7 +366,7 @@ them to use the mobile application.
 
 The product will have piezo vibration sensors that will detect if there are any
 collisions detected. Raspberry Pi camera module will also be used to record
-video.
+video. Then the Raspberry Pi will process the video file and location information that will be sent to the web server that will be used by the mobile application.
 
 #### 2.1.3 Targeted Audience Group:
 
@@ -381,14 +381,12 @@ will be able to use the video feed as a proof of an incident.
 The main functionality of our system is to provide an incident report on user's
 mobile device in case of an accident. Information that the user saves on the
 application can then be used by them for their insurance company. The hardware
-will provide the video feed as well as the coordinates of the report.
+will provide the video feed as well as the location of the report through the use of gps.
 
 #### 2.2.2 Extra Requirements
 
-Internet connection is needed for the hardware device for it to be able to send
-the report, video and location, to the database. Implementation of battery
-powered raspberry pi will also be needed for it to be placed inside the car.
-(Jerome please confirm)
+Internet connectivity is required for the hardware device for it to be able to send
+the report, video, and location to the database. The Raspberry Pi will be powered by having it connected to the car itself. 
 
 #### 2.2.3 Best Performance
 
@@ -485,12 +483,12 @@ Safety precaution that has to be considered when using the hardware:
 -   When using the hardware, make sure that the hardware is properly plugged in
     before turning on the car.
 
--   Avoid sunlight exposure
+-   Make sure that the hardware is secured and in place where there is no direct contact with sunlight.
 
 #### 2.4.3 Future Additions
 
 We are planning on creating a new case for the hardware since we are planning on
-adding a touchscreen capability on our hardware.
+adding a touchscreen capability on our hardware for portability and easy usability.
 
 2.5 Build Instructions
 ----------------------
@@ -784,9 +782,7 @@ sensor instead of vibration sensor. By using Gravity sensor, the video will only
 be lock when there is a disruption on the movememnt of the car. On the other
 hand, vibration sensor will lock the video everytime it sense a vibration.
 
-Improvements that can be made on Android Mobile Application are the following:
-Have each fragments for video, location, driver and car in separate page
-fragments.
+For Android Developers, I would recommend to have and create each fragments for video, location, driver and car in separate page fragments for clear readability.
 
 \pagebreak
 
