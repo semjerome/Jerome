@@ -760,6 +760,1365 @@ def recVideo( sNum ):
 
 \pagebreak
 
+Android Application Build
+*Reminder* 
+We removed the website name that we used for the php files for your own reproducibility.
+We used google maps api so make sure to visit their website to generate your OWN google_maps_key. Here is the link to the google's website for generating the google map key: https://developers.google.com/maps/documentation/javascript/get-api-key.
+
+MainActivity - The opening display and login of the mobile application. Checks if the login information that the user inputs is a valid login. If it's a valid login, it then passes the information through intent to the next activity which is ReportList.java.
+
+package galaxynoise.autaccreport;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.util.HashMap;
+
+public class MainActivity extends AppCompatActivity {
+    EditText username, password;
+    String Name, Password;
+    Context ctx=this;
+    String NAME=null, PASSWORD=null, EMAIL=null;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        username = (EditText) findViewById(R.id.etUserName);
+        password = (EditText) findViewById(R.id.etPW);
+        Button b1 = (Button) findViewById(R.id.btnLogin);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+        public void onClick (View v)
+        {
+            main_login();
+        }
+    });
+    }
+
+    public void main_register(View v){
+        startActivity(new Intent(this,ReportList.class));
+    }
+
+    public void main_login(){
+        Name=null;
+        Password=null;
+        Name = username.getText().toString();
+        Password = password.getText().toString();
+        BackGround b = new BackGround();
+        b.execute(Name, Password);
+    }
+
+    class BackGround extends AsyncTask<String, String, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+            String name = params[0];
+            String password = params[1];
+            String data="";
+            int tmp;
+
+            try {
+                URL url = new URL("http://websitename.com/app/login.php");
+                String urlParams = "name="+name+"&password="+password;
+
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setDoOutput(true);
+                OutputStream os = httpURLConnection.getOutputStream();
+                os.write(urlParams.getBytes());
+                os.flush();
+                os.close();
+
+                InputStream is = httpURLConnection.getInputStream();
+                while((tmp=is.read())!=-1){
+                    data+= (char)tmp;
+                }
+
+                is.close();
+                httpURLConnection.disconnect();
+
+                return data;
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+                return "Exception: "+e.getMessage();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return "Exception: "+e.getMessage();
+            }
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            String err=null;
+
+            try {
+                JSONObject root = new JSONObject(s);
+                //JSONObject user_data = root.getJSONObject("User");
+                JSONArray mainArray = root.getJSONArray("User");
+
+                // looping through All Contacts
+                for (int i = 0; i < mainArray.length(); i++) {
+                    JSONObject insideJsonObject = mainArray.getJSONObject(i);
+                    EMAIL=null;
+                    if (insideJsonObject != null) {
+                        NAME = insideJsonObject.getString("username");
+                        PASSWORD = insideJsonObject.getString("password");
+                        EMAIL = insideJsonObject.getString("uid");
+                        Log.d("Inside JSON uid: ", EMAIL);
+                        Log.d("Inside JSON username: ", NAME);
+                        Log.d("Inside JSON password: ", PASSWORD);
+                    }
+                }
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+                err = "Exception: "+e.getMessage();
+            }
+            if(EMAIL!=null) {
+                Toast.makeText(MainActivity.this, "Valid Login!", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(ctx, ReportList.class);
+                i.putExtra("name", NAME);
+                i.putExtra("password", PASSWORD);
+                i.putExtra("uid", EMAIL);
+                i.putExtra("err", err);
+                startActivity(i);
+            }
+            else{
+                Toast.makeText(MainActivity.this, "Invalid Login or Password!", Toast.LENGTH_SHORT).show();
+
+            }
+        }
+    }
+}
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/mainactivity.png)
+MainActivity, opening display and login activity for the user.
+
+ReportList.java- After the user logins, ReportList.java handles the collection of all the reports of incidents that the user has in the database. It connects to the web server then places each report in a listview for the user. It displays the report id, data of incident, location of the incident (longitude and latitude), and the video name.
+
+package galaxynoise.autaccreport;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.Cursor;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.util.SparseBooleanArray;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import static android.R.attr.data;
+import static android.R.id.list;
+
+public class ReportList extends AppCompatActivity {
+    ListView listIncident;
+    public static boolean isListempty =true;
+    Intent currIntent;
+    //PatientAdapter patientAdapter;
+    ArrayList<HashMap<String, String>> infolist = new ArrayList<>(3);
+    private String TAG = ReportList.class.getSimpleName();
+    TextView tvnews;
+    String id;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_report_list);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        String id=null, username ;
+        final Intent testIntent = new Intent(getApplicationContext(), VidActivity.class);
+        Intent intent = getIntent();
+        Bundle b = intent.getExtras();
+        if (b != null) {
+            id =  (String)b.get("uid");
+            username =  (String)b.get("name");
+        }
+
+        listIncident=(ListView) findViewById(R.id.listAll);
+        tvnews=(TextView)findViewById((R.id.tvnews));
+      //  showIncidenttList(user);
+        GetInfo info = new GetInfo();
+        info.execute(id);
+        listIncident.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView< ?> parent, View view, int position,long arg3) {
+                view.setSelected(true);
+                //Toast.makeText(ReportList.this, "Selected!", Toast.LENGTH_SHORT).show();
+                HashMap<String,String> map =(HashMap<String,String>)listIncident.getItemAtPosition(position);
+                String reportid = map.get("reportid");
+                String idate = map.get("incidentdate");
+                String longi = map.get("longi");
+                String lati = map.get("lati");
+                String videoName = map.get("videoName");
+                //String name= map.get(TAG_NAME);
+                Toast.makeText(ReportList.this, "ReportId:"+ reportid+"is selected.", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(ReportList.this, VidActivity.class);
+                i.putExtra("reportid", reportid);
+                i.putExtra("incidentdate", idate);
+                i.putExtra("longi", longi);
+                i.putExtra("lati", lati);
+                i.putExtra("videoName", videoName);
+                startActivity(i);
+            }
+        });
+    }
+
+    /**
+     * Async task class to get json by making HTTP call
+     */
+     class GetInfo extends AsyncTask<String, Void, Void> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            // Showing progress dialog
+
+        }
+
+        @Override
+        protected Void doInBackground(String... params) {
+            String uid = params[0];
+            HTTPHandler sh = new HTTPHandler();
+            String data="";
+            int tmp;
+            // Making a request to url and getting response
+            //String uri = "http://websitename.com/app/incident.php";
+            //String jsonStr = sh.makeServiceCall(uri);
+            try {
+                URL url = new URL("http://websitename.com/app/incident.php");
+                String urlParams = "uid="+uid;
+
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setDoOutput(true);
+                OutputStream os = httpURLConnection.getOutputStream();
+                os.write(urlParams.getBytes());
+                os.flush();
+                os.close();
+
+                InputStream is = httpURLConnection.getInputStream();
+                while((tmp=is.read())!=-1){
+                    data+= (char)tmp;
+                }
+                is.close();
+                httpURLConnection.disconnect();
+
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+                //return "Exception: "+e.getMessage();
+            } catch (IOException e) {
+                e.printStackTrace();
+               // return "Exception: "+e.getMessage();
+            }
+
+            //Log.e(TAG, "Response from url: " + jsonStr);
+
+            if (data != null) {
+                try {
+                    JSONObject mainJsonObject = new JSONObject(data);
+                    // Log.d("JSON Data : ", mainJsonObject.toString());
+
+                    infolist.clear();
+                    JSONArray mainArray = mainJsonObject.getJSONArray("Incident");
+                    // Log.d("JSON Array : ", mainArray.toString());
+
+                    for (int i = 0; i < mainArray.length(); i++) {
+
+                        JSONObject incidentJsonObject = mainArray.getJSONObject(i);
+
+                                if (incidentJsonObject != null) {
+
+                                    String reportid = incidentJsonObject
+                                            .getString("reportid");
+                                    Log.d("Inside JSON LongName : ", reportid);
+                                    String incidentdate = incidentJsonObject
+                                            .getString("incidentdate");
+                                    String longi = incidentJsonObject
+                                            .getString("longi");
+                                    String lati = incidentJsonObject
+                                            .getString("lati");
+                                    String videoName = incidentJsonObject
+                                            .getString("videoName");
+
+                                    HashMap<String, String> info = new HashMap<>();
+                                    info.put("reportid", reportid);
+                                    info.put("incidentdate", incidentdate);
+                                    info.put("longi", longi);
+                                    info.put("lati", lati);
+                                    info.put("videoName", videoName);
+
+                                    // adding contact to contact list
+                                    infolist.add(info);
+                            }
+                    }
+
+                } catch (JSONException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute (Void result){
+            super.onPostExecute(result);
+            // Dismiss the progress dialog
+            /**
+             * Updating parsed JSON data into ListView
+             **/
+            if (infolist.size() > 0) {
+                ListAdapter adapter = new SimpleAdapter(
+                        ReportList.this, infolist,
+                        R.layout.content_report_list, new String[]{"reportid", "incidentdate", "longi", "lati", "videoName"}, new int[]                         {R.id.tvreportName,
+                        R.id.tvdate, R.id.tvLongi, R.id.tvLati, R.id.tvVid});
+                listIncident.setAdapter(adapter);
+            }
+            else
+            {
+                tvnews.setText(R.string.news);
+            }
+        }
+    }
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setTitle("Exit")
+                .setMessage("You want to sign out?")
+                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        ReportList.super.onBackPressed();
+                    }
+                }).create().show();
+    }
+}
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/reportlist.png)
+ReportList display layout
+
+VidActivity- Activity for all the fragments in PageFragment.java. Mainly used for the design and display in the viewpager as well as menu options on the top right hand side of the application.
+
+package galaxynoise.autaccreport;
+//Team name Galaxy Noise
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+public class VidActivity extends AppCompatActivity implements View.OnClickListener {
+    int drawables[] = {
+            R.drawable.ic_car,
+            R.drawable.ic_driver,
+            R.drawable.ic_location,
+            R.drawable.ic_video
+    };
+
+    String reportid;
+    String incidentdate;
+    String longitude;
+    String latitude;
+    String videoName;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        //requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_vid);
+        //getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.fragment_car);
+
+        Intent i =  getIntent();
+
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(new SampleFragmentPagerAdapter(getSupportFragmentManager(),
+                VidActivity.this));
+
+        // Give the TabLayout the ViewPager
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(drawables[0]);
+        tabLayout.getTabAt(1).setIcon(drawables[1]);
+        tabLayout.getTabAt(2).setIcon(drawables[2]);
+        tabLayout.getTabAt(3).setIcon(drawables[3]);
+
+    }
+
+    public String [] getFromReport()
+    {
+        String fromReport [] = {reportid, incidentdate, longitude, latitude, videoName};
+        return fromReport;
+    }
+    
+    public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
+        final int PAGE_COUNT = 4;
+        private Context context;
+        private String tabTitles[] = new String[] { "Car Info","Driver", "Location","Video" };
+        Drawable myDrawable;
+        String title;
+
+        public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
+            super(fm);
+            this.context = context;
+        }
+        
+        @Override
+        public int getCount() {
+
+            return PAGE_COUNT;
+        }
+        
+        @Override
+        public CharSequence getPageTitle(int position)
+        {
+            switch (position) {
+                case 0:
+                    return tabTitles[0];
+                //return tabTitles[0];
+                case 1:
+                    return tabTitles[1];
+                //return tabTitles[1];
+                case 2:
+                    return tabTitles[2];
+                //return tabTitles[2];
+                case 3:
+                    return tabTitles[3];
+            }
+            return "";
+        }
+        
+        @Override
+        public Fragment getItem(int position) {
+
+            return PageFragmentVid.create(position + 1);
+        }
+    }
+    @Override
+    // Handle the Back Key
+    public void onBackPressed() {
+        finish();
+    }
+    @Override
+    public void onClick(View v) {
+
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        Intent intent = null;
+
+        switch (menu.getItemId())
+        {
+            //Product website
+            case R.id.about:
+                intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://websitename.com"));
+                startActivity(intent);
+                break;
+
+            //Insurance auto claims phone number
+            case R.id.CAA:
+                try {
+                    intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-800-387-2656"));
+                    startActivity(intent);
+                } catch (Exception e) {
+                }
+                break;
+            case R.id.TD:
+                try {
+                    intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-800-293-4941"));
+                    startActivity(intent);
+                } catch (Exception e) {
+
+                }
+                break;
+            case R.id.RBC:
+                try {
+                    intent= new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-877-748-7224"));
+                    startActivity(intent);
+                } catch (Exception e) {
+
+                }
+                break;
+            case R.id.Desj:
+                try {
+                    intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-888-776-8343"));
+                    startActivity(intent);
+                } catch (Exception e) {
+
+                }
+                break;
+            case R.id.Farm:
+                try {
+                    intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "855-209-9549"));
+                    startActivity(intent);
+                } catch (Exception e) {
+
+                }
+                break;
+        }
+        return super.onOptionsItemSelected(menu);
+    }
+}
+
+
+PageFragmentVid.java - This is where all the data are from the database are gathered and stored to be displayed by the mobile application. The fragments call the php files required to get information such as driver's information, car details, coordinates of incident, and video file directory. The php files that we use, transforms the data in the database into a formattable JSON file where we extract all the information from. 
+
+package galaxynoise.autaccreport;
+/** //Team name Galaxy Noise
+ * Created by Zaido on 2016-11-13.
+ */
+import android.Manifest;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListAdapter;
+import android.widget.MediaController;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.VideoView;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class PageFragmentVid extends Fragment {
+    public static final String ARG_PAGE = "ARG_PAGE";
+    AutoCompleteTextView actMake;
+    AutoCompleteTextView actModel;
+    AutoCompleteTextView actYear;
+
+    EditText etPN;
+    EditText  etBrand;
+    EditText  etModel;
+    EditText etYear;
+
+    EditText etFname;
+    EditText  etLname;
+    EditText  etLicense;
+    EditText etGender;
+    EditText etInsurance;
+
+    String [] myData;
+    private int mPage;
+
+    //Boolean for checking database
+    public static boolean isDriverEmpty;
+    public static boolean isCarEmpty;
+
+    String PLATENUMBER= null;
+    String CARMAKE= null;
+    String CARMODEL= null;
+    String CARYEAR = null;
+
+    String DRIVERLICENSE = null, FNAME=null,LNAME = null, GENDER = null, INSURANCENUMBER = null;
+    String reportid;
+    //JSON
+    private ProgressDialog pDialog;
+    private String TAG = VidActivity.class.getSimpleName();
+
+    //Arraylist
+    ArrayList<HashMap<String, String>> carinfo = new ArrayList<>(3);
+    ArrayList<HashMap<String, String>> driverinfo = new ArrayList<>(3);
+
+    Button btnCarAdd;
+    Button btnDriverAdd;
+
+    View view;
+    // Identifier for the permission request
+    private static final int READ_CONTACTS_PERMISSIONS_REQUEST = 1;
+
+    //hello
+    public static PageFragmentVid create(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        PageFragmentVid fragment = new PageFragmentVid();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mPage = getArguments().getInt(ARG_PAGE);
+
+    }
+
+    GoogleMap googleMap;
+    MapView mMapView;
+    MarkerOptions markerOptions;
+    TextView tvReverseGeo;
+    public String addressText;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        VidActivity activity = (VidActivity) getActivity();
+        myData = activity.getFromReport();
+        reportid =myData[0];
+        /*
+            0 = reportid , 1 = incidentdate, 2 = longi, 3 = lati, 4 = vidname
+         */
+        if(mPage==1) //Car page
+        {
+            view = inflater.inflate(R.layout.fragment_car, container, false);
+            etPN = (EditText) view.findViewById(R.id.etPN);
+            etBrand= (EditText) view.findViewById(R.id.etBrand);
+            etModel= (EditText) view.findViewById(R.id.etModel);
+            etYear = (EditText) view.findViewById(R.id.etYear);
+
+            actMake = (AutoCompleteTextView) view.findViewById(R.id.actMake);
+            actModel = (AutoCompleteTextView) view.findViewById(R.id.actModel);
+            actYear = (AutoCompleteTextView) view.findViewById(R.id.actYear);
+
+            String carJson = loadCarJsonLocal();
+            try {
+                JSONObject json = new JSONObject(carJson);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            btnCarAdd = (Button)view.findViewById(R.id.btnCarAdd);
+
+            btnCarAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    executeAddCar();
+                }
+            });
+
+            GetCar b = new GetCar();
+            b.execute(reportid);
+        }
+
+        else if(mPage==2)//Driver
+        {
+            view= inflater.inflate(R.layout.fragment_driver,container, false);
+            String reportid = myData[0];
+            etLicense= (EditText) view.findViewById(R.id.etLicense);
+            etFname = (EditText) view.findViewById(R.id.etFname);
+            etLname= (EditText) view.findViewById(R.id.etLname);
+            etGender = (EditText) view.findViewById(R.id.etGender);
+            etInsurance = (EditText) view.findViewById(R.id.etInsurance);
+            btnDriverAdd =(Button)view.findViewById(R.id.btnDriverAdd);
+
+            btnDriverAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    executeDriverAdd();
+                }
+            });
+
+            GetDriver g = new GetDriver();
+            g.execute(reportid);
+        }
+        else if(mPage==3)
+        { //location
+            /*
+            0 = reportid , 1 = incidentdate, 2 = longi, 3 = lati, 4 = vidname
+         */
+            view = inflater.inflate(R.layout.fragment_eventlocation, container, false);
+            tvReverseGeo = (TextView)view.findViewById(R.id.tvReverseGeo);
+
+            mMapView = (MapView) view.findViewById(R.id.mapView);
+            mMapView.onCreate(savedInstanceState);
+
+            mMapView.onResume();
+
+            try{
+                MapsInitializer.initialize(getActivity().getApplicationContext());
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+
+            mMapView.getMapAsync(new OnMapReadyCallback() {
+                @Override
+                public void onMapReady(GoogleMap mMap) {
+                    googleMap = mMap;
+                    if(checkPermission())
+                    googleMap.setMyLocationEnabled(true);
+
+                    double longi = Double.parseDouble(myData[2]);
+                    double lati = Double.parseDouble(myData[3]);
+                    /*toronto
+                    double lati = 43.579028;
+                    double longi = -79.746524; */
+                    LatLng event = new LatLng(lati,longi);
+                    markerOptions = new MarkerOptions();
+
+                    Log.d("tv: ","not set");
+                    new ReverseGeoCodingTask(getContext()).execute(event);
+                    String snippetAddress = tvReverseGeo.getText().toString();
+                    googleMap.addMarker(markerOptions.position(event)
+                            .title("Event Location")
+                            .snippet(snippetAddress));
+
+                    CameraPosition cameraPosition = new CameraPosition.Builder().target(event).zoom(9).build();
+                    googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                }
+
+                private boolean checkPermission()
+                {
+                    return (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION)
+                                == PackageManager.PERMISSION_GRANTED);
+                }
+
+            });
+        }
+        else if (mPage == 4)
+        { //video
+            view = inflater.inflate(R.layout.fragment_eventvideos, container, false);
+            String vidname = myData[4];
+            VideoView mVideoView  = (VideoView) view.findViewById(R.id.videoView);
+            MediaController mediaController = new MediaController(getActivity());
+            mediaController.setAnchorView(mVideoView);
+            mVideoView.setMediaController(mediaController);
+            String myPackage= "galaxynoise.autaccreport";
+            Uri uri = Uri.parse("http://www.websitename.com/Android/"+vidname+".mp4");
+            try{
+               mVideoView.setVideoURI(uri);
+                mVideoView.start();
+            }catch(Exception e){
+                Log.e("Error", e.getMessage());
+                e.printStackTrace();
+            }
+        }
+
+        else
+        {
+            view = inflater.inflate(R.layout.fragment_pager, container, false);
+            TextView textView = (TextView) view;
+            textView.setText("Fragment #" + mPage);
+        }
+
+        return view;
+    }
+
+    public String loadCarJsonLocal()
+    {
+        String json = null;
+        try {
+
+            InputStream is = getContext().getAssets().open("car_makemodel.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+
+        return json;
+
+    }
+    private class ReverseGeoCodingTask extends AsyncTask<LatLng, Void, String>{
+        Context mContext;
+        public ReverseGeoCodingTask(Context context){
+            super();
+            mContext = context;
+        }
+
+        @Override
+        protected String doInBackground(LatLng... params){
+            Geocoder geocoder  = new Geocoder(mContext);
+            double latitude = params[0].latitude;
+            double longitude = params[0].longitude;
+
+            List<Address> addresses = null;
+
+            try {
+            	addresses = geocoder.getFromLocation(latitude, longitude,1);
+            } catch (IOException e) {
+            	e.printStackTrace();
+            }
+
+            if(addresses!= null && addresses.size() > 0 ) {
+                addressText = addresses.get(0).getAddressLine(0) +"," +
+                        addresses.get(0).getLocality() +"," + addresses.get(0).getPostalCode() +
+                        ", " +addresses.get(0).getCountryName();
+            }
+
+            return addressText;
+
+        }
+
+        @Override
+        protected void onPostExecute(String addressText) {
+            // Setting the title for the marker.
+            // This will be displayed on taping the marker
+            // Placing a marker on the touched position
+            tvReverseGeo.setText(addressText);
+
+        }
+    }
+    
+    /**
+     car make and model reference, arthurkao, github repository,
+     https://github.com/arthurkao/vehicle-make-model-data
+     **/
+    void executeAddCar()
+    {
+        PLATENUMBER = etPN.getText().toString();
+        CARMAKE = etBrand.getText().toString();
+        CARMODEL = etBrand.getText().toString();
+        CARYEAR = etYear.getText().toString();
+        AddCar a = new AddCar();
+        a.execute(PLATENUMBER, CARMAKE, CARMODEL, CARYEAR,reportid);
+    }
+
+    class AddCar extends AsyncTask<String, String, String> {
+        @Override
+        protected String doInBackground(String... params) {
+            String platenumber = params[0];
+            String carmake = params[1];
+            String carmodel = params[2];
+            String caryear = params[3];
+            String reportid = params[4];
+            String data="";
+            int tmp;
+
+            try {
+                URL url;
+
+                if(isCarEmpty==true) {
+                    url = new URL("http://websitename.com/app/addCar.php");
+                    isCarEmpty=false;
+                }
+                else
+                {
+                    url = new URL("http://websitename.com/app/updateCar.php");
+                }
+
+                String urlParams = "platenumber="+platenumber+"&carmake="+carmake+"&carmodel="
+                        +carmodel+"&caryear="+caryear+"&reportid="+reportid;
+
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setDoOutput(true);
+                OutputStream os = httpURLConnection.getOutputStream();
+                os.write(urlParams.getBytes());
+                os.flush();
+                os.close();
+
+                InputStream is = httpURLConnection.getInputStream();
+                while((tmp=is.read())!=-1){
+                    data+= (char)tmp;
+                }
+
+                is.close();
+                httpURLConnection.disconnect();
+
+                return data;
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+                return "Exception: "+e.getMessage();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return "Exception: "+e.getMessage();
+            }
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            String err=null;
+
+            try {
+                JSONObject root = new JSONObject(s);
+                //JSONObject user_data = root.getJSONObject("User");
+
+                JSONObject car= root.getJSONObject("Car");
+
+                car.put("platenumber", PLATENUMBER);
+                car.put("carmake",CARMAKE);
+                car.put("carmodel",CARMODEL);
+                car.put("caryear",CARYEAR);
+                car.put("reportid",reportid);
+
+                Log.d("Storing to JSON plate: ", PLATENUMBER);
+                Log.d("Storing to JSON make: ", CARMAKE);
+                Log.d("Storing to JSON model: ", CARMODEL);
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+                err = "Exception: "+e.getMessage();
+            }
+            if(PLATENUMBER!=null) {
+                Toast.makeText(getActivity(), "Stored!", Toast.LENGTH_SHORT).show();
+            }
+            else{
+                Toast.makeText(getActivity(), "Fill in plate number", Toast.LENGTH_LONG).show();
+
+            }
+        }
+    }
+
+    //get Car
+    class GetCar extends AsyncTask<String, Void, Void> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            // Showing progress dialog
+
+        }
+
+        @Override
+        protected Void doInBackground(String... params) {
+            String reportid = params[0];
+            HTTPHandler sh = new HTTPHandler();
+            String data = "";
+            int tmp;
+            // Making a request to url and getting response
+            //String uri = "http://websitename.com/app/incident.php";
+            //String jsonStr = sh.makeServiceCall(uri);
+
+
+            try {
+                URL url = new URL("http://websitename.com/app/getCar.php");
+                String urlParams = "reportid=" + reportid;
+
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setDoOutput(true);
+                OutputStream os = httpURLConnection.getOutputStream();
+                os.write(urlParams.getBytes());
+                os.flush();
+                os.close();
+
+                InputStream is = httpURLConnection.getInputStream();
+                while ((tmp = is.read()) != -1) {
+                    data += (char) tmp;
+                }
+
+                is.close();
+                httpURLConnection.disconnect();
+
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+                //return "Exception: "+e.getMessage();
+            } catch (IOException e) {
+                e.printStackTrace();
+                // return "Exception: "+e.getMessage();
+            }
+
+            //Log.e(TAG, "Response from url: " + jsonStr);
+
+            if (data != null) {
+                try {
+                    JSONObject mainJsonObject = new JSONObject(data);
+                    // Log.d("JSON Data : ", mainJsonObject.toString());
+
+                    JSONArray mainArray = mainJsonObject.getJSONArray("Car");
+                    // Log.d("JSON Array : ", mainArray.toString());
+
+                    for (int i = 0; i < mainArray.length(); i++) {
+
+                        JSONObject incidentJsonObject = mainArray.getJSONObject(i);
+
+                        if (incidentJsonObject != null) {
+
+                            String platenumber = incidentJsonObject
+                                    .getString("platenumber");
+                            String carmake = incidentJsonObject
+                                    .getString("carmake");
+                            String carmodel = incidentJsonObject
+                                    .getString("carmodel");
+                            String caryear = incidentJsonObject
+                                    .getString("caryear");
+
+                            HashMap<String, String> info = new HashMap<>();
+                            info.put("platenumber", platenumber);
+                            info.put("carmake", carmake);
+                            info.put("carmodel", carmodel);
+                            info.put("caryear", caryear);
+
+                            // adding contact to contact list
+                            carinfo.add(info);
+                        }
+
+
+                    }
+
+                } catch (JSONException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
+            // Dismiss the progress dialog
+
+            /**
+             * Updating parsed JSON data into ListView
+             **/
+            if (carinfo.size() > 0) {
+                etPN.setText(carinfo.get(0).get("platenumber").toString());
+                etBrand.setText(carinfo.get(0).get("carmake").toString());
+                etModel.setText(carinfo.get(0).get("carmodel").toString());
+                etYear.setText(carinfo.get(0).get("caryear").toString());
+                isCarEmpty=false;
+            }
+            else
+            {
+                isCarEmpty=true;
+            }
+
+        }
+    }
+
+    void executeDriverAdd()
+    {
+        //DRIVERLICENSE = null, FNAME=null,LNAME = null, GENDER = null, INSURANCENUMBER = null;
+        DRIVERLICENSE = etLicense.getText().toString();
+        FNAME = etFname.getText().toString();
+        LNAME = etLname.getText().toString();
+        GENDER = etGender.getText().toString();
+        INSURANCENUMBER = etInsurance.getText().toString();
+
+        AddDriver a = new AddDriver();
+        a.execute(DRIVERLICENSE, FNAME, FNAME, GENDER,INSURANCENUMBER,reportid);
+    }
+
+    //ADDING NEW DATA FOR DRIVER
+    class AddDriver extends AsyncTask<String, String, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+            String driverlicense = params[0];
+            String fname = params[1];
+            String lname = params[2];
+            String gender = params[3];
+            String insurancenumber = params[4];
+            String reportid = params[5];
+            String data = "";
+            int tmp;
+            URL url;
+            try {
+                if(isDriverEmpty==true) {
+                     url = new URL("http://websitename.com/app/addDriver.php");
+                    isDriverEmpty=false;
+                }
+                else
+                {
+                     url = new URL("http://websitename.com/app/updateDriver.php");
+                }
+                String urlParams = "driverlicense=" + driverlicense + "&fname=" + fname + "&lname="
+                        + lname + "&gender=" + gender + "&insuranceNumber=" + insurancenumber + "&reportid=" + reportid;
+
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setDoOutput(true);
+                OutputStream os = httpURLConnection.getOutputStream();
+                os.write(urlParams.getBytes());
+                os.flush();
+                os.close();
+
+                InputStream is = httpURLConnection.getInputStream();
+                while ((tmp = is.read()) != -1) {
+                    data += (char) tmp;
+                }
+
+                is.close();
+                httpURLConnection.disconnect();
+
+                return data;
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+                return "Exception: " + e.getMessage();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return "Exception: " + e.getMessage();
+            }
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            String err = null;
+            //Log.e(TAG, "Response from url: " + s);
+            try {
+                JSONObject root = new JSONObject(s);
+                //JSONObject user_data = root.getJSONObject("User");
+                JSONObject car = root.getJSONObject("Driver");
+
+                car.put("driverlicense", DRIVERLICENSE);
+                car.put("fname", FNAME);
+                car.put("lname", LNAME);
+                car.put("gender", GENDER);
+                car.put("insuranceNumber", INSURANCENUMBER);
+                car.put("reportid", reportid);
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+                err = "Exception: " + e.getMessage();
+            }
+            if (DRIVERLICENSE != null) {
+                Log.d("Storing to JSON plate: ", DRIVERLICENSE);
+                Log.d("Storing to JSON make: ", FNAME);
+                Log.d("Storing to JSON model: ", LNAME);
+                Toast.makeText(getActivity(), "Stored!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getActivity(), "Fill in plate number", Toast.LENGTH_LONG).show();
+
+            }
+        }
+    }
+        //get Car
+        class GetDriver extends AsyncTask<String, Void, Void> {
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                // Showing progress dialog
+
+            }
+
+            @Override
+            protected Void doInBackground(String... params) {
+                String reportid = params[0];
+                HTTPHandler sh = new HTTPHandler();
+                String data = "";
+                int tmp;
+                // Making a request to url and getting response
+                //String uri = "http://websitename.com/app/incident.php";
+                //String jsonStr = sh.makeServiceCall(uri);
+
+
+                try {
+                    URL url = new URL("http://websitename.com/app/getDriver.php");
+                    String urlParams = "reportid=" + reportid;
+
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    httpURLConnection.setDoOutput(true);
+                    OutputStream os = httpURLConnection.getOutputStream();
+                    os.write(urlParams.getBytes());
+                    os.flush();
+                    os.close();
+
+                    InputStream is = httpURLConnection.getInputStream();
+                    while ((tmp = is.read()) != -1) {
+                        data += (char) tmp;
+                    }
+
+                    is.close();
+                    httpURLConnection.disconnect();
+
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                    //return "Exception: "+e.getMessage();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    // return "Exception: "+e.getMessage();
+                }
+
+                //Log.e(TAG, "Response from url: " + jsonStr);
+
+                if (data != null) {
+                    try {
+                        JSONObject mainJsonObject = new JSONObject(data);
+                        // Log.d("JSON Data : ", mainJsonObject.toString());
+
+
+                        JSONArray mainArray = mainJsonObject.getJSONArray("Driver");
+                        // Log.d("JSON Array : ", mainArray.toString());
+
+                        for (int i = 0; i < mainArray.length(); i++) {
+
+                            JSONObject incidentJsonObject = mainArray.getJSONObject(i);
+
+                            if (incidentJsonObject != null) {
+
+                                String driverlicense = incidentJsonObject
+                                        .getString("driverlicense");
+                                String fname = incidentJsonObject
+                                        .getString("fname");
+                                String lname = incidentJsonObject
+                                        .getString("lname");
+                                String gender = incidentJsonObject
+                                        .getString("gender");
+                                String insurancenumber = incidentJsonObject
+                                        .getString("insuranceNumber");
+                                        
+                                HashMap<String, String> info = new HashMap<>();
+                                info.put("driverlicense", driverlicense);
+                                info.put("fname", fname);
+                                info.put("lname", lname);
+                                info.put("gender", gender);
+                                info.put("insuranceNumber", insurancenumber);
+                                // adding contact to contact list
+                                driverinfo.add(info);
+                            }
+
+
+                        }
+
+                    } catch (JSONException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+
+                }
+
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(Void result) {
+                super.onPostExecute(result);
+                // Dismiss the progress dialog
+
+                /**
+                 * Updating parsed JSON data into ListView
+                 **/
+                if (driverinfo.size() > 0) {
+                    etLicense.setText(driverinfo.get(0).get("driverlicense").toString());
+                    etFname.setText(driverinfo.get(0).get("fname").toString());
+                    etLname.setText(driverinfo.get(0).get("lname").toString());
+                    etGender.setText(driverinfo.get(0).get("gender").toString());
+                    etInsurance.setText(driverinfo.get(0).get("insuranceNumber").toString());
+                    isDriverEmpty=false;
+                }
+                else
+                {
+                    isDriverEmpty=true;
+                }
+            }
+        }
+    // Called when the user is performing an action which requires the app to read the
+        // user's contacts
+        public void getPermissionToReadUserContacts() {
+            // 1) Use the support library version ContextCompat.checkSelfPermission(...) to avoid
+            // checking the build version since Context.checkSelfPermission(...) is only available
+            // in Marshmallow
+            // 2) Always check for permission (even if permission has already been granted)
+            // since the user can revoke permissions at any time through Settings
+            if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_CONTACTS)
+                    != PackageManager.PERMISSION_GRANTED) {
+                // The permission is NOT already granted.
+                // Check if the user has been asked about this permission already and denied
+                // it. If so, we want to give more explanation about why the permission is needed.
+                // Fire off an async request to actually get the permission
+                // This will show the standard permission request dialog UI
+            }
+        }
+}
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/driverinfo.png) 
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/carinfo.png)
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/location.png)
+![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/videofile.png)
+Each page fragments: Driver's Information, Car Information, Location, Video file
+\pagebreak
+
 3.Conclusion
 ============
 
