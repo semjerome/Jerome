@@ -353,6 +353,11 @@ that was mentioned above through the official website.
 | Telematics       | Name of the hardware.                                       |
 | User             | Someone who interacts with the web or sfotware appplication |
 | GPS              | Global Positioning System                                   |
+| PHP file              | PHP is a script language and interpreter that is freely available and used primarily on Linux Web servers. It lets the mobile application retrieve and add infomration from and into the database.|
+| Database            | a structured set of data held in a computer, especially one that is accessible in various ways. We used SQL databse for this project.|
+| Java              | Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is the main programming language that we used fro creating mobile application                                 |
+| Android Studio             | Android Studio is the integrated development environment (IDE) from google. It was used for creating the mobile application.                                 |
+| IDE | is a software application that provides comprehensive facilities to computer programmers for software development.               |
 | Official Website | http://autaccreport.com/                                    |
 
 \pagebreak
