@@ -2148,10 +2148,10 @@ Each page fragments: Driver's Information, Car Information, Location, Video file
 3.Conclusion
 ============
 
-In this report, we wrote the purpose of this telematics and how to reproduce it.
+In this report, we wrote the purpose of our project and how to reproduce it.
 By following the instructions, you should be able to reproduce it and should run
 on how it is supposed to. On the other hand, it is not possible to create a
-working PCB as there are some connection issues.
+working PCB as there are some circuitry issues that has never been fixed. 
 
 \pagebreak
 
@@ -2167,7 +2167,7 @@ sensor instead of vibration sensor. By using Gravity sensor, the video will only
 be lock when there is a disruption on the movememnt of the car. On the other
 hand, vibration sensor will lock the video everytime it sense a vibration.
 
-For Android Developers, I would recommend to have and create each fragments for video, location, driver and car in separate page fragments for clear readability.
+For Android Developers, I would recommend to have and create each fragments for video, location, driver and car in separate page fragments for clear readability and easy programmability of the application.
 
 \pagebreak
 
