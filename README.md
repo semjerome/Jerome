@@ -784,6 +784,10 @@ def recVideo( sNum ):
 
 #### 2.7.1 Introduction
 
+The mobile Application lets the user access their existing account. If the user is not registered, then they will have to register through online with the product key of their product. In mobile applicaion, the user is able to access all of the incident that they are involved with. At the same time, they are able to enter more information about the driver that they had an accident with and the car that the other drivier is using during that incident.
+
+See section 2.5.2 System Diagram for more infomration about how mobile application interects with the server.
+
 *Reminder* 
 We removed the website name that we used for the php files for your own reproducibility.
 We used google maps api so make sure to visit their website to generate your OWN google_maps_key. Here is the link to the google's website for generating the google map key: https://developers.google.com/maps/documentation/javascript/get-api-key.
