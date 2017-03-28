@@ -579,6 +579,7 @@ Connect the particular camera module that I listed above to your Raspberry Pi 3.
 #### Assembling the Bicolor Case for 7inch LCD
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/Case.png)
 #### Assembling Instruction
+
 1.  Assemble the Raspberry Pi on #1 board using #9, #10, and #11 (through the halls #2 on board #1)
 2.	Assemble board #2, touchscreen, and board #1 using #5, #6, and #7
     a.Insert each #5 bolts through all six halls of board #2
@@ -594,7 +595,7 @@ Connect the particular camera module that I listed above to your Raspberry Pi 3.
 
 Product Detail Site : http://www.waveshare.com/product/Bicolor-Case-for-7inch-LCD.htm
 
-Programming on Raspberry Pi
+#### Programming on Raspberry Pi
 #### 2.6.5.2  Hardware Application Programming 
 Insert Video and add more information related to GPS Receiver and Touch Screen and Case.
 In Raspberry Pi, we designed a GUI program which is separated by several parts; recording a video, catching an event signal from vibration sensor, uploading the video file, uploading the information in database, and multithreading code.
