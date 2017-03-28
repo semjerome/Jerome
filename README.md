@@ -2231,7 +2231,7 @@ echo json_encode(array("Incident"=>$response));
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ##### GetCar.php
-When the user selects an incident from the list that is provided to them, this is one of the two php file that is going to get executed. This php file will retrieve any information about the car that the other driver was using during the incident. It will use the incident id as reference when searching the car information. If there was no recorded information about the car that the other driver was using, it will then return an empty json object.
+When the user selects an incident from the list that is provided to them, this is one of the two php file that is going to get executed. This php file will retrieve any information about the car that the other driver was using during the incident. It will use the incident id as reference when searching for the car's information. If there was no recorded information about the car that the other driver was using, it will then return an empty json object.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <?php
@@ -2257,7 +2257,7 @@ echo json_encode(array("Car"=>$response));
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ##### GetDriver.php
-When the user selects an incident from the list that is provided to them, this is one of the two php file that is going to get executed. This php file will retrieve any information about the car that the other driver was using during the incident. It will use the incident id as reference when searching the car information. If there was no recorded information about the car that the other driver was using, it will then return an empty json object.
+When the user selects an incident from the list that is provided to them, this is one of the two php file that is going to get executed. This php file will retrieve any information about driver that ths user had an accident with. It will use the incident id as reference when searching for the driver's information. If there was no recorded information about the other driver, it will then return an empty json object.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <?php
@@ -2281,6 +2281,95 @@ echo json_encode(array("Driver"=>$response));
  
 ?>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+##### UpdateCar.php and AddCar.php
+When the user adds the car information, it will use one of thsese two application depending on the current situation. If the database does not hold any existing car infomration about the selected incident, it will use the AddCar.php. On the other hand, if the database does hold an information about the car, it will use the UpdateCar.php. We created two different php file because add and update uses different sql statement.
+
+AddCar.php
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?php
+error_reporting(0);
+require "init.php";
+ 
+$platenumber = $_POST["platenumber"];
+$carmake = $_POST["carmake"];
+$carmodel = $_POST["carmodel"];
+$caryear = $_POST["caryear"];
+$reportid = $_POST["reportid"];
+ 
+ 
+$sql = "INSERT INTO `Car`(`platenumber`, `carmake`, `carmodel`, `caryear`,`reportid`) VALUES ('".$platenumber."','".$carmake."','".$carmodel."','".$caryear."','".$reportid."');";
+if(!mysqli_query($con, $sql)){
+    echo '{"message":"Unable to save the data to the database."}';
+}
+ 
+?>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+UpdateCar.php
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?php
+error_reporting(0);
+require "init.php";
+ 
+$platenumber = $_POST["platenumber"];
+$carmake = $_POST["carmake"];
+$carmodel = $_POST["carmodel"];
+$caryear = $_POST["caryear"];
+$reportid = $_POST["reportid"];
+ 
+$sql = "UPDATE `Car` SET `platenumber`='".$platenumber."',`carmake`='".$carmake."',`carmodel`='".$carmodel."',`caryear`='".$caryear."' WHERE `reportid`='".$reportid."';";
+if(!mysqli_query($con, $sql)){
+    echo '{"message":"Unable to save the data to the database."}';
+}
+ 
+?>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+##### UpdateDriver.php and AddDriver.php
+When the user adds the dirver information, it will use one of thsese two application depending on the current situation. If the database does not hold any existing driver infomration about the selected incident, it will use the AddDriver.php. On the other hand, if the database does hold an information about the driver, it will use the UpdateDriver.php. We created two different php file because add and update uses different sql statement.
+
+AddCar.php
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?php
+error_reporting(0);
+require "init.php";
+ 
+$platenumber = $_POST["platenumber"];
+$carmake = $_POST["carmake"];
+$carmodel = $_POST["carmodel"];
+$caryear = $_POST["caryear"];
+$reportid = $_POST["reportid"];
+ 
+ 
+$sql = "INSERT INTO `Car`(`platenumber`, `carmake`, `carmodel`, `caryear`,`reportid`) VALUES ('".$platenumber."','".$carmake."','".$carmodel."','".$caryear."','".$reportid."');";
+if(!mysqli_query($con, $sql)){
+    echo '{"message":"Unable to save the data to the database."}';
+}
+ 
+?>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+UpdateCar.php
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?php
+error_reporting(0);
+require "init.php";
+ 
+$platenumber = $_POST["platenumber"];
+$carmake = $_POST["carmake"];
+$carmodel = $_POST["carmodel"];
+$caryear = $_POST["caryear"];
+$reportid = $_POST["reportid"];
+ 
+$sql = "UPDATE `Car` SET `platenumber`='".$platenumber."',`carmake`='".$carmake."',`carmodel`='".$carmodel."',`caryear`='".$caryear."' WHERE `reportid`='".$reportid."';";
+if(!mysqli_query($con, $sql)){
+    echo '{"message":"Unable to save the data to the database."}';
+}
+ 
+?>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 #### 2.6.8 Mobile Application Test Case
 
