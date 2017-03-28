@@ -2377,11 +2377,14 @@ if(!mysqli_query($con, $sql)){
 #### 2.6.8 Mobile Application Test Case
 
 | Test Number        | Test Case Title         | test Case Purpose  |Preconditions to run the test case           | Steps  |Expected Result  |
-| ------------- |:-------------:| -----:|:-------------:| -----:|-----:|
+| ------------- |:-------------:| -----|:-------------:| -----|-----|
 |AndroidApp-01    | LogIn Validation | $Verify that the Validation is working. |   Startup the app        | 1. Run tha Application 2.Click login without entering anything  | The application will ask you to enter a valid usernamne and password.  |
-| col 2 is      | centered      |   $12 |   |   |   |
-| zebra stripes | are neat      |    $1 ||  |   |
-
+| AndroidApp-02   | Database Connection      |   Verify that the application is able to conenct through database. |  Startup the app | 1. Run the app. 2.Enter a valid username and password. username= jabneel password=password  |  Go to the next activity and retrieve any incident list related to the account.  |
+| AndroidApp-03   | incident Retrieve Information      |   Verify that it retrieves information related to the incident such as driver and car. |  Should be on reportist class. | 1. Select incident 0 on the list.      |  Should have an existing data about the driver and the vehicle  |
+| AndroidApp-04   | Map      |   Verify that the map is working |  Should be on Information Display | 1. Select Location tab  |  Should pinpoint on 871 Bramble Court Mississauga  |
+| AndroidApp-05   | Video      |   Verify that the video is working |  Should be on Information Display | 1. Select Video tab  |  Should play a video |
+| AndroidApp-06   | Change Information      |   Verify that the driver and car infomrattion can be change |  Should be on Information Display | 1. Select Car Info             2. Enter a different information                     3.Save                                4. Select Driver info        5. Enter a different information                        6. Save  |  Information should be permanently changed|
+| AndroidApp-07   | Add Information      |   Verify that you can add car and driver information |  Should be on Information Display that has no car or driver infomration| 1. Select Car Info             2. Enter a different information                     3.Save                                4. Select Driver info        5. Enter a different information                        6. Save  |  New information should be stored in the database|
 
 \pagebreak
 
