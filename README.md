@@ -765,9 +765,8 @@ Android Application Build
 We removed the website name that we used for the php files for your own reproducibility.
 We used google maps api so make sure to visit their website to generate your OWN google_maps_key. Here is the link to the google's website for generating the google map key: https://developers.google.com/maps/documentation/javascript/get-api-key.
 
-MainActivity - The opening display and login of the mobile application. Checks if the login information that the user inputs is a valid login. If it's a valid login, it then passes the information through intent to the next activity which is ReportList.java.
-
 ##### MainActivity.java
+The opening display and login of the mobile application. Checks if the login information that the user inputs is a valid login. If it's a valid login, it then passes the information through intent to the next activity which is ReportList.java.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
@@ -925,9 +924,8 @@ public class MainActivity extends AppCompatActivity {
 
 MainActivity, opening display and login activity for the user.
 
-ReportList.java- After the user logins, ReportList.java handles the collection of all the reports of incidents that the user has in the database. It connects to the web server then places each report in a listview for the user. It displays the report id, data of incident, location of the incident (longitude and latitude), and the video name.
-
 ##### ReportList.java
+After the user logins, ReportList.java handles the collection of all the reports of incidents that the user has in the database. It connects to the web server then places each report in a listview for the user. It displays the report id, data of incident, location of the incident (longitude and latitude), and the video name.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
 package galaxynoise.autaccreport;
@@ -1159,11 +1157,9 @@ public class ReportList extends AppCompatActivity {
 
 ReportList display layout
 
-VidActivity- Activity for all the fragments in PageFragment.java. Mainly used for the design and display in the viewpager as well as menu options on the top right hand side of the application.
 
-
-##### ReportList.java
-
+##### VidActivity.java
+Activity for all the fragments in PageFragment.java. Mainly used for the design and display in the viewpager as well as menu options on the top right hand side of the application.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
 package galaxynoise.autaccreport;
@@ -1348,10 +1344,8 @@ public class VidActivity extends AppCompatActivity implements View.OnClickListen
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PageFragmentVid.java - This is where all the data are from the database are gathered and stored to be displayed by the mobile application. The fragments call the php files required to get information such as driver's information, car details, coordinates of incident, and video file directory. The php files that we use, transforms the data in the database into a formattable JSON file where we extract all the information from. 
-
 ##### PageFragmentVid.java
-
+This is where all the data are from the database are gathered and stored to be displayed by the mobile application. The fragments call the php files required to get information such as driver's information, car details, coordinates of incident, and video file directory. The php files that we use, transforms the data in the database into a formattable JSON file where we extract all the information from. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
 package galaxynoise.autaccreport;
