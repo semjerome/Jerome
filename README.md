@@ -351,7 +351,7 @@ that was mentioned above through the official website.
 | Term             | Definition                                                  |
 |------------------|-------------------------------------------------------------|
 | Telematics       | Name of the hardware.                                       |
-| User             | Someone who interacts with the web or sfotware appplication |
+| User             | Someone who interacts with the web or software appplication |
 | GPS              | Global Positioning System                                   |
 | PHP file              | PHP is a script language and interpreter that is freely available and used primarily on Linux Web servers. It lets the mobile application retrieve and add infomration from and into the database.|
 | Database            | a structured set of data held in a computer, especially one that is accessible in various ways. We used SQL databse for this project.|
