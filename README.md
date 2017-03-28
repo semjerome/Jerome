@@ -8,7 +8,7 @@ author: "Jerome Aganon, Jabneel Cruz, Jaewoong Kang, Achille Mattapullut"
 March 28th, 2017
 
 \pagebreak
-\linespread(2)
+\linespread{2}
 \selectfont
 
 Telematics
