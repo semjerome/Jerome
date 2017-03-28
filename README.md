@@ -597,7 +597,7 @@ Product Detail Site : http://www.waveshare.com/product/Bicolor-Case-for-7inch-LC
 
 #### Programming on Raspberry Pi
 #### 2.6.5.2  Hardware Application Programming 
-Insert Video and add more information related to GPS Receiver and Touch Screen and Case.
+
 In Raspberry Pi, we designed a GUI program which is separated by several parts; recording a video, catching an event signal from vibration sensor, uploading the video file, uploading the information in database, and multithreading code.
 We chose Python as programming language for these program because of several its benefits.
 •	Python is very easy to learn
@@ -717,11 +717,32 @@ sudo apt-get install pytqt-dev-tools
 
 Reference video link: https://www.youtube.com/watch?v=ZcfUjxji-YA 
 
-#### 2.6.5.2.5 Programming to Record Event Video
-<Jerome will add this part>
+#### 2.6.5.2.5 Programming to Record Event Video and Catch Event
 
-#### 2.6.5.2.6 Programming to Catch Event
-<Jerome will add this part>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+while True:
+            GPIO.output(18,GPIO.HIGH)
+
+            if isTrig == True:
+              trig();
+              #stopVideo()
+            
+            result = GPIO.input(5)
+            if result == 1:
+                print("Vibrated\n********************************\nRecording Video")
+                isTrig =True
+                vidName = time.strftime("%d%m%Y")+time.strftime("%I%M%S")
+                recVideo(vidName)
+            sleep(1)
+            hname = vidName+"video.h264"
+            mname = vidName+"video.mp4"
+            print("Converting video file h264 to MP4");
+            commands = "sudo MP4Box -add" + " "+hname + " " +mname
+            os.system(commands)
+                print("Sending video file to email");
+            sendAlert(vidName)
+            print("File sent");
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              "
 
 #### 2.6.5.2.7 Programming to Upload a Video File into Server
 We also have to make the code for uploading video files into server.
