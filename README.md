@@ -2329,20 +2329,22 @@ if(!mysqli_query($con, $sql)){
 ##### UpdateDriver.php and AddDriver.php
 When the user adds the dirver information, it will use one of thsese two application depending on the current situation. If the database does not hold any existing driver infomration about the selected incident, it will use the AddDriver.php. On the other hand, if the database does hold an information about the driver, it will use the UpdateDriver.php. We created two different php file because add and update uses different sql statement.
 
-AddCar.php
+AddDriver.php
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <?php
 error_reporting(0);
 require "init.php";
  
-$platenumber = $_POST["platenumber"];
-$carmake = $_POST["carmake"];
-$carmodel = $_POST["carmodel"];
-$caryear = $_POST["caryear"];
+$driverlicense = $_POST["driverlicense"];
+$fname = $_POST["fname"];
+$lname = $_POST["lname"];
+$gender = $_POST["gender"];
+$insuranceNumber = $_POST["insuranceNumber"];
 $reportid = $_POST["reportid"];
  
+
  
-$sql = "INSERT INTO `Car`(`platenumber`, `carmake`, `carmodel`, `caryear`,`reportid`) VALUES ('".$platenumber."','".$carmake."','".$carmodel."','".$caryear."','".$reportid."');";
+$sql = "INSERT INTO `Driver`(`driverlicense`, `fname`, `lname`, `gender`, `insuranceNumber`, `reportid`) VALUES ('".$driverlicense."','".$fname."','".$lname."','".$gender."','".$insuranceNumber."','".$reportid."');";
 if(!mysqli_query($con, $sql)){
     echo '{"message":"Unable to save the data to the database."}';
 }
@@ -2350,19 +2352,20 @@ if(!mysqli_query($con, $sql)){
 ?>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-UpdateCar.php
+UpdateDriver.php
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<?php
+?php
 error_reporting(0);
 require "init.php";
  
-$platenumber = $_POST["platenumber"];
-$carmake = $_POST["carmake"];
-$carmodel = $_POST["carmodel"];
-$caryear = $_POST["caryear"];
+$driverlicense = $_POST["driverlicense"];
+$fname = $_POST["fname"];
+$lname = $_POST["lname"];
+$gender = $_POST["gender"];
+$insuranceNumber = $_POST["insuranceNumber"];
 $reportid = $_POST["reportid"];
  
-$sql = "UPDATE `Car` SET `platenumber`='".$platenumber."',`carmake`='".$carmake."',`carmodel`='".$carmodel."',`caryear`='".$caryear."' WHERE `reportid`='".$reportid."';";
+$sql = "UPDATE `Driver` SET `driverlicense`='".$driverlicense."',`fname`='".$fname."',`lname`='".$lname."',`gender`='".$gender."',`insuranceNumber`='".$insuranceNumber."' WHERE `reportid`='".$reportid."';";
 if(!mysqli_query($con, $sql)){
     echo '{"message":"Unable to save the data to the database."}';
 }
