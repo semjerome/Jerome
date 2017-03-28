@@ -767,6 +767,10 @@ We used google maps api so make sure to visit their website to generate your OWN
 
 MainActivity - The opening display and login of the mobile application. Checks if the login information that the user inputs is a valid login. If it's a valid login, it then passes the information through intent to the next activity which is ReportList.java.
 
+##### MainActivity.java
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"
 package galaxynoise.autaccreport;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -913,11 +917,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/mainactivity.png)
 MainActivity, opening display and login activity for the user.
 
 ReportList.java- After the user logins, ReportList.java handles the collection of all the reports of incidents that the user has in the database. It connects to the web server then places each report in a listview for the user. It displays the report id, data of incident, location of the incident (longitude and latitude), and the video name.
 
+##### ReportList.java
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"
 package galaxynoise.autaccreport;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -1140,11 +1151,19 @@ public class ReportList extends AppCompatActivity {
                 }).create().show();
     }
 }
+"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/reportlist.png)
 ReportList display layout
 
 VidActivity- Activity for all the fragments in PageFragment.java. Mainly used for the design and display in the viewpager as well as menu options on the top right hand side of the application.
 
+
+##### ReportList.java
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"
 package galaxynoise.autaccreport;
 //Team name Galaxy Noise
 import android.content.Context;
@@ -1324,9 +1343,15 @@ public class VidActivity extends AppCompatActivity implements View.OnClickListen
     }
 }
 
+"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PageFragmentVid.java - This is where all the data are from the database are gathered and stored to be displayed by the mobile application. The fragments call the php files required to get information such as driver's information, car details, coordinates of incident, and video file directory. The php files that we use, transforms the data in the database into a formattable JSON file where we extract all the information from. 
 
+##### PageFragmentVid.java
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"
 package galaxynoise.autaccreport;
 /** //Team name Galaxy Noise
  * Created by Zaido on 2016-11-13.
@@ -2112,6 +2137,8 @@ public class PageFragmentVid extends Fragment {
             }
         }
 }
+"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/driverinfo.png) 
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/carinfo.png)
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/location.png)
