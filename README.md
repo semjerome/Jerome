@@ -2187,9 +2187,6 @@ require "init.php";
 $name = $_POST["name"];
 $password = $_POST["password"];
  
-//$name = "semjerome";
-//$password = "password";
- 
 $sql = "SELECT * FROM `User` WHERE `username`='".$name."' AND `password`='".$password."';";
  
 $result = mysqli_query($con, $sql);
@@ -2201,6 +2198,86 @@ while($row = mysqli_fetch_array($result)){
 }
  
 echo json_encode(array("User"=>$response));
+ 
+?>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+##### Incident.php
+Once the user is able to login, this is first file that it will run in order to retrieve all of the incident related to the user's profile. It will use the user's id as reference when running the following code.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?php
+error_reporting(0);
+require "init.php";
+ 
+$uid = $_POST["uid"];
+
+ 
+$count=0; 
+$sql = "SELECT * FROM `Incident` WHERE `uid`='".$uid."';";
+ 
+$result = mysqli_query($con, $sql);
+ 
+$response = array();
+ 
+while($row = mysqli_fetch_array($result)){
+    $response[$count] = array("reportid"=>$row[0],"incidentdate"=>$row[1],"longi"=>$row[2],"lati"=>$row[3],"videoName"=>$row[4]);
+$count++;
+}
+ 
+echo json_encode(array("Incident"=>$response));
+ 
+?>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+##### GetCar.php
+When the user selects an incident from the list that is provided to them, this is one of the two php file that is going to get executed. This php file will retrieve any information about the car that the other driver was using during the incident. It will use the incident id as reference when searching the car information. If there was no recorded information about the car that the other driver was using, it will then return an empty json object.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?php
+error_reporting(0);
+require "init.php";
+ 
+$reportid = $_POST["reportid"];
+
+ 
+$sql = "SELECT * FROM `Car` WHERE `reportid`='".$reportid."';";
+ 
+$result = mysqli_query($con, $sql);
+ 
+$response = array();
+ 
+while($row = mysqli_fetch_array($result)){
+    $response[0] = array("platenumber"=>$row[0],"carmake"=>$row[1],"carmodel"=>$row[2],"caryear"=>$row[3]);
+}
+ 
+echo json_encode(array("Car"=>$response));
+ 
+?>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+##### GetDriver.php
+When the user selects an incident from the list that is provided to them, this is one of the two php file that is going to get executed. This php file will retrieve any information about the car that the other driver was using during the incident. It will use the incident id as reference when searching the car information. If there was no recorded information about the car that the other driver was using, it will then return an empty json object.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?php
+error_reporting(0);
+require "init.php";
+ 
+$reportid = $_POST["reportid"];
+
+ 
+$sql = "SELECT * FROM `Driver` WHERE `reportid`='".$reportid."';";
+ 
+$result = mysqli_query($con, $sql);
+ 
+$response = array();
+ 
+while($row = mysqli_fetch_array($result)){
+    $response[0] = array("driverlicense"=>$row[0],"fname"=>$row[1],"lname"=>$row[2],"gender"=>$row[3],"insuranceNumber"=>$row[4]);
+}
+ 
+echo json_encode(array("Driver"=>$response));
  
 ?>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
