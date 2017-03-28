@@ -922,6 +922,7 @@ public class MainActivity extends AppCompatActivity {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/mainactivity.png)
+
 MainActivity, opening display and login activity for the user.
 
 ReportList.java- After the user logins, ReportList.java handles the collection of all the reports of incidents that the user has in the database. It connects to the web server then places each report in a listview for the user. It displays the report id, data of incident, location of the incident (longitude and latitude), and the video name.
@@ -1155,6 +1156,7 @@ public class ReportList extends AppCompatActivity {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/reportlist.png)
+
 ReportList display layout
 
 VidActivity- Activity for all the fragments in PageFragment.java. Mainly used for the design and display in the viewpager as well as menu options on the top right hand side of the application.
@@ -2143,6 +2145,7 @@ public class PageFragmentVid extends Fragment {
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/carinfo.png)
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/location.png)
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/videofile.png)
+
 Each page fragments: Driver's Information, Car Information, Location, Video file
 \pagebreak
 
