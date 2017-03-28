@@ -580,18 +580,18 @@ Connect the particular camera module that I listed above to your Raspberry Pi 3.
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/Case.png)
 #### Assembling Instruction
 
-1. Assemble the Raspberry Pi on ##1 board using #9, #10, and #11 (through the halls #2 on board #1)
+1. Assemble the Raspberry Pi on #1 board using #9, #10, and #11 (through the halls #2 on board #1)
 2. Assemble board #2, touchscreen, and board #1 using #5, #6, and #7
-    a.Insert each #5 bolts through all six halls of board #2
-    b.Insert each #5 bolts into #6 bearings
-    c.Assemble Touchscreen and above board #2 which is already assembled with #5 bolts
-    d.Insert each #5 bolts into #6 bearings again
-    e.Assemble board #1 and Touchscreen & board #2 which are already assembled in above steps
-    f.Tighten the all #5 bolts all #7 nuts 
+    a.	Insert each #5 bolts through all six halls of board #2
+    b.	Insert each #5 bolts into #6 bearings
+    c.	Assemble Touchscreen and above board #2 which is already assembled with #5 bolts
+    d.	Insert each #5 bolts into #6 bearings again
+    e.	Assemble board #1 and Touchscreen & board #2 which are already assembled in above steps
+    f.	Tighten the all #5 bolts all #7 nuts 
 3. Make the Screen Holder using #3, #4, #7, and #8
-    a.Assemble the headers of #8 bolts into each furrow of each side in #4 bars
-    b.Assemble sides of two #4 bar and the furrows on #3 panels
-    c.Tighten the #7 nuts
+    a.	Assemble the headers of #8 bolts into each furrow of each side in #4 bars
+    b.	Assemble sides of two #4 bar and the furrows on #3 panels
+    c.	Tighten the #7 nuts
 
 Product Detail Site : http://www.waveshare.com/product/Bicolor-Case-for-7inch-LCD.htm
 
