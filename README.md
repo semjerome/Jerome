@@ -722,9 +722,10 @@ while True:
                 print("Sending video file to email");
             sendAlert(vidName)
             print("File sent");
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              "
+	    
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
 
-#### 2.6.5.2.7 Programming to Upload a Video File into Server
+#### 2.6.5.2.6 Programming to Upload a Video File into Server
 We also have to make the code for uploading video files into server.
 In this project, we will transfer our files to server by using Python Ftp Library
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -746,7 +747,7 @@ myfile.close()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Note: ftplib is a built-in module in Python, so you don’t have to install it
 
-#### 2.6.5.2.8 Programming to Insert Data into MySQL
+#### 2.6.5.2.7 Programming to Insert Data into MySQL
 This application must update the information of database too whenever video files are uploaded into server.
 For this application, we need only INSERT method.
 
@@ -781,7 +782,7 @@ db.close()
 4th  Line : Write the specified SQL Query command we want to use
 5th Line : Close the database
 
-#### 2.6.5.2.9 Programming to make a Thread Function
+#### 2.6.5.2.8 Programming to make a Thread Function
 
 If the video record program start recording the video, the other program should have been waiting until this process is finished. In order to receive the event signal at the same time, we, therefore, need to correct these two functions as threading. 
 Multithreading code in Python is very similar to other languages and its basic code is show in the following line:
@@ -806,7 +807,7 @@ You shouldn’t miss to add thread library too
 import thread
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#### 2.6.5.2.10 GUI Programming with Qt Design
+#### 2.6.5.2.9 GUI Programming with Qt Design
 We need to design a simple graphic interface because our devices don’t support Keyboard input.
 Therefore, this GUI should involve the current status window and the basic 5 functions; starting recording video, stop recording, upload video to server, upload data into MySQL, and open the saving files directory. We already get this Qt Design when we installed PyQt.
 
@@ -830,7 +831,7 @@ Note: If you are using PyQt5 not PyQt4, you can use below command instead of abo
 sudo pyuic5 input.ui -o output.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#### 2.6.5.2.11	Programming of Event Handler for Graphic User Interface.
+#### 2.6.5.2.10	Programming of Event Handler for Graphic User Interface.
 We have made a simple GUI in previous step, but it was only for Graphical Interface such as button. Now we should add event handlers for each button. Here is the basic code for event handling.
 (Button’s name).clicked.connet(Handler Name) 
 For example, in case that we want call recordinfThread class from testdrive.py whenever we clicked “Start Recording” Button,
