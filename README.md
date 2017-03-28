@@ -2148,10 +2148,7 @@ Each page fragments: Driver's Information, Car Information, Location, Video file
 3.Conclusion
 ============
 
-In this report, we wrote the purpose of our project and how to reproduce it.
-By following the instructions, you should be able to reproduce it and should run
-on how it is supposed to. On the other hand, it is not possible to create a
-working PCB as there are some circuitry issues that has never been fixed. 
+In this report, we wrote the purpose of our project and how to reproduce it. By following the build instructions for the hardware and software, you should be able to reproduce it individually and should run on how it is supposed to. Finishing the connectivity of the hardware device to the database would ensure a working project. On the other hand, it is not possible to create a working PCB as there are some circuitry issues that has never been fixed. 
 
 \pagebreak
 
