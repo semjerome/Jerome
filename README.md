@@ -579,9 +579,9 @@ Connect the particular camera module that I listed above to your Raspberry Pi 3.
 Assembling the Bicolor Case for 7inch LCD
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/Case.png)
 ####Assembling Instruction
-1.	Assemble the Raspberry Pi on #1 board using #9, #10, and #11 (through the halls #2 on board #1)
+1.  Assemble the Raspberry Pi on #1 board using #9, #10, and #11 (through the halls #2 on board #1)
 2.	Assemble board #2, touchscreen, and board #1 using #5, #6, and #7
-⋅⋅* Ordered sub-list	Insert each #5 bolts through all six halls of board #2
+⋅⋅* Insert each #5 bolts through all six halls of board #2
 ⋅⋅* Insert each #5 bolts into #6 bearings
 ⋅⋅* Assemble Touchscreen and above board #2 which is already assembled with #5 bolts
 ⋅⋅* Insert each #5 bolts into #6 bearings again
