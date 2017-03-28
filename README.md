@@ -2176,7 +2176,34 @@ Each page fragments: Driver's Information, Car Information, Location, Video file
 
 #### 2.6.8 Back End
 
+##### Login.php
+This is the php file that is going to get executed when the user tries to login with their mobile application.
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?php
+error_reporting(0);
+require "init.php";
+ 
+$name = $_POST["name"];
+$password = $_POST["password"];
+ 
+//$name = "semjerome";
+//$password = "password";
+ 
+$sql = "SELECT * FROM `User` WHERE `username`='".$name."' AND `password`='".$password."';";
+ 
+$result = mysqli_query($con, $sql);
+ 
+$response = array();
+ 
+while($row = mysqli_fetch_array($result)){
+    $response[0] = array("uid"=>$row[0],"username"=>$row[1],"password"=>$row[2]);
+}
+ 
+echo json_encode(array("User"=>$response));
+ 
+?>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #### 2.6.8 Mobile Application Test Case
 
