@@ -610,17 +610,13 @@ Python is littler slower and is not powerful at high graphic and memory intensiv
 #### 2.6.5.2.1 Setting for Pi Camera
 We already explained how to connect Pi Camera to Raspberry Pi, but in order to control the Pi camera by python, you must install python-picamera also.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 sudo apt-get update
 sudo apt-get install python-picamera
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you are currently using Python3 package, you can install with below command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 sudo apt-get install python3-picamera
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #### 2.6.5.2.2 Setting for Touch Screen
@@ -629,12 +625,10 @@ You can buy Raspberry Pi LCD Touch Display (https://www.raspberrypi.org/products
 First, open “config.txt” file which is located in the root of Raspberry Pi TF card
 Second, add these 4 lines in “config.txt” file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 max_usb_current=1
 hdmi_group=2
 hdmi_mode=87
 hdmi_cvt 1024 600 60 6 0 0 0
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Third, save config.txt file and reboot Raspberry Pi
@@ -645,16 +639,13 @@ Link for more Information: http://www.waveshare.com/wiki/7inch_HDMI_LCD_(C)
 
 To use GPS USB receiver, you also should install GPS on raspberry Pi with following commands,
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 sudo apt-get upgrade
 sudo apt-get install gpsd gpsd-clients python-gps
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you finished installation of GPS, you also must modify the gpsd.hotplug file for setting serial port to access to the GPS.
 You can use the lines below to set up GPS serial port.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 nano /lib/udev/gpsd.hotplug
 
 Scroll down the document and add
@@ -667,34 +658,27 @@ Press CTRL and X together to exit the file
 
 /etc/init.d/gpsd restart
 gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If the operating system of your Raspberry Pi is the Raspberian Jessie not Wheezy, you wouldn’t be albe to see any texts in gpsd.hotplug file.
 In this case, you can set up your Raspberry Pi by following method,
 •	Type following command on terminal
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 	sudo nano /etc/default/gpsd
-	"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 •	Modify the gpsd as following lines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 START_DAEMON="true"
 GPSD_OPTIONS="n"
 DEVICES="/dev/ttyUSB0"
 USBAUTO="false"
-GPSD_SOCET="/var/run/gpsd.sock"
-"
+GPSD_SOCET="/var/run/gpsd.sock
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 •	Save this, then restart the GPS with below command 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 	sudo /etc/init.d/gpsd restart
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you finish setting it up, you can check GPS working with cgps -s command
@@ -704,15 +688,11 @@ If you finish setting it up, you can check GPS working with cgps -s command
 There are various open source frameworks package for GUI programming by Python, but in this project, we will make GUI by PyQt, one of the most popular and powerful GUI packages.
 In order to use PyQt, you have to download and install it using following command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 sudo apt-get install python-qt4
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In addition, we also need to install several tools, and you can install them with following command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 sudo apt-get install pytqt-dev-tools
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Reference video link: https://www.youtube.com/watch?v=ZcfUjxji-YA 
@@ -748,29 +728,21 @@ while True:
 We also have to make the code for uploading video files into server.
 In this project, we will transfer our files to server by using Python Ftp Library
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 import ftplib
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Basic command to connect to the server is,
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 ftp_connection = ftplib.FTP(server, username, password)
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 After above, we should define where the transferred file needs to be stored. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 ftp_connection.cwd(“Target Directory Path”)
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finally, the below codes are for reading source and sending it into server.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 myfile  = open(“path/file”, ‘rb’)
 ftp_connection.storbinary(‘STOR file’, myfile)
 myfile.close()
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Note: ftplib is a built-in module in Python, so you don’t have to install it
 
@@ -780,19 +752,15 @@ For this application, we need only INSERT method.
 
 To use MySql-Python, you need to install MySQLdb module
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 pip install MySQL-python
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Note: If your device doesn’t have pip, you can install it with following command:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 For Python3
 sudo apt-get install python3-pip
 For Python2
 sudo apt-get install python-pip
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 More information Link: https://www.raspberrypi.org/documentation/linux/software/python.md
@@ -800,13 +768,11 @@ More information Link: https://www.raspberrypi.org/documentation/linux/software/
 Connecting SQL Python codes are very similar to PHP’s codes.
 The below codes are the basic MySQLdb codes to use for database in Python:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 import MySQLdb
 db = MySQLdb.connect(Host Address, User ID, User Password, Database Name)
 cursor = db.cursor()
 cursor.execute(“SQL Query”)
 db.close()
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1st  Line :  Call the MySQLdb module from Python Libarary
@@ -820,32 +786,24 @@ db.close()
 If the video record program start recording the video, the other program should have been waiting until this process is finished. In order to receive the event signal at the same time, we, therefore, need to correct these two functions as threading. 
 Multithreading code in Python is very similar to other languages and its basic code is show in the following line:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 thread.start_new_thread ( function, args[, kwargs] )
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 kwargs is an optional dictionary of keyword arguments. For example, the threading code for the recording(location, time) and catching(port) functions are: 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 thread.start_new_thread (recording, (directory, 60,) )
 thread.start_new_thread (chatching,36)
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 or you can also use this,
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 thread1 = recording(directory, 60)
 thread2 = catching(36)
 thread1.start()
 thread2.start()
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You shouldn’t miss to add thread library too
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 import thread
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #### 2.6.5.2.10 GUI Programming with Qt Design
@@ -864,16 +822,12 @@ Therefore, this GUI should involve the current status window and the basic 5 fun
 
 When you finish making a simple graphic user interface with Qt design, you can save a file with ui format. You should, therefore, convert  it to python format, and this is the command for the converting.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 sudo pyuic4 input.ui -o output.py
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Note: If you are using PyQt5 not PyQt4, you can use below command instead of above.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 sudo pyuic5 input.ui -o output.py
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #### 2.6.5.2.11	Programming of Event Handler for Graphic User Interface.
