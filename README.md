@@ -268,23 +268,35 @@ Table of Contents
 
 2.4.3 Future Additions
 
-[2.5 Build Instructions](#25-build-instructions)
+[2.5 Project Schedule and Progress](#26-hardware-build-instructions)
 
-2.5.1 Introduction
+[2.6 Hardware Build Instructions](#26-hardware-build-instructions)
 
-2.5.2 System Diagram
+2.6.1 Introduction
 
-2.5.3 Bill of Material/Budget
+2.6.2 System Diagram
 
-2.5..4 Time Commitment
+2.6.3 Bill of Material/Budget
 
-2.5.5 Mechanical Assembly
+2.6..4 Time Commitment
 
-2.5.6 PCB/Soldering
+2.6.5 Mechanical Assembly
 
-2.5.7 Unit Testing
+2.6.6 PCB/Soldering
 
-2.5.8 Production Testing
+2.6.7 Unit Testing
+
+2.6.8 Production Testing
+
+[2.7 Mobile Application Build Instructions](#27-mobile-application-build-instructions)
+
+2.7.1 Introduction
+
+2.7.2 Mobile Application
+
+2.6.3 Back-End 
+
+2.7.4 Mobile Application Test Case
 
 [Conclusion](#3-conclusion)
 
