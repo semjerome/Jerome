@@ -634,7 +634,9 @@ address.
 | Full Sized Breadboard                   | 1        | \$8.81        |
 | USB GPS Dongle                          | 1        | \$50.00       |
 | LED                                     | 1        | \$0.25        |
-| Total                                   |          | \$193.24      |
+| Case                                    | 1        | \$17.00       |
+| TouchScreen                             | 1        | \$71.80       |
+| Total                                   |          | \$282.04      |
 
 #### 2.6.4 Time Commitment
 
