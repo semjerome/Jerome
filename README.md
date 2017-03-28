@@ -2376,6 +2376,12 @@ if(!mysqli_query($con, $sql)){
 
 #### 2.6.8 Mobile Application Test Case
 
+| Test Number        | Test Case Title         | test Case Purpose  |Preconditions to run the test case           | Steps  |Expected Result  |
+| ------------- |:-------------:| -----:|:-------------:| -----:|-----:|
+|AndroidApp-01    | LogIn Validation | $Verify that the Validation is working. |   Startup the app        | 1. Run tha Application 2.Click login without entering anything  | The application will ask you to enter a valid usernamne and password.  |
+| col 2 is      | centered      |   $12 |   |   |   |
+| zebra stripes | are neat      |    $1 ||  |   |
+
 
 \pagebreak
 
