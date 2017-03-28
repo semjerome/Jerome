@@ -1,9 +1,15 @@
 ---
 csl: apa.csl
 bibliography: GNoiseCitations.bib
+title: Telematics
+author: "Jerome Aganon, Jabneel Cruz, Jaewoong Kang, Achille Mattapullut"
 ---
-
+\vfill
 March 28th, 2017
+
+\pagebreak
+\linespread(2)
+\selectfont
 
 Telematics
 ==========
