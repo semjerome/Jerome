@@ -507,10 +507,98 @@ Safety precaution that has to be considered when using the hardware:
 We are planning on creating a new case for the hardware since we are planning on
 adding a touchscreen capability on our hardware for portability and easy usability.
 
-2.5 Project Schedule and Progress
+2.5 Project Schedule and Progress Status
 ----------------------------------
 
+#### 2.5.1 Schedule
+
 ![alt text](https://github.com/semjerome/semjerome.github.io/blob/master/documentation/schedule.png)
+
+#### 2.5.2 Status Report
+
+##### [31/1/2017] Report by Jabneel
+
+Recent Project Activities:
+Our group, Telematics, have been working on our database, web server, website template, mobile application, as well as hardware improvement. We are currently on schedule in regards to our technical report and updating our Github.
+
+The progress of work for each group member is as follows: Jabneel - I have been working on setting up a database for car models and car makes that will be used for the mobile application. We have recently bought the VPS Hosting so there is no database that has been set up yet, but I have done some research and found repositories that have databases that use JSON (most of our SQL format). I am also currently working on our website template. Jerome - He has bought the VPS hosting and been working on setting up and giving access to all the members so we can start with using/creating our database and website. Issues with GoDaddy customer service caused some delays during the weekend. Jaewoong - He is assigned to update the vibration sensor into a g-sensor which is what most dashcam uses. He is also assigned to buy a GPS module which is going to be used by the hardware to send coordinates/address to the database.
+
+Financial Updates:
+Jerome and I have bought the VPS Hosting which costs around $260.00 and having access to it for 6 months. Jaewoong, on the other hand, has to spend money for the g-sensor as well as the GPS module.
+
+##### [14/02/2017] Report by Jaewoong and Achille
+
+This is the reporting status of troubleshooting progress for our group, Telematics.
+ 
+
+We are currently trying making the programs for GPS and server/database for Raspberry PI. In addition, we are also creating the GUI and website too.
+ 
+
+Jaewoong Kang - I am mostly concentrating on GUI programming. We already set up several programs for each function such as recording video, catching event signal from sensor, and saving video files with specified event information. Now we need to merge these functions with Threading. Therefore, I also doing this at the same time. I have little problem caused by the broken part of Raspberry Pi, but it won’t affect to programming, and we already decided to exchange this to Jabneel’s device.
+
+
+Achille Mattapullut - He is currently helping with the hardware part, In addition, he is also helping setting up the GPS on new device. He is mainly trying to finish up on the website front end. He had little delay caused by his job interview, but now he can come back to his part then it is expected to be able to catch up as our schedule.
+
+ 
+Jabneel - He currently focuses on website security by using WordPress hash. He is also trying to finish his main works, PHP program for communication between mobile and database.
+ 
+
+Jerome - He currently concentrates on the GPS receiving programming for Raspberry Pi. He is also helping making codes for server and Raspberry Pi communication by using Python.
+
+
+Delay Issue and Troubleshooting: We have been a slight delay issues such as exchanging device caused by broken part issue, but we already start to set it up and it won’t be long delay. In addition, we currently finished around 50% of technical report, so we will focus on finishing this in next week.
+
+
+
+##### [07/03/2017] Report by Jabneel
+
+Recent Project Activities:
+Our group has recently finished setting up our website where the user can register an account (used for website and application). We also imported the database from Jerome's web host to ours. Hardware has recently gained access to GPS module. The car models and brands have been imported into the Application instead of having to access server yo use it. This is to reduce coupling. There have been recent delays with database and progress in the application but this gave space to finishing the website. 
+
+The progress of work for each group member is as follows:  
+Jabneel- I am currently working on the integration of the website's registration system and the application. We want the app to have a link to the website's registration page then use that account for both application and website. Since WordPress encrypts the password of the user in the wp database, in the mobile app, we're gonna have to find a way to match user's input with what's in the database. Jerome will be helping me with this problem.
+Jerome- He has been working with the integration of the database as well as the website. Database to website's integration is working properly. The user can register and log in on the website and it is properly stored in the database.  Since we recently imported the database from the previous Web host, the mobile application's links to PHP files should be changed.
+Jaewoong- He is working on hardware's integration with the database. Information that the hardware detects and creates should be sent to the database server. He is currently working on GUI for the sensor program.
+Achille- He has been doing some testing, proof reading and implementation on the website and database. This week, he will be doing more testing with the website's integration with the database after the hardware is able to send information to the database.
+
+Financial Update:
+There is no financial update since my last email.
+
+##### [20/03/2017] Report by Achille
+
+Achille Mattapullut - is currently helping with the hardware part, I am mainly helping setting up the GPS. I am rewriting some codes to make it compatible with our project. And finishing up on the website front end.
+
+Jabneel Cruz -   added password security by using WordPress hash and also updated our php file for android so that it will have password security too
+
+Jerome Aganon - is currently working to add php file on our server so we can retrieve information from the raspberry pi. 
+
+Jaewoong Kang - will write a separate progress report for hardware.
+
+
+Delay Issue: We are still behind in term of hardware. Pi2 camera connection part is broken.
+
+##### [20/03/2017] Report by Jaewoong
+
+This is the reporting status of troubleshooting progress for our group, Telematics.
+
+ 
+We are currently trying making the programs for GPS and server/database for Raspberry PI. In addition, we are also creating the GUI and website too.
+
+
+Jaewoong Kang - I am mostly concentrating on GUI programming. We already set up several programs for each function such as recording video, catching event signal from sensor, and saving video files with specified event information. Now we need to merge these functions with Threading. Therefore, I also doing this at the same time. I have little problem caused by the broken part of Raspberry Pi, but it won’t affect to programming, and we already decided to exchange this to Jabneel’s device.
+
+Achille Mattapullut - He is currently helping with the hardware part, In addition, he is also helping setting up the GPS on new device. He is mainly trying to finish up on the website front end. He had little delay caused by his job interview, but now he can come back to his part then it is expected to be able to catch up as our schedule.
+
+
+Jabneel - He currently focuses on website security by using WordPress hash. He is also trying to finish his main works, PHP program for communication between mobile and database.
+
+ 
+Jerome - He currently concentrates on the GPS receiving programming for Raspberry Pi. He is also helping making codes for server and Raspberry Pi communication by using Python.
+
+
+Delay Issue and Troubleshooting: We have been a slight delay issues such as exchanging device caused by broken part issue, but we already start to set it up and it won’t be long delay. In addition, we currently finished around 50% of technical report, so we will focus on finishing this in next week.
+
+
 
 
 2.6 Hardware Build Instructions
