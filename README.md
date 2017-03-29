@@ -754,17 +754,27 @@ Assembling Instruction
 1.  Assemble the Raspberry Pi on \#1 board using \#9, \#10, and \#11 (through
     the halls \#2 on board \#1)
 
-2.  Assemble board \#2, touchscreen, and board \#1 using \#5, \#6, and \#7 ..a.
-    Insert each \#5 bolts through all six halls of board \#2 ..b. Insert each
-    \#5 bolts into \#6 bearings ..c. Assemble Touchscreen and above board \#2
-    which is already assembled with \#5 bolts ..d. Insert each \#5 bolts into
-    \#6 bearings again ..e. Assemble board \#1 and Touchscreen & board \#2 which
-    are already assembled in above steps ..f. Tighten the all \#5 bolts all \#7
-    nuts
+2.  Assemble board \#2, touchscreen, and board \#1 using \#5, \#6, and \#7 
 
-3.  Make the Screen Holder using \#3, \#4, \#7, and \#8 ..a. Assemble the
-    headers of \#8 bolts into each furrow of each side in \#4 bars ..b. Assemble
-    sides of two \#4 bar and the furrows on \#3 panels ..c. Tighten the \#7 nuts
+    a. Insert each \#5 bolts through all six halls of board \#2 
+    
+    b. Insert each \#5 bolts into \#6 bearings 
+    
+    c. Assemble Touchscreen and above board \#2 which is already assembled with \#5 bolts 
+    
+    d. Insert each \#5 bolts into \#6 bearings again 
+    
+    e. Assemble board \#1 and Touchscreen & board \#2 which are already assembled in above steps 
+    
+    f. Tighten the all \#5 bolts all \#7 nuts
+
+3.  Make the Screen Holder using \#3, \#4, \#7, and \#8 
+    
+    a. Assemble the headers of \#8 bolts into each furrow of each side in \#4 bars
+    
+    b. Assemble sides of two \#4 bar and the furrows on \#3 panels
+    
+    c. Tighten the \#7 nuts
 
 Product Detail Site :
 http://www.waveshare.com/product/Bicolor-Case-for-7inch-LCD.htm
@@ -1022,11 +1032,11 @@ db.close()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-1st Line : Call the MySQLdb module from Python Libarary 
-2nd Line : Connect the target SQL
-3rd Line : Declare cursor object using cursor() method 
-4th Line : Write the specified SQL Query command we want to use 
-5th Line : Close the database
+1. Call the MySQLdb module from Python Libarary 
+2. Connect the target SQL
+3. Declare cursor object using cursor() method 
+4. Write the specified SQL Query command we want to use 
+5. Close the database
 
 #### 2.6.5.2.8 Programming to make a Thread Function
 
