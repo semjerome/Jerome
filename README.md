@@ -1521,7 +1521,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
             else{
-                Toast.makeText(MainActivity.this, "Invalid Login or Password!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Invalid Login or Password!", Toast.LENGTH_SHORT).show();
 
             }
         }
@@ -1531,9 +1531,13 @@ public class MainActivity extends AppCompatActivity {
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
+
+
 MainActivity, opening display and login activity for the user.
 
 ![Main Activity](documentation/mainactivity.png)
+
 
 ##### ReportList.java
 
@@ -1541,7 +1545,11 @@ After the user logins, ReportList.java handles the collection of all the reports
 of incidents that the user has in the database. It connects to the web server
 then places each report in a listview for the user. It displays the report id,
 data of incident, location of the incident (longitude and latitude), and the
-video name. \~\~\~\~ " package galaxynoise.autaccreport; import
+video name.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"
+package galaxynoise.autaccreport; import
 android.content.DialogInterface; import android.content.Intent; import
 android.database.Cursor; import android.os.AsyncTask; import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton; import
@@ -1564,7 +1572,6 @@ public static boolean isListempty =true; Intent currIntent; //PatientAdapter
 patientAdapter; ArrayList\> infolist = new ArrayList\<\>(3); private String TAG
 = ReportList.class.getSimpleName(); TextView tvnews; String id;
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
