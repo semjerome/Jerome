@@ -2887,7 +2887,7 @@ WHERE `reportid`='".$$reportid."';"; if(!mysqli_query($$con, \$sql)){ echo
 | AndroidApp-06 | Change Information            | Verify that the driver and car infomrattion can be change                            | Should be on Information Display                                       | 1. Select Car Info 2. Enter a different information 3.Save 4. Select Driver info 5. Enter a different information 6. Save | Information should be permanently changed                                      |
 | AndroidApp-07 | Add Information               | Verify that you can add car and driver information                                   | Should be on Information Display that has no car or driver infomration | 1. Select Car Info 2. Enter a different information 3.Save 4. Select Driver info 5. Enter a different information 6. Save | New information should be stored in the database                               |
 
-####Variances
+#### Variances
 
 This testing of the AutAccReport mobile application was supposed to be conducted alongside the hardware part of the project which would have allowed a wider testing opportunity. The testing was conducted on Android mobile phone on Android Version 6.0.1. All result were the same when performed on different Android devices
 
