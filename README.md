@@ -312,7 +312,7 @@ Instructions](#27-mobile-application-build-instructions)
 
 [Reference](#5-reference)
 
-1. Introduction
+1.Introduction
 ===============
 
 1.1 Purpose
@@ -373,7 +373,7 @@ that was mentioned above through the official website.
 \pagebreak
 
 
-2. System Requirements Specification (SRS)
+2.System Requirements Specification (SRS)
 ==========================================
 
 2.1 Technology Introduction
@@ -2887,6 +2887,10 @@ WHERE `reportid`='".$$reportid."';"; if(!mysqli_query($$con, \$sql)){ echo
 | AndroidApp-06 | Change Information            | Verify that the driver and car infomrattion can be change                            | Should be on Information Display                                       | 1. Select Car Info 2. Enter a different information 3.Save 4. Select Driver info 5. Enter a different information 6. Save | Information should be permanently changed                                      |
 | AndroidApp-07 | Add Information               | Verify that you can add car and driver information                                   | Should be on Information Display that has no car or driver infomration | 1. Select Car Info 2. Enter a different information 3.Save 4. Select Driver info 5. Enter a different information 6. Save | New information should be stored in the database                               |
 
+####Variances
+
+This testing of the AutAccReport mobile application was supposed to be conducted alongside the hardware part of the project which would have allowed a wider testing opportunity. The testing was conducted on Android mobile phone on Android Version 6.0.1. All result were the same when performed on different Android devices
+
 \pagebreak
 
 3.Conclusion
@@ -2916,6 +2920,10 @@ hand, vibration sensor will lock the video everytime it sense a vibration.
 For Android Developers, I would recommend to have and create each fragments for
 video, location, driver and car in separate page fragments for clear readability
 and easy programmability of the application.
+
+The cache clearing issue should be a priority for the development team. The test showed that this issue make the client unable to access their user account personal information and report log.
+
+
 
 \pagebreak
 
