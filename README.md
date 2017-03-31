@@ -360,6 +360,8 @@ that was mentioned above through the official website.
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Telematics       | Name of the hardware.                                                                                                                                                                                                                                                        |
 | User             | Someone who interacts with the web or software appplication                                                                                                                                                                                                                  |
+| Android device             | Android device is a device that runs on the Android operating system. Android is an array of software intended for mobile devices that features an operating system                                                                                                                                                                                                             |
+| GUI             | A graphical user interface (GUI) is a human-computer interface (i.e., a way for humans to interact with computers) that uses windows, icons and menus                                                                                                                                                                                                                |
 | GPS              | Global Positioning System                                                                                                                                                                                                                                                    |
 | PHP file         | PHP is a script language and interpreter that is freely available and used primarily on Linux Web servers. It lets the mobile application retrieve and add infomration from and into the database.                                                                           |
 | Database         | a structured set of data held in a computer, especially one that is accessible in various ways. We used SQL databse for this project.                                                                                                                                        |
@@ -369,6 +371,7 @@ that was mentioned above through the official website.
 | Official Website | http://autaccreport.com/                                                                                                                                                                                                                                                     |
 
 \pagebreak
+
 
 2. System Requirements Specification (SRS)
 ==========================================
