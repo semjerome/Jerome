@@ -134,62 +134,62 @@ each phase. A Gantt chart will be added by week 3 to provide more project
 schedule details and a more complete budget will be added by week 4. It is
 important to start tasks as soon as possible to be able to meet deadlines.
 
-| **Labour Estimates**                                                                      | **Hrs**        | **Notes**                                                                                                                                            |
-|-------------------------------------------------------------------------------------------|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Phase 1**                                                                               |                |                                                                                                                                                      |
-| Writing proposal.                                                                         | 9              | Tech identification quiz.                                                                                                                            |
-| Creating project schedule. Initial project team meeting.                                  | 9              | Proposal due.                                                                                                                                        |
-| Creating budget. Status Meeting.                                                          | 9              | Project Schedule due.                                                                                                                                |
-| Acquiring components and writing progress report.                                         | 9              | Budget due.                                                                                                                                          |
-| Mechanical assembly and writing progress report. Status Meeting.                          | 9              | Progress Report due (components acquired milestone).                                                                                                 |
-| PCB fabrication.                                                                          | 9              | Progress Report due (Mechanical Assembly milestone).                                                                                                 |
-| Interface wiring, Placard design, Status Meeting.                                         | 9              | PCB Due (power up milestone).                                                                                                                        |
-| Preparing for demonstration.                                                              | 9              | Placard due.                                                                                                                                         |
-| Writing progress report and demonstrating project.                                        | 9              | Progress Report due (Demonstrations at Open House Saturday, November 12th, 2016 from 10 a.m. - 2 p.m.).                                              |
-| Editing build video.                                                                      | 9              | Peer grading of demonstrations due.                                                                                                                  |
-| Incorporation of feedback from demonstration and writing progress report. Status Meeting. | 9              | 30 second build video due.                                                                                                                           |
-| Practice presentations                                                                    | 9              | Progress Report due.                                                                                                                                 |
-| 1st round of Presentations, Collaborators present.                                        | 9              | Presentation PowerPoint file due.                                                                                                                    |
-| 2nd round of Presentations                                                                | 9              | Build instructions up due.                                                                                                                           |
-| Project videos, Status Meeting.                                                           | 9              | 30 second script due.                                                                                                                                |
-| **Phase 1 Total**                                                                         | **135**        |                                                                                                                                                      |
-| **Phase 2**                                                                               |                |                                                                                                                                                      |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                       |
-| Initial integration.                                                                      | 9              | Progress Report                                                                                                                                      |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                       |
-| Testing.                                                                                  | 9              | Progress Report                                                                                                                                      |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                       |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                       |
-| Incorporation of feedback.                                                                | 9              | Progress Report                                                                                                                                      |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                       |
-| Testing.                                                                                  | 9              | Progress Report                                                                                                                                      |
-| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                       |
-| Prepare for demonstration.                                                                | 9              | Progress Report                                                                                                                                      |
-| Complete presentation.                                                                    | 9              | Demonstration at Open House Saturday, April 8th, 2017 10 a.m. to 2 p.m.                                                                              |
-| Complete final report. 1st round of Presentations.                                        | 9              | Presentation PowerPoint file due.                                                                                                                    |
-| Write video script. 2nd round of Presentations, delivery of project.                      | 9              | Final written report including final budget and record of expenditures, covering both this semester and the previous semester.                       |
-| Project videos.                                                                           | 9              | Video script due                                                                                                                                     |
-| **Phase 2 Total**                                                                         | **135**        |                                                                                                                                                      |
-| **Phase 3**                                                                               |                |                                                                                                                                                      |
-| Interviews                                                                                | TBD            |                                                                                                                                                      |
-| **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                                      |
-| **Material Estimates**                                                                    | **Cost**       | **Notes**                                                                                                                                            |
-| **Phase 1**                                                                               |                |                                                                                                                                                      |
-| RaspBerry Pi 3 Starter Kit                                                                | \$89.99        | https://www.amazon.com/Vilros-Raspberry-Ultimate-Starter-Kit-Clear/dp/B01CYWE20U                                                                     |
-| Pi Camera Module with Case                                                                | \$38.79        | https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_2?s=pc&ie=UTF8&qid=1484598331&sr=1-2&keywords=raspberry+pi+camera |
-| Piezo Buzzer Element (Vibration Sensor)                                                   | \$5.19         | Canada Robotix                                                                                                                                       |
-| LED                                                                                       | \$0.50         | Canada Robotix                                                                                                                                       |
-| USB GPS Dongle.                                                                           | \$50           | Amazon                                                                                                                                               |
-| **Phase 1 Total**                                                                         | **\>\$200.00** |                                                                                                                                                      |
-| **Phase 2**                                                                               |                |                                                                                                                                                      |
-| Materials to improve functionality, fit, and finish of project.                           |                |                                                                                                                                                      |
-| **Phase 2 Total**                                                                         | **TBD**        |                                                                                                                                                      |
-| **Phase 3**                                                                               |                |                                                                                                                                                      |
-| Off campus colocation                                                                     | \<\$100.00     | An example: .                                                                                                                                        |
-| *Shipping*                                                                                | *TBD*          |                                                                                                                                                      |
-| *Tax*                                                                                     | *TBD*          |                                                                                                                                                      |
-| *Duty*                                                                                    | *TBD*          |                                                                                                                                                      |
-| **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                                      |
+| **Labour Estimates**                                                                      | **Hrs**        | **Notes**                                                                                                                                              |
+|-------------------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Phase 1**                                                                               |                |                                                                                                                                                        |
+| Writing proposal.                                                                         | 9              | Tech identification quiz.                                                                                                                              |
+| Creating project schedule. Initial project team meeting.                                  | 9              | Proposal due.                                                                                                                                          |
+| Creating budget. Status Meeting.                                                          | 9              | Project Schedule due.                                                                                                                                  |
+| Acquiring components and writing progress report.                                         | 9              | Budget due.                                                                                                                                            |
+| Mechanical assembly and writing progress report. Status Meeting.                          | 9              | Progress Report due (components acquired milestone).                                                                                                   |
+| PCB fabrication.                                                                          | 9              | Progress Report due (Mechanical Assembly milestone).                                                                                                   |
+| Interface wiring, Placard design, Status Meeting.                                         | 9              | PCB Due (power up milestone).                                                                                                                          |
+| Preparing for demonstration.                                                              | 9              | Placard due.                                                                                                                                           |
+| Writing progress report and demonstrating project.                                        | 9              | Progress Report due (Demonstrations at Open House Saturday, November 12th, 2016 from 10 a.m. - 2 p.m.).                                                |
+| Editing build video.                                                                      | 9              | Peer grading of demonstrations due.                                                                                                                    |
+| Incorporation of feedback from demonstration and writing progress report. Status Meeting. | 9              | 30 second build video due.                                                                                                                             |
+| Practice presentations                                                                    | 9              | Progress Report due.                                                                                                                                   |
+| 1st round of Presentations, Collaborators present.                                        | 9              | Presentation PowerPoint file due.                                                                                                                      |
+| 2nd round of Presentations                                                                | 9              | Build instructions up due.                                                                                                                             |
+| Project videos, Status Meeting.                                                           | 9              | 30 second script due.                                                                                                                                  |
+| **Phase 1 Total**                                                                         | **135**        |                                                                                                                                                        |
+| **Phase 2**                                                                               |                |                                                                                                                                                        |
+| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                         |
+| Initial integration.                                                                      | 9              | Progress Report                                                                                                                                        |
+| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                         |
+| Testing.                                                                                  | 9              | Progress Report                                                                                                                                        |
+| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                         |
+| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                         |
+| Incorporation of feedback.                                                                | 9              | Progress Report                                                                                                                                        |
+| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                         |
+| Testing.                                                                                  | 9              | Progress Report                                                                                                                                        |
+| Meet with collaborators                                                                   | 9              | Status Meeting                                                                                                                                         |
+| Prepare for demonstration.                                                                | 9              | Progress Report                                                                                                                                        |
+| Complete presentation.                                                                    | 9              | Demonstration at Open House Saturday, April 8th, 2017 10 a.m. to 2 p.m.                                                                                |
+| Complete final report. 1st round of Presentations.                                        | 9              | Presentation PowerPoint file due.                                                                                                                      |
+| Write video script. 2nd round of Presentations, delivery of project.                      | 9              | Final written report including final budget and record of expenditures, covering both this semester and the previous semester.                         |
+| Project videos.                                                                           | 9              | Video script due                                                                                                                                       |
+| **Phase 2 Total**                                                                         | **135**        |                                                                                                                                                        |
+| **Phase 3**                                                                               |                |                                                                                                                                                        |
+| Interviews                                                                                | TBD            |                                                                                                                                                        |
+| **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                                        |
+| **Material Estimates**                                                                    | **Cost**       | **Notes**                                                                                                                                              |
+| **Phase 1**                                                                               |                |                                                                                                                                                        |
+| RaspBerry Pi 3 Starter Kit                                                                | \$89.99        | https://www.amazon.com/Vilros-Raspberry-Ultimate-Starter-Kit-Clear/dp/B01CYWE20U                                                                       |
+| Pi Camera Module with Case                                                                | \$38.79        | https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr\_1\_2?s=pc&ie=UTF8&qid=1484598331&sr=1-2&keywords=raspberry+pi+camera |
+| Piezo Buzzer Element (Vibration Sensor)                                                   | \$5.19         | Canada Robotix                                                                                                                                         |
+| LED                                                                                       | \$0.50         | Canada Robotix                                                                                                                                         |
+| USB GPS Dongle.                                                                           | \$50           | Amazon                                                                                                                                                 |
+| **Phase 1 Total**                                                                         | **\>\$200.00** |                                                                                                                                                        |
+| **Phase 2**                                                                               |                |                                                                                                                                                        |
+| Materials to improve functionality, fit, and finish of project.                           |                |                                                                                                                                                        |
+| **Phase 2 Total**                                                                         | **TBD**        |                                                                                                                                                        |
+| **Phase 3**                                                                               |                |                                                                                                                                                        |
+| Off campus colocation                                                                     | \<\$100.00     | An example: .                                                                                                                                          |
+| *Shipping*                                                                                | *TBD*          |                                                                                                                                                        |
+| *Tax*                                                                                     | *TBD*          |                                                                                                                                                        |
+| *Duty*                                                                                    | *TBD*          |                                                                                                                                                        |
+| **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                                        |
 
 **Concluding remarks**
 
@@ -313,7 +313,7 @@ Instructions](#27-mobile-application-build-instructions)
 [Reference](#5-reference)
 
 1.Introduction
-===============
+==============
 
 1.1 Purpose
 -----------
@@ -360,12 +360,12 @@ that was mentioned above through the official website.
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Telematics       | Name of the hardware.                                                                                                                                                                                                                                                        |
 | User             | Someone who interacts with the web or software appplication                                                                                                                                                                                                                  |
-| Android device             | Android device is a device that runs on the Android operating system. Android is an array of software intended for mobile devices that features an operating system                                                                                                                                                                                                             |
-| GUI             | A graphical user interface (GUI) is a human-computer interface (i.e., a way for humans to interact with computers) that uses windows, icons and menus                                                                                                                                                                                                                |
+| Android device   | Android device is a device that runs on the Android operating system. Android is an array of software intended for mobile devices that features an operating system                                                                                                          |
+| GUI              | A graphical user interface (GUI) is a human-computer interface (i.e., a way for humans to interact with computers) that uses windows, icons and menus                                                                                                                        |
 | GPS              | Global Positioning System                                                                                                                                                                                                                                                    |
 | PHP file         | PHP is a script language and interpreter that is freely available and used primarily on Linux Web servers. It lets the mobile application retrieve and add infomration from and into the database.                                                                           |
 | Database         | a structured set of data held in a computer, especially one that is accessible in various ways. We used SQL databse for this project.                                                                                                                                        |
-| Python             | Python is a computer programming language that lets you work more quickly than other programming languages.                                                                                                                                                                                                                   |
+| Python           | Python is a computer programming language that lets you work more quickly than other programming languages.                                                                                                                                                                  |
 | Java             | Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is the main programming language that we used fro creating mobile application |
 | Android Studio   | Android Studio is the integrated development environment (IDE) from google. It was used for creating the mobile application.                                                                                                                                                 |
 | IDE              | is a software application that provides comprehensive facilities to computer programmers for software development.                                                                                                                                                           |
@@ -373,9 +373,8 @@ that was mentioned above through the official website.
 
 \pagebreak
 
-
 2.System Requirements Specification (SRS)
-==========================================
+=========================================
 
 2.1 Technology Introduction
 ---------------------------
@@ -758,27 +757,30 @@ Assembling Instruction
 1.  Assemble the Raspberry Pi on \#1 board using \#9, \#10, and \#11 (through
     the halls \#2 on board \#1)
 
-2.  Assemble board \#2, touchscreen, and board \#1 using \#5, \#6, and \#7 
+2.  Assemble board \#2, touchscreen, and board \#1 using \#5, \#6, and \#7
 
-    a. Insert each \#5 bolts through all six halls of board \#2 
-    
-    b. Insert each \#5 bolts into \#6 bearings 
-    
-    c. Assemble Touchscreen and above board \#2 which is already assembled with \#5 bolts 
-    
-    d. Insert each \#5 bolts into \#6 bearings again 
-    
-    e. Assemble board \#1 and Touchscreen & board \#2 which are already assembled in above steps 
-    
-    f. Tighten the all \#5 bolts all \#7 nuts
+    1.  Insert each \#5 bolts through all six halls of board \#2
 
-3.  Make the Screen Holder using \#3, \#4, \#7, and \#8 
-    
-    a. Assemble the headers of \#8 bolts into each furrow of each side in \#4 bars
-    
-    b. Assemble sides of two \#4 bar and the furrows on \#3 panels
-    
-    c. Tighten the \#7 nuts
+    2.  Insert each \#5 bolts into \#6 bearings
+
+    3.  Assemble Touchscreen and above board \#2 which is already assembled with
+        \#5 bolts
+
+    4.  Insert each \#5 bolts into \#6 bearings again
+
+    5.  Assemble board \#1 and Touchscreen & board \#2 which are already
+        assembled in above steps
+
+    6.  Tighten the all \#5 bolts all \#7 nuts
+
+3.  Make the Screen Holder using \#3, \#4, \#7, and \#8
+
+    1.  Assemble the headers of \#8 bolts into each furrow of each side in \#4
+        bars
+
+    2.  Assemble sides of two \#4 bar and the furrows on \#3 panels
+
+    3.  Tighten the \#7 nuts
 
 Product Detail Site :
 http://www.waveshare.com/product/Bicolor-Case-for-7inch-LCD.htm
@@ -802,14 +804,13 @@ intensive tasks, it is still great for our small device.
 #### 2.6.5.2.1 Setting for Pi Camera
 
 We already explained how to connect Pi Camera to Raspberry Pi, but in order to
-control the Pi camera by python, you must install python-picamera also. 
+control the Pi camera by python, you must install python-picamera also.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
 sudo apt-get update sudo apt-get install python-picamera
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 If you are currently using Python3 package, you can install with below command
 
@@ -828,7 +829,7 @@ we chose the different touch screen, WaveShare LCD(c) which had IPS panel and
 more resolution with similar price, and it required below setting to use.
 
 First, open “config.txt” file which is located in the root of Raspberry Pi TF
-card Second, add these 4 lines in “config.txt” file 
+card Second, add these 4 lines in “config.txt” file
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
@@ -842,12 +843,12 @@ Third, save config.txt file and reboot Raspberry Pi Note: You must make sure
 that there are no spaces on either side of the equal sign. If the screen is
 displayed with not full size of touch screen, it means that configuration is not
 completed properly. Link for more Information:
-http://www.waveshare.com/wiki/7inch_HDMI_LCD_(C)
+http://www.waveshare.com/wiki/7inch\_HDMI\_LCD\_(C)
 
 #### 2.6.5.2.3 Setting for GPS Receiver
 
 To use GPS USB receiver, you also should install GPS on raspberry Pi with
-following commands, 
+following commands,
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
@@ -879,8 +880,8 @@ gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock
 
 If the operating system of your Raspberry Pi is the Raspberian Jessie not
 Wheezy, you wouldn’t be albe to see any texts in gpsd.hotplug file. In this
-case, you can set up your Raspberry Pi by following method, 
-• Type following command on terminal 
+case, you can set up your Raspberry Pi by following method, • Type following
+command on terminal
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
@@ -888,8 +889,8 @@ sudo nano /etc/default/gpsd
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-• Modify the gpsd as following lines START_DAEMON="true" GPSD_OPTIONS="n"
-DEVICES="/dev/ttyUSB0" USBAUTO="false" GPSD_SOCET="/var/run/gpsd.sock
+• Modify the gpsd as following lines START\_DAEMON="true" GPSD\_OPTIONS="n"
+DEVICES="/dev/ttyUSB0" USBAUTO="false" GPSD\_SOCET="/var/run/gpsd.sock
 
 • Save this, then restart the GPS with below command
 
@@ -905,9 +906,10 @@ If you finish setting it up, you can check GPS working with cgps -s command
 
 There are various open source frameworks package for GUI programming by Python,
 but in this project, we will make GUI by PyQt, one of the most popular and
-powerful GUI packages. 
+powerful GUI packages.
 
-In order to use PyQt, you have to download and install it using following command 
+In order to use PyQt, you have to download and install it using following
+command
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
@@ -915,8 +917,8 @@ sudo apt-get install python-qt4
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In addition, we also need to install several tools, and you can install them with
-following command 
+In addition, we also need to install several tools, and you can install them
+with following command
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
@@ -953,11 +955,12 @@ while True:
             sendAlert(vidName)
             print("File sent");
 "        
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #### 2.6.5.2.6 Programming to Upload a Video File into Server
-We also have to make the code for uploading video files into server.
-In this project, we will transfer our files to server by using Python Ftp Library
+
+We also have to make the code for uploading video files into server. In this
+project, we will transfer our files to server by using Python Ftp Library
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
@@ -973,7 +976,7 @@ ftp_connection = ftplib.FTP(server, username, password)
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After above, we should define where the transferred file needs to be stored. 
+After above, we should define where the transferred file needs to be stored.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 "
@@ -1035,12 +1038,15 @@ db.close()
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+1.  Call the MySQLdb module from Python Libarary
 
-1. Call the MySQLdb module from Python Libarary 
-2. Connect the target SQL
-3. Declare cursor object using cursor() method 
-4. Write the specified SQL Query command we want to use 
-5. Close the database
+2.  Connect the target SQL
+
+3.  Declare cursor object using cursor() method
+
+4.  Write the specified SQL Query command we want to use
+
+5.  Close the database
 
 #### 2.6.5.2.8 Programming to make a Thread Function
 
@@ -1086,7 +1092,6 @@ import thread
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 #### 2.6.5.2.9 GUI Programming with Qt Design
 
 We need to design a simple graphic interface because our devices don’t support
@@ -1097,13 +1102,10 @@ get this Qt Design when we installed PyQt.
 
 ![PyQt](documentation/PyQt.jpg)
 
-1.Run Qt Design and open new project and file
-2.Set up dialog size as around 400 x 300
-3.Change window title to “Autacc Car Blackbox”
-4.Add 5 of “Push Button” by Drag and Drop the button icon in Widget box
-5.Change text of 5 buttons as functions’ names
-6.Add “Text Edit” with same way
-7.Save this to ui format file 
+1.Run Qt Design and open new project and file 2.Set up dialog size as around 400
+x 300 3.Change window title to “Autacc Car Blackbox” 4.Add 5 of “Push Button” by
+Drag and Drop the button icon in Widget box 5.Change text of 5 buttons as
+functions’ names 6.Add “Text Edit” with same way 7.Save this to ui format file
 
 When you finish making a simple graphic user interface with Qt design, you can
 save a file with ui format. You should, therefore, convert it to python format,
@@ -1115,7 +1117,6 @@ sudo pyuic4 input.ui -o output.py
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 Note: If you are using PyQt5 not PyQt4, you can use below command instead of
 above.
 
@@ -1125,22 +1126,19 @@ sudo pyuic5 input.ui -o output.py
 "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 #### 2.6.5.2.10 Programming of Event Handler for Graphic User Interface.
 
 We have made a simple GUI in previous step, but it was only for Graphical
 Interface such as button. Now we should add event handlers for each button. Here
-is the basic code for event handling. 
-(Button’s name).clicked.connet(Handler Name)
-For example, in case that we want call recordinfThread class from
+is the basic code for event handling. (Button’s name).clicked.connet(Handler
+Name) For example, in case that we want call recordinfThread class from
 testdrive.py whenever we clicked “Start Recording” Button, We can make these
-functions by adding following codes in GUI phython file 
+functions by adding following codes in GUI phython file
 
 1.Add import testdrive  
-2.Declare the name for the recordingThread function 
-Instance =  testdrive.recordingThread(); 
-3.Make the connection between event handler and
-specified button which we made. 
+2.Declare the name for the recordingThread function Instance =
+testdrive.recordingThread(); 3.Make the connection between event handler and
+specified button which we made.
 
 pushButton.clicked.connet(instance)
 
@@ -1370,7 +1368,7 @@ application interects with the server.
 
 *Reminder* We removed the website name that we used for the php files for your
 own reproducibility. We used google maps api so make sure to visit their website
-to generate your OWN google_maps_key. Here is the link to the google's website
+to generate your OWN google\_maps\_key. Here is the link to the google's website
 for generating the google map key:
 https://developers.google.com/maps/documentation/javascript/get-api-key.
 
@@ -1384,8 +1382,8 @@ then passes the information through intent to the next activity which is
 ReportList.java.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
 package galaxynoise.autaccreport;
+
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -1531,17 +1529,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-
-"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
 
 MainActivity, opening display and login activity for the user.
 
 ![Main Activity](documentation/mainactivity.png)
-
 
 ##### ReportList.java
 
@@ -1552,210 +1544,234 @@ data of incident, location of the incident (longitude and latitude), and the
 video name.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-"
-package galaxynoise.autaccreport; import
-android.content.DialogInterface; import android.content.Intent; import
-android.database.Cursor; import android.os.AsyncTask; import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton; import
-android.support.design.widget.Snackbar; import
-android.support.v7.app.AlertDialog; import
-android.support.v7.app.AppCompatActivity; import
-android.support.v7.widget.Toolbar; import android.util.Log; import
-android.util.SparseBooleanArray; import android.view.View; import
-android.widget.AdapterView; import android.widget.ListAdapter; import
-android.widget.ListView; import android.widget.SimpleAdapter; import
-android.widget.TextView; import android.widget.Toast; import org.json.JSONArray;
-import org.json.JSONException; import org.json.JSONObject; import
-java.io.IOException; import java.io.InputStream; import java.io.OutputStream;
-import java.net.HttpURLConnection; import java.net.MalformedURLException; import
-java.net.URL; import java.util.ArrayList; import java.util.HashMap; import
-static android.R.attr.data; import static android.R.id.list;
+package galaxynoise.autaccreport; 
+import android.content.DialogInterface; 
+import android.content.Intent; 
+import android.database.Cursor; 
+import android.os.AsyncTask; 
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton; 
+import android.support.design.widget.Snackbar; 
+import android.support.v7.app.AlertDialog; 
+import android.support.v7.app.AppCompatActivity; 
+import android.support.v7.widget.Toolbar; 
+import android.util.Log; 
+import android.util.SparseBooleanArray; 
+import android.view.View; 
+import android.widget.AdapterView; 
+import android.widget.ListAdapter; 
+import android.widget.ListView; 
+import android.widget.SimpleAdapter; 
+import android.widget.TextView; import android.widget.Toast; 
+import org.json.JSONArray; 
+import org.json.JSONException; 
+import org.json.JSONObject; 
+import java.io.IOException; 
+import java.io.InputStream; 
+import java.io.OutputStream;
+import java.net.HttpURLConnection; 
+import java.net.MalformedURLException; 
+import java.net.URL; 
+import java.util.ArrayList; 
+import java.util.HashMap; 
+import static android.R.attr.data; 
+import static android.R.id.list;
 
-public class ReportList extends AppCompatActivity { ListView listIncident;
-public static boolean isListempty =true; Intent currIntent; //PatientAdapter
-patientAdapter; ArrayList\> infolist = new ArrayList\<\>(3); private String TAG
-= ReportList.class.getSimpleName(); TextView tvnews; String id;
+public class ReportList extends AppCompatActivity {
 
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_report_list);
-    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-    setSupportActionBar(toolbar);
+    ListView listIncident;
+    public static boolean isListempty =true;
+    Intent currIntent;
+    //PatientAdapter patientAdapter;
+    ArrayList<HashMap<String, String>> infolist = new ArrayList<>(3);
+    private String TAG = ReportList.class.getSimpleName();
+    TextView tvnews;
+    String id;
 
-    String id=null, username ;
-    final Intent testIntent = new Intent(getApplicationContext(), VidActivity.class);
-    Intent intent = getIntent();
-    Bundle b = intent.getExtras();
-    if (b != null) {
-        id =  (String)b.get("uid");
-        username =  (String)b.get("name");
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_report_list);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        String id=null, username ;
+        final Intent testIntent = new Intent(getApplicationContext(), VidActivity.class);
+        Intent intent = getIntent();
+        Bundle b = intent.getExtras();
+        if (b != null) {
+            id =  (String)b.get("uid");
+            username =  (String)b.get("name");
+        }
+
+        listIncident=(ListView) findViewById(R.id.listAll);
+        tvnews=(TextView)findViewById((R.id.tvnews));
+      //  showIncidenttList(user);
+        GetInfo info = new GetInfo();
+        info.execute(id);
+        listIncident.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position,long arg3) {
+                view.setSelected(true);
+                //Toast.makeText(ReportList.this, "Selected!", Toast.LENGTH_SHORT).show();
+                HashMap<String,String> map =(HashMap<String,String>)listIncident.getItemAtPosition(position);
+                String reportid = map.get("reportid");
+                String idate = map.get("incidentdate");
+                String longi = map.get("longi");
+                String lati = map.get("lati");
+                String videoName = map.get("videoName");
+                //String name= map.get(TAG_NAME);
+                Toast.makeText(ReportList.this, "ReportId:"+ reportid+"is selected.", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(ReportList.this, VidActivity.class);
+                i.putExtra("reportid", reportid);
+                i.putExtra("incidentdate", idate);
+                i.putExtra("longi", longi);
+                i.putExtra("lati", lati);
+                i.putExtra("videoName", videoName);
+                startActivity(i);
+            }
+        });
     }
 
-    listIncident=(ListView) findViewById(R.id.listAll);
-    tvnews=(TextView)findViewById((R.id.tvnews));
-  //  showIncidenttList(user);
-    GetInfo info = new GetInfo();
-    info.execute(id);
-    listIncident.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    /**
+     * Async task class to get json by making HTTP call
+     */
+     class GetInfo extends AsyncTask<String, Void, Void> {
+
         @Override
-        public void onItemClick(AdapterView< ?> parent, View view, int position,long arg3) {
-            view.setSelected(true);
-            //Toast.makeText(ReportList.this, "Selected!", Toast.LENGTH_SHORT).show();
-            HashMap<String,String> map =(HashMap<String,String>)listIncident.getItemAtPosition(position);
-            String reportid = map.get("reportid");
-            String idate = map.get("incidentdate");
-            String longi = map.get("longi");
-            String lati = map.get("lati");
-            String videoName = map.get("videoName");
-            //String name= map.get(TAG_NAME);
-            Toast.makeText(ReportList.this, "ReportId:"+ reportid+"is selected.", Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(ReportList.this, VidActivity.class);
-            i.putExtra("reportid", reportid);
-            i.putExtra("incidentdate", idate);
-            i.putExtra("longi", longi);
-            i.putExtra("lati", lati);
-            i.putExtra("videoName", videoName);
-            startActivity(i);
-        }
-    });
-}
+        protected void onPreExecute() {
+            super.onPreExecute();
+            // Showing progress dialog
 
-/**
- * Async task class to get json by making HTTP call
- */
- class GetInfo extends AsyncTask<String, Void, Void> {
-
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-        // Showing progress dialog
-
-    }
-
-    @Override
-    protected Void doInBackground(String... params) {
-        String uid = params[0];
-        HTTPHandler sh = new HTTPHandler();
-        String data="";
-        int tmp;
-        // Making a request to url and getting response
-        //String uri = "http://websitename.com/app/incident.php";
-        //String jsonStr = sh.makeServiceCall(uri);
-        try {
-            URL url = new URL("http://websitename.com/app/incident.php");
-            String urlParams = "uid="+uid;
-
-            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-            httpURLConnection.setDoOutput(true);
-            OutputStream os = httpURLConnection.getOutputStream();
-            os.write(urlParams.getBytes());
-            os.flush();
-            os.close();
-
-            InputStream is = httpURLConnection.getInputStream();
-            while((tmp=is.read())!=-1){
-                data+= (char)tmp;
-            }
-            is.close();
-            httpURLConnection.disconnect();
-
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-            //return "Exception: "+e.getMessage();
-        } catch (IOException e) {
-            e.printStackTrace();
-           // return "Exception: "+e.getMessage();
         }
 
-        //Log.e(TAG, "Response from url: " + jsonStr);
-
-        if (data != null) {
+        @Override
+        protected Void doInBackground(String... params) {
+            String uid = params[0];
+            HTTPHandler sh = new HTTPHandler();
+            String data="";
+            int tmp;
+            // Making a request to url and getting response
+            //String uri = "http://semjerome.com/app/incident.php";
+            //String jsonStr = sh.makeServiceCall(uri);
             try {
-                JSONObject mainJsonObject = new JSONObject(data);
-                // Log.d("JSON Data : ", mainJsonObject.toString());
+                URL url = new URL("http://semjerome.com/app/incident.php");
+                String urlParams = "uid="+uid;
 
-                infolist.clear();
-                JSONArray mainArray = mainJsonObject.getJSONArray("Incident");
-                // Log.d("JSON Array : ", mainArray.toString());
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setDoOutput(true);
+                OutputStream os = httpURLConnection.getOutputStream();
+                os.write(urlParams.getBytes());
+                os.flush();
+                os.close();
 
-                for (int i = 0; i < mainArray.length(); i++) {
-
-                    JSONObject incidentJsonObject = mainArray.getJSONObject(i);
-
-                            if (incidentJsonObject != null) {
-
-                                String reportid = incidentJsonObject
-                                        .getString("reportid");
-                                Log.d("Inside JSON LongName : ", reportid);
-                                String incidentdate = incidentJsonObject
-                                        .getString("incidentdate");
-                                String longi = incidentJsonObject
-                                        .getString("longi");
-                                String lati = incidentJsonObject
-                                        .getString("lati");
-                                String videoName = incidentJsonObject
-                                        .getString("videoName");
-
-                                HashMap<String, String> info = new HashMap<>();
-                                info.put("reportid", reportid);
-                                info.put("incidentdate", incidentdate);
-                                info.put("longi", longi);
-                                info.put("lati", lati);
-                                info.put("videoName", videoName);
-
-                                // adding contact to contact list
-                                infolist.add(info);
-                        }
+                InputStream is = httpURLConnection.getInputStream();
+                while((tmp=is.read())!=-1){
+                    data+= (char)tmp;
                 }
+                is.close();
+                httpURLConnection.disconnect();
 
-            } catch (JSONException e) {
-                // TODO Auto-generated catch block
+
+            } catch (MalformedURLException e) {
                 e.printStackTrace();
+                //return "Exception: "+e.getMessage();
+            } catch (IOException e) {
+                e.printStackTrace();
+               // return "Exception: "+e.getMessage();
             }
 
-        }
+            //Log.e(TAG, "Response from url: " + jsonStr);
 
-        return null;
-    }
+            if (data != null) {
+                try {
+                    JSONObject mainJsonObject = new JSONObject(data);
+                    // Log.d("JSON Data : ", mainJsonObject.toString());
 
-    @Override
-    protected void onPostExecute (Void result){
-        super.onPostExecute(result);
-        // Dismiss the progress dialog
-        /**
-         * Updating parsed JSON data into ListView
-         **/
-        if (infolist.size() > 0) {
-            ListAdapter adapter = new SimpleAdapter(
-                    ReportList.this, infolist,
-                    R.layout.content_report_list, new String[]{"reportid", "incidentdate", "longi", "lati", "videoName"}, new int[]                         {R.id.tvreportName,
-                    R.id.tvdate, R.id.tvLongi, R.id.tvLati, R.id.tvVid});
-            listIncident.setAdapter(adapter);
-        }
-        else
-        {
-            tvnews.setText(R.string.news);
-        }
-    }
-}
-@Override
-public void onBackPressed() {
-    new AlertDialog.Builder(this)
-            .setTitle("Exit")
-            .setMessage("You want to sign out?")
-            .setNegativeButton(android.R.string.no, null)
-            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    infolist.clear();
+                    JSONArray mainArray = mainJsonObject.getJSONArray("Incident");
+                    // Log.d("JSON Array : ", mainArray.toString());
 
-                public void onClick(DialogInterface arg0, int arg1) {
-                    ReportList.super.onBackPressed();
+                    for (int i = 0; i < mainArray.length(); i++) {
+
+                        JSONObject incidentJsonObject = mainArray.getJSONObject(i);
+
+                                if (incidentJsonObject != null) {
+
+                                    String reportid = incidentJsonObject
+                                            .getString("reportid");
+                                    Log.d("Inside JSON LongName : ", reportid);
+                                    String incidentdate = incidentJsonObject
+                                            .getString("incidentdate");
+                                    String longi = incidentJsonObject
+                                            .getString("longi");
+                                    String lati = incidentJsonObject
+                                            .getString("lati");
+                                    String videoName = incidentJsonObject
+                                            .getString("videoName");
+
+                                    HashMap<String, String> info = new HashMap<>();
+                                    info.put("reportid", reportid);
+                                    info.put("incidentdate", incidentdate);
+                                    info.put("longi", longi);
+                                    info.put("lati", lati);
+                                    info.put("videoName", videoName);
+
+                                    // adding contact to contact list
+                                    infolist.add(info);
+                            }
+
+
+                    }
+
+                } catch (JSONException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
                 }
-            }).create().show();
+
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute (Void result){
+            super.onPostExecute(result);
+            // Dismiss the progress dialog
+            /**
+             * Updating parsed JSON data into ListView
+             **/
+            if (infolist.size() > 0) {
+                ListAdapter adapter = new SimpleAdapter(
+                        ReportList.this, infolist,
+                        R.layout.content_report_list, new String[]{"reportid", "incidentdate", "longi", "lati", "videoName"}, new int[]{R.id.tvreportName,
+                        R.id.tvdate, R.id.tvLongi, R.id.tvLati, R.id.tvVid});
+                listIncident.setAdapter(adapter);
+            }
+            else
+            {
+                tvnews.setText(R.string.news);
+            }
+        }
+    }
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setTitle("Exit")
+                .setMessage("You want to sign out?")
+                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        ReportList.super.onBackPressed();
+                    }
+                }).create().show();
+    }
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-} " \~\~\~\~ ReportList display layout
+ReportList display layout
 
 ![Report List](documentation/reportlist.png)
 
@@ -1763,178 +1779,209 @@ public void onBackPressed() {
 
 Activity for all the fragments in PageFragment.java. Mainly used for the design
 and display in the viewpager as well as menu options on the top right hand side
-of the application. \~\~\~\~ " package galaxynoise.autaccreport; //Team name
-Galaxy Noise import android.content.Context; import android.content.Intent;
-import android.graphics.drawable.Drawable; import android.net.Uri; import
-android.os.Bundle; import android.support.design.widget.TabLayout; import
-android.support.v4.app.Fragment; import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter; import
-android.support.v4.content.ContextCompat; import
-android.support.v4.view.ViewPager; import
-android.support.v7.app.AppCompatActivity; import android.view.Menu; import
-android.view.MenuItem; import android.view.View;
-
-public class VidActivity extends AppCompatActivity implements
-View.OnClickListener { int drawables[] = { R.drawable.ic_car,
-R.drawable.ic_driver, R.drawable.ic_location, R.drawable.ic_video };
+of the application.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-String reportid;
-String incidentdate;
-String longitude;
-String latitude;
-String videoName;
+package galaxynoise.autaccreport;
 
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    //requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_vid);
-    //getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.fragment_car);
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 
-    Intent i =  getIntent();
+public class VidActivity extends AppCompatActivity implements View.OnClickListener {
+    int drawables[] = {
+            R.drawable.ic_car,
+            R.drawable.ic_driver,
+            R.drawable.ic_location,
+            R.drawable.ic_video
+    };
 
-    ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-    viewPager.setAdapter(new SampleFragmentPagerAdapter(getSupportFragmentManager(),
-            VidActivity.this));
+    String reportid;
+    String incidentdate;
+    String longitude;
+    String latitude;
+    String videoName;
 
-    // Give the TabLayout the ViewPager
-    TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
-    tabLayout.setupWithViewPager(viewPager);
-
-    tabLayout.getTabAt(0).setIcon(drawables[0]);
-    tabLayout.getTabAt(1).setIcon(drawables[1]);
-    tabLayout.getTabAt(2).setIcon(drawables[2]);
-    tabLayout.getTabAt(3).setIcon(drawables[3]);
-
-}
-
-public String [] getFromReport()
-{
-    String fromReport [] = {reportid, incidentdate, longitude, latitude, videoName};
-    return fromReport;
-}
-
-public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
-    final int PAGE_COUNT = 4;
-    private Context context;
-    private String tabTitles[] = new String[] { "Car Info","Driver", "Location","Video" };
-    Drawable myDrawable;
-    String title;
-
-    public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
-        super(fm);
-        this.context = context;
-    }
-    
     @Override
-    public int getCount() {
+    protected void onCreate(Bundle savedInstanceState) {
+        //requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_vid);
+        //getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.fragment_car);
 
-        return PAGE_COUNT;
+        //get DATA could include car
+
+        Intent i =  getIntent();
+        /*String pn = intent.getStringExtra("plate_number");
+        String brand = intent.getStringExtra("brand");
+        String model =intent.getStringExtra("model");
+        String year =intent.getStringExtra("year");
+
+        String fname = intent.getStringExtra("first_name");
+        String  lname =intent.getStringExtra("last_name");
+        String  license = intent.getStringExtra("license");
+        String gender= intent.getStringExtra("gender");
+        String insurance = intent.getStringExtra("insurance");*/
+
+        reportid = i.getStringExtra("reportid");
+        incidentdate =i.getStringExtra("incidentdate");
+        longitude= i.getStringExtra("longi");
+        latitude= i.getStringExtra("lati");
+        videoName =i.getStringExtra("videoName");
+
+        //getDataFromReportList();
+
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(new SampleFragmentPagerAdapter(getSupportFragmentManager(),
+                VidActivity.this));
+
+        // Give the TabLayout the ViewPager
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(drawables[0]);
+        tabLayout.getTabAt(1).setIcon(drawables[1]);
+        tabLayout.getTabAt(2).setIcon(drawables[2]);
+        tabLayout.getTabAt(3).setIcon(drawables[3]);
+
     }
-    
-    @Override
-    public CharSequence getPageTitle(int position)
+
+    public String [] getFromReport()
     {
-        switch (position) {
-            case 0:
-                return tabTitles[0];
-            //return tabTitles[0];
-            case 1:
-                return tabTitles[1];
-            //return tabTitles[1];
-            case 2:
-                return tabTitles[2];
-            //return tabTitles[2];
-            case 3:
-                return tabTitles[3];
+        String fromReport [] = {reportid, incidentdate, longitude, latitude, videoName};
+        return fromReport;
+    }
+
+    public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
+        final int PAGE_COUNT = 4;
+        private Context context;
+        private String tabTitles[] = new String[] { "Car Info","Driver", "Location","Video" };
+        Drawable myDrawable;
+        String title;
+
+        public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
+            super(fm);
+            this.context = context;
         }
-        return "";
+
+        @Override
+        public int getCount() {
+
+            return PAGE_COUNT;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position)
+        {
+            switch (position) {
+                case 0:
+                    return tabTitles[0];
+                //return tabTitles[0];
+                case 1:
+                    return tabTitles[1];
+                //return tabTitles[1];
+                case 2:
+                    return tabTitles[2];
+                //return tabTitles[2];
+                case 3:
+                    return tabTitles[3];
+            }
+            return "";
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+
+            return PageFragmentVid.create(position + 1);
+        }
     }
-    
     @Override
-    public Fragment getItem(int position) {
-
-        return PageFragmentVid.create(position + 1);
+    // Handle the Back Key
+    public void onBackPressed() {
+        finish();
     }
-}
-@Override
-// Handle the Back Key
-public void onBackPressed() {
-    finish();
-}
-@Override
-public void onClick(View v) {
+    @Override
+    public void onClick(View v) {
 
-}
-public boolean onCreateOptionsMenu(Menu menu) {
-    // Inflate the menu; this adds items to the action bar if it is present.
-    getMenuInflater().inflate(R.menu.menu, menu);
-    return true;
-}
-
-@Override
-public boolean onOptionsItemSelected(MenuItem menu) {
-    // Inflate the menu; this adds items to the action bar if it is present.
-    Intent intent = null;
-
-    switch (menu.getItemId())
-    {
-        //Product website
-        case R.id.about:
-            intent = new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("http://websitename.com"));
-            startActivity(intent);
-            break;
-
-        //Insurance auto claims phone number
-        case R.id.CAA:
-            try {
-                intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-800-387-2656"));
-                startActivity(intent);
-            } catch (Exception e) {
-            }
-            break;
-        case R.id.TD:
-            try {
-                intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-800-293-4941"));
-                startActivity(intent);
-            } catch (Exception e) {
-
-            }
-            break;
-        case R.id.RBC:
-            try {
-                intent= new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-877-748-7224"));
-                startActivity(intent);
-            } catch (Exception e) {
-
-            }
-            break;
-        case R.id.Desj:
-            try {
-                intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-888-776-8343"));
-                startActivity(intent);
-            } catch (Exception e) {
-
-            }
-            break;
-        case R.id.Farm:
-            try {
-                intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "855-209-9549"));
-                startActivity(intent);
-            } catch (Exception e) {
-
-            }
-            break;
     }
-    return super.onOptionsItemSelected(menu);
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        Intent intent = null;
+
+        switch (menu.getItemId())
+        {
+            //Product website
+            case R.id.about:
+                intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://semjerome.com"));
+                startActivity(intent);
+                break;
+
+            //Insurance auto claims phone number
+            case R.id.CAA:
+                try {
+                    intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-800-387-2656"));
+                    startActivity(intent);
+                } catch (Exception e) {
+                }
+                break;
+            case R.id.TD:
+                try {
+                    intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-800-293-4941"));
+                    startActivity(intent);
+                } catch (Exception e) {
+
+                }
+                break;
+            case R.id.RBC:
+                try {
+                    intent= new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-877-748-7224"));
+                    startActivity(intent);
+                } catch (Exception e) {
+
+                }
+                break;
+            case R.id.Desj:
+                try {
+                    intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "1-888-776-8343"));
+                    startActivity(intent);
+                } catch (Exception e) {
+
+                }
+                break;
+            case R.id.Farm:
+                try {
+                    intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "855-209-9549"));
+                    startActivity(intent);
+                } catch (Exception e) {
+
+                }
+                break;
+
+        }
+        return super.onOptionsItemSelected(menu);
+    }
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-}
-
-" \~\~\~\~
 
 ##### PageFragmentVid.java
 
@@ -1943,627 +1990,450 @@ displayed by the mobile application. The fragments call the php files required
 to get information such as driver's information, car details, coordinates of
 incident, and video file directory. The php files that we use, transforms the
 data in the database into a formattable JSON file where we extract all the
-information from. \~\~\~\~ " package galaxynoise.autaccreport; /\*\* //Team name
-Galaxy Noise \* Created by Zaido on 2016-11-13. \*/ import android.Manifest;
-import android.app.ProgressDialog; import android.content.Context; import
-android.content.Intent; import android.content.pm.PackageManager; import
-android.location.Address; import android.location.Geocoder; import
-android.net.Uri; import android.os.AsyncTask; import android.os.Bundle; import
-android.support.v4.app.ActivityCompat; import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat; import android.util.Log; import
-android.view.LayoutInflater; import android.view.View; import
-android.view.ViewGroup; import android.widget.AutoCompleteTextView; import
-android.widget.Button; import android.widget.EditText; import
-android.widget.ListAdapter; import android.widget.MediaController; import
-android.widget.SimpleAdapter; import android.widget.TextView; import
-android.widget.Toast; import android.widget.VideoView; import
-com.google.android.gms.location.LocationServices; import
-com.google.android.gms.maps.CameraUpdateFactory; import
-com.google.android.gms.maps.GoogleMap; import
-com.google.android.gms.maps.MapView; import
-com.google.android.gms.maps.MapsInitializer; import
-com.google.android.gms.maps.OnMapReadyCallback; import
-com.google.android.gms.maps.model.CameraPosition; import
-com.google.android.gms.maps.model.LatLng; import
-com.google.android.gms.maps.model.MarkerOptions; import org.json.JSONArray;
-import org.json.JSONException; import org.json.JSONObject; import
-java.io.BufferedInputStream; import java.io.BufferedReader; import
-java.io.IOException; import java.io.InputStream; import
-java.io.InputStreamReader; import java.io.OutputStream; import
-java.net.HttpURLConnection; import java.net.MalformedURLException; import
-java.net.ProtocolException; import java.net.URL; import java.util.ArrayList;
-import java.util.HashMap; import java.util.List;
-
-public class PageFragmentVid extends Fragment { public static final String
-ARG_PAGE = "ARG_PAGE"; AutoCompleteTextView actMake; AutoCompleteTextView
-actModel; AutoCompleteTextView actYear;
+information from.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-EditText etPN;
-EditText  etBrand;
-EditText  etModel;
-EditText etYear;
+package galaxynoise.autaccreport;
+/** //Team name Galaxy Noise
+ * Created by Zaido on 2016-11-13.
+ */
+import android.Manifest;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListAdapter;
+import android.widget.MediaController;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.VideoView;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
-EditText etFname;
-EditText  etLname;
-EditText  etLicense;
-EditText etGender;
-EditText etInsurance;
+public class PageFragmentVid extends Fragment {
+    public static final String ARG_PAGE = "ARG_PAGE";
+    AutoCompleteTextView actMake;
+    AutoCompleteTextView actModel;
+    AutoCompleteTextView actYear;
 
-String [] myData;
-private int mPage;
+    EditText etPN;
+    EditText  etBrand;
+    EditText  etModel;
+    EditText etYear;
 
-//Boolean for checking database
-public static boolean isDriverEmpty;
-public static boolean isCarEmpty;
+    EditText etFname;
+    EditText  etLname;
+    EditText  etLicense;
+    EditText etGender;
+    EditText etInsurance;
 
-String PLATENUMBER= null;
-String CARMAKE= null;
-String CARMODEL= null;
-String CARYEAR = null;
+    String [] myData;
+    private int mPage;
 
-String DRIVERLICENSE = null, FNAME=null,LNAME = null, GENDER = null, INSURANCENUMBER = null;
-String reportid;
-//JSON
-private ProgressDialog pDialog;
-private String TAG = VidActivity.class.getSimpleName();
+    //Boolean for checking database
+    public static boolean isDriverEmpty;
+    public static boolean isCarEmpty;
 
-//Arraylist
-ArrayList<HashMap<String, String>> carinfo = new ArrayList<>(3);
-ArrayList<HashMap<String, String>> driverinfo = new ArrayList<>(3);
+    String PLATENUMBER= null;
+    String CARMAKE= null;
+    String CARMODEL= null;
+    String CARYEAR = null;
 
-Button btnCarAdd;
-Button btnDriverAdd;
+    String DRIVERLICENSE = null, FNAME=null,LNAME = null, GENDER = null, INSURANCENUMBER = null;
+    String reportid;
+    //JSON
+    private ProgressDialog pDialog;
+    private String TAG = VidActivity.class.getSimpleName();
 
-View view;
-// Identifier for the permission request
-private static final int READ_CONTACTS_PERMISSIONS_REQUEST = 1;
+    //Arraylist
+    ArrayList<HashMap<String, String>> carinfo = new ArrayList<>(3);
+    ArrayList<HashMap<String, String>> driverinfo = new ArrayList<>(3);
 
-//hello
-public static PageFragmentVid create(int page) {
-    Bundle args = new Bundle();
-    args.putInt(ARG_PAGE, page);
-    PageFragmentVid fragment = new PageFragmentVid();
-    fragment.setArguments(args);
-    return fragment;
-}
+    Button btnCarAdd;
+    Button btnDriverAdd;
 
-@Override
-public void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    mPage = getArguments().getInt(ARG_PAGE);
+    View view;
+    // Identifier for the permission request
+    private static final int READ_CONTACTS_PERMISSIONS_REQUEST = 1;
 
-}
-
-GoogleMap googleMap;
-MapView mMapView;
-MarkerOptions markerOptions;
-TextView tvReverseGeo;
-public String addressText;
-
-@Override
-public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                         Bundle savedInstanceState) {
-
-    VidActivity activity = (VidActivity) getActivity();
-    myData = activity.getFromReport();
-    reportid =myData[0];
-    /*
-        0 = reportid , 1 = incidentdate, 2 = longi, 3 = lati, 4 = vidname
-     */
-    if(mPage==1) //Car page
-    {
-        view = inflater.inflate(R.layout.fragment_car, container, false);
-        etPN = (EditText) view.findViewById(R.id.etPN);
-        etBrand= (EditText) view.findViewById(R.id.etBrand);
-        etModel= (EditText) view.findViewById(R.id.etModel);
-        etYear = (EditText) view.findViewById(R.id.etYear);
-
-        actMake = (AutoCompleteTextView) view.findViewById(R.id.actMake);
-        actModel = (AutoCompleteTextView) view.findViewById(R.id.actModel);
-        actYear = (AutoCompleteTextView) view.findViewById(R.id.actYear);
-
-        String carJson = loadCarJsonLocal();
-        try {
-            JSONObject json = new JSONObject(carJson);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        btnCarAdd = (Button)view.findViewById(R.id.btnCarAdd);
-
-        btnCarAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                executeAddCar();
-            }
-        });
-
-        GetCar b = new GetCar();
-        b.execute(reportid);
+    //hello
+    public static PageFragmentVid create(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        PageFragmentVid fragment = new PageFragmentVid();
+        fragment.setArguments(args);
+        return fragment;
     }
 
-    else if(mPage==2)//Driver
-    {
-        view= inflater.inflate(R.layout.fragment_driver,container, false);
-        String reportid = myData[0];
-        etLicense= (EditText) view.findViewById(R.id.etLicense);
-        etFname = (EditText) view.findViewById(R.id.etFname);
-        etLname= (EditText) view.findViewById(R.id.etLname);
-        etGender = (EditText) view.findViewById(R.id.etGender);
-        etInsurance = (EditText) view.findViewById(R.id.etInsurance);
-        btnDriverAdd =(Button)view.findViewById(R.id.btnDriverAdd);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mPage = getArguments().getInt(ARG_PAGE);
 
-        btnDriverAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                executeDriverAdd();
-            }
-        });
-
-        GetDriver g = new GetDriver();
-        g.execute(reportid);
     }
-    else if(mPage==3)
-    { //location
+
+    GoogleMap googleMap;
+    MapView mMapView;
+    MarkerOptions markerOptions;
+    TextView tvReverseGeo;
+    public String addressText;
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        VidActivity activity = (VidActivity) getActivity();
+        myData = activity.getFromReport();
+        reportid =myData[0];
         /*
-        0 = reportid , 1 = incidentdate, 2 = longi, 3 = lati, 4 = vidname
-     */
-        view = inflater.inflate(R.layout.fragment_eventlocation, container, false);
-        tvReverseGeo = (TextView)view.findViewById(R.id.tvReverseGeo);
+            0 = reportid , 1 = incidentdate, 2 = longi, 3 = lati, 4 = vidname
+         */
+        if(mPage==1) //Car page
+        {
+            view = inflater.inflate(R.layout.fragment_car, container, false);
+            etPN = (EditText) view.findViewById(R.id.etPN);
+            etBrand= (EditText) view.findViewById(R.id.etBrand);
+            etModel= (EditText) view.findViewById(R.id.etModel);
+            etYear = (EditText) view.findViewById(R.id.etYear);
 
-        mMapView = (MapView) view.findViewById(R.id.mapView);
-        mMapView.onCreate(savedInstanceState);
+            actMake = (AutoCompleteTextView) view.findViewById(R.id.actMake);
+            actModel = (AutoCompleteTextView) view.findViewById(R.id.actModel);
+            actYear = (AutoCompleteTextView) view.findViewById(R.id.actYear);
 
-        mMapView.onResume();
-
-        try{
-            MapsInitializer.initialize(getActivity().getApplicationContext());
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-
-        mMapView.getMapAsync(new OnMapReadyCallback() {
-            @Override
-            public void onMapReady(GoogleMap mMap) {
-                googleMap = mMap;
-                if(checkPermission())
-                googleMap.setMyLocationEnabled(true);
-
-                double longi = Double.parseDouble(myData[2]);
-                double lati = Double.parseDouble(myData[3]);
-                /*toronto
-                double lati = 43.579028;
-                double longi = -79.746524; */
-                LatLng event = new LatLng(lati,longi);
-                markerOptions = new MarkerOptions();
-
-                Log.d("tv: ","not set");
-                new ReverseGeoCodingTask(getContext()).execute(event);
-                String snippetAddress = tvReverseGeo.getText().toString();
-                googleMap.addMarker(markerOptions.position(event)
-                        .title("Event Location")
-                        .snippet(snippetAddress));
-
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(event).zoom(9).build();
-                googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-            }
-
-            private boolean checkPermission()
-            {
-                return (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION)
-                            == PackageManager.PERMISSION_GRANTED);
-            }
-
-        });
-    }
-    else if (mPage == 4)
-    { //video
-        view = inflater.inflate(R.layout.fragment_eventvideos, container, false);
-        String vidname = myData[4];
-        VideoView mVideoView  = (VideoView) view.findViewById(R.id.videoView);
-        MediaController mediaController = new MediaController(getActivity());
-        mediaController.setAnchorView(mVideoView);
-        mVideoView.setMediaController(mediaController);
-        String myPackage= "galaxynoise.autaccreport";
-        Uri uri = Uri.parse("http://www.websitename.com/Android/"+vidname+".mp4");
-        try{
-           mVideoView.setVideoURI(uri);
-            mVideoView.start();
-        }catch(Exception e){
-            Log.e("Error", e.getMessage());
-            e.printStackTrace();
-        }
-    }
-
-    else
-    {
-        view = inflater.inflate(R.layout.fragment_pager, container, false);
-        TextView textView = (TextView) view;
-        textView.setText("Fragment #" + mPage);
-    }
-
-    return view;
-}
-
-public String loadCarJsonLocal()
-{
-    String json = null;
-    try {
-
-        InputStream is = getContext().getAssets().open("car_makemodel.json");
-        int size = is.available();
-        byte[] buffer = new byte[size];
-        is.read(buffer);
-        is.close();
-        json = new String(buffer, "UTF-8");
-
-    } catch (IOException ex) {
-        ex.printStackTrace();
-        return null;
-    }
-
-    return json;
-
-}
-private class ReverseGeoCodingTask extends AsyncTask<LatLng, Void, String>{
-    Context mContext;
-    public ReverseGeoCodingTask(Context context){
-        super();
-        mContext = context;
-    }
-
-    @Override
-    protected String doInBackground(LatLng... params){
-        Geocoder geocoder  = new Geocoder(mContext);
-        double latitude = params[0].latitude;
-        double longitude = params[0].longitude;
-
-        List<Address> addresses = null;
-
-        try {
-            addresses = geocoder.getFromLocation(latitude, longitude,1);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        if(addresses!= null && addresses.size() > 0 ) {
-            addressText = addresses.get(0).getAddressLine(0) +"," +
-                    addresses.get(0).getLocality() +"," + addresses.get(0).getPostalCode() +
-                    ", " +addresses.get(0).getCountryName();
-        }
-
-        return addressText;
-
-    }
-
-    @Override
-    protected void onPostExecute(String addressText) {
-        // Setting the title for the marker.
-        // This will be displayed on taping the marker
-        // Placing a marker on the touched position
-        tvReverseGeo.setText(addressText);
-
-    }
-}
-
-/**
- car make and model reference, arthurkao, github repository,
- https://github.com/arthurkao/vehicle-make-model-data
- **/
-void executeAddCar()
-{
-    PLATENUMBER = etPN.getText().toString();
-    CARMAKE = etBrand.getText().toString();
-    CARMODEL = etBrand.getText().toString();
-    CARYEAR = etYear.getText().toString();
-    AddCar a = new AddCar();
-    a.execute(PLATENUMBER, CARMAKE, CARMODEL, CARYEAR,reportid);
-}
-
-class AddCar extends AsyncTask<String, String, String> {
-    @Override
-    protected String doInBackground(String... params) {
-        String platenumber = params[0];
-        String carmake = params[1];
-        String carmodel = params[2];
-        String caryear = params[3];
-        String reportid = params[4];
-        String data="";
-        int tmp;
-
-        try {
-            URL url;
-
-            if(isCarEmpty==true) {
-                url = new URL("http://websitename.com/app/addCar.php");
-                isCarEmpty=false;
-            }
-            else
-            {
-                url = new URL("http://websitename.com/app/updateCar.php");
-            }
-
-            String urlParams = "platenumber="+platenumber+"&carmake="+carmake+"&carmodel="
-                    +carmodel+"&caryear="+caryear+"&reportid="+reportid;
-
-            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-            httpURLConnection.setDoOutput(true);
-            OutputStream os = httpURLConnection.getOutputStream();
-            os.write(urlParams.getBytes());
-            os.flush();
-            os.close();
-
-            InputStream is = httpURLConnection.getInputStream();
-            while((tmp=is.read())!=-1){
-                data+= (char)tmp;
-            }
-
-            is.close();
-            httpURLConnection.disconnect();
-
-            return data;
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-            return "Exception: "+e.getMessage();
-        } catch (IOException e) {
-            e.printStackTrace();
-            return "Exception: "+e.getMessage();
-        }
-    }
-
-    @Override
-    protected void onPostExecute(String s) {
-        String err=null;
-
-        try {
-            JSONObject root = new JSONObject(s);
-            //JSONObject user_data = root.getJSONObject("User");
-
-            JSONObject car= root.getJSONObject("Car");
-
-            car.put("platenumber", PLATENUMBER);
-            car.put("carmake",CARMAKE);
-            car.put("carmodel",CARMODEL);
-            car.put("caryear",CARYEAR);
-            car.put("reportid",reportid);
-
-            Log.d("Storing to JSON plate: ", PLATENUMBER);
-            Log.d("Storing to JSON make: ", CARMAKE);
-            Log.d("Storing to JSON model: ", CARMODEL);
-
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-            err = "Exception: "+e.getMessage();
-        }
-        if(PLATENUMBER!=null) {
-            Toast.makeText(getActivity(), "Stored!", Toast.LENGTH_SHORT).show();
-        }
-        else{
-            Toast.makeText(getActivity(), "Fill in plate number", Toast.LENGTH_LONG).show();
-
-        }
-    }
-}
-
-//get Car
-class GetCar extends AsyncTask<String, Void, Void> {
-
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-        // Showing progress dialog
-
-    }
-
-    @Override
-    protected Void doInBackground(String... params) {
-        String reportid = params[0];
-        HTTPHandler sh = new HTTPHandler();
-        String data = "";
-        int tmp;
-        // Making a request to url and getting response
-        //String uri = "http://websitename.com/app/incident.php";
-        //String jsonStr = sh.makeServiceCall(uri);
-
-
-        try {
-            URL url = new URL("http://websitename.com/app/getCar.php");
-            String urlParams = "reportid=" + reportid;
-
-            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-            httpURLConnection.setDoOutput(true);
-            OutputStream os = httpURLConnection.getOutputStream();
-            os.write(urlParams.getBytes());
-            os.flush();
-            os.close();
-
-            InputStream is = httpURLConnection.getInputStream();
-            while ((tmp = is.read()) != -1) {
-                data += (char) tmp;
-            }
-
-            is.close();
-            httpURLConnection.disconnect();
-
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-            //return "Exception: "+e.getMessage();
-        } catch (IOException e) {
-            e.printStackTrace();
-            // return "Exception: "+e.getMessage();
-        }
-
-        //Log.e(TAG, "Response from url: " + jsonStr);
-
-        if (data != null) {
+            String carJson = loadCarJsonLocal();
             try {
-                JSONObject mainJsonObject = new JSONObject(data);
-                // Log.d("JSON Data : ", mainJsonObject.toString());
-
-                JSONArray mainArray = mainJsonObject.getJSONArray("Car");
-                // Log.d("JSON Array : ", mainArray.toString());
-
-                for (int i = 0; i < mainArray.length(); i++) {
-
-                    JSONObject incidentJsonObject = mainArray.getJSONObject(i);
-
-                    if (incidentJsonObject != null) {
-
-                        String platenumber = incidentJsonObject
-                                .getString("platenumber");
-                        String carmake = incidentJsonObject
-                                .getString("carmake");
-                        String carmodel = incidentJsonObject
-                                .getString("carmodel");
-                        String caryear = incidentJsonObject
-                                .getString("caryear");
-
-                        HashMap<String, String> info = new HashMap<>();
-                        info.put("platenumber", platenumber);
-                        info.put("carmake", carmake);
-                        info.put("carmodel", carmodel);
-                        info.put("caryear", caryear);
-
-                        // adding contact to contact list
-                        carinfo.add(info);
-                    }
-
-
-                }
-
-            } catch (JSONException e) {
-                // TODO Auto-generated catch block
+                JSONObject json = new JSONObject(carJson);
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
+            btnCarAdd = (Button)view.findViewById(R.id.btnCarAdd);
+
+            btnCarAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    executeAddCar();
+                }
+            });
+
+            GetCar b = new GetCar();
+            b.execute(reportid);
         }
 
-        return null;
-    }
+        else if(mPage==2)//Driver
+        {
+            view= inflater.inflate(R.layout.fragment_driver,container, false);
+            String reportid = myData[0];
+            etLicense= (EditText) view.findViewById(R.id.etLicense);
+            etFname = (EditText) view.findViewById(R.id.etFname);
+            etLname= (EditText) view.findViewById(R.id.etLname);
+            etGender = (EditText) view.findViewById(R.id.etGender);
+            etInsurance = (EditText) view.findViewById(R.id.etInsurance);
+            btnDriverAdd =(Button)view.findViewById(R.id.btnDriverAdd);
 
-    @Override
-    protected void onPostExecute(Void result) {
-        super.onPostExecute(result);
-        // Dismiss the progress dialog
+            btnDriverAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    executeDriverAdd();
+                }
+            });
 
-        /**
-         * Updating parsed JSON data into ListView
-         **/
-        if (carinfo.size() > 0) {
-            etPN.setText(carinfo.get(0).get("platenumber").toString());
-            etBrand.setText(carinfo.get(0).get("carmake").toString());
-            etModel.setText(carinfo.get(0).get("carmodel").toString());
-            etYear.setText(carinfo.get(0).get("caryear").toString());
-            isCarEmpty=false;
+            GetDriver g = new GetDriver();
+            g.execute(reportid);
         }
+        else if(mPage==3)
+        { //location
+            /*
+            0 = reportid , 1 = incidentdate, 2 = longi, 3 = lati, 4 = vidname
+         */
+            view = inflater.inflate(R.layout.fragment_eventlocation, container, false);
+            tvReverseGeo = (TextView)view.findViewById(R.id.tvReverseGeo);
+
+            mMapView = (MapView) view.findViewById(R.id.mapView);
+            mMapView.onCreate(savedInstanceState);
+
+            mMapView.onResume();
+
+            try{
+                MapsInitializer.initialize(getActivity().getApplicationContext());
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+
+            mMapView.getMapAsync(new OnMapReadyCallback() {
+                @Override
+                public void onMapReady(GoogleMap mMap) {
+                    googleMap = mMap;
+                    if(checkPermission())
+                    googleMap.setMyLocationEnabled(true);
+
+                    double longi = Double.parseDouble(myData[2]);
+                    double lati = Double.parseDouble(myData[3]);
+                    //toronto
+                    //double lati = 43.579028;
+                    //double longi = -79.746524;
+                    LatLng event = new LatLng(lati,longi);
+                    markerOptions = new MarkerOptions();
+
+                    Log.d("tv: ","not set");
+                    new ReverseGeoCodingTask(getContext()).execute(event);
+                    //Log.d("tv: ",addressText);
+                    String snippetAddress = tvReverseGeo.getText().toString();
+                    googleMap.addMarker(markerOptions.position(event)
+                            .title("Event Location")
+                            .snippet(snippetAddress));
+
+                    CameraPosition cameraPosition = new CameraPosition.Builder().target(event).zoom(9).build();
+                    googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                }
+
+                private boolean checkPermission()
+                {
+                    return (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION)
+                                == PackageManager.PERMISSION_GRANTED);
+                }
+
+            });
+        }
+        else if (mPage == 4)
+        { //video
+            view = inflater.inflate(R.layout.fragment_eventvideos, container, false);
+            //String videoUrl = "http://www.semjerome.com/Video_files/Family guy - archie take.3gp";
+            //Uri uri = Uri.parse(videoUrl);
+            String vidname = myData[4];
+            VideoView mVideoView  = (VideoView) view.findViewById(R.id.videoView);
+            MediaController mediaController = new MediaController(getActivity());
+            mediaController.setAnchorView(mVideoView);
+            mVideoView.setMediaController(mediaController);
+            String myPackage= "galaxynoise.autaccreport";
+            Uri uri = Uri.parse("http://www.semjerome.com/Android/"+vidname+".mp4");
+            try{
+               mVideoView.setVideoURI(uri);
+                mVideoView.start();
+            }catch(Exception e){
+                Log.e("Error", e.getMessage());
+                e.printStackTrace();
+            }
+            //MediaController videoMediaController = new MediaController(this);
+            //mVideoView.setVideoPath(mUrl);
+            //videoMediaController.setMediaPlayer(mVideoView);
+            //mVideoView.setMediaController(videoMediaController);
+        }
+
         else
         {
-            isCarEmpty=true;
+            view = inflater.inflate(R.layout.fragment_pager, container, false);
+            TextView textView = (TextView) view;
+            textView.setText("Fragment #" + mPage);
         }
 
+        return view;
     }
-}
 
-void executeDriverAdd()
-{
-    //DRIVERLICENSE = null, FNAME=null,LNAME = null, GENDER = null, INSURANCENUMBER = null;
-    DRIVERLICENSE = etLicense.getText().toString();
-    FNAME = etFname.getText().toString();
-    LNAME = etLname.getText().toString();
-    GENDER = etGender.getText().toString();
-    INSURANCENUMBER = etInsurance.getText().toString();
-
-    AddDriver a = new AddDriver();
-    a.execute(DRIVERLICENSE, FNAME, FNAME, GENDER,INSURANCENUMBER,reportid);
-}
-
-//ADDING NEW DATA FOR DRIVER
-class AddDriver extends AsyncTask<String, String, String> {
-
-    @Override
-    protected String doInBackground(String... params) {
-        String driverlicense = params[0];
-        String fname = params[1];
-        String lname = params[2];
-        String gender = params[3];
-        String insurancenumber = params[4];
-        String reportid = params[5];
-        String data = "";
-        int tmp;
-        URL url;
+    public String loadCarJsonLocal()
+    {
+        String json = null;
         try {
-            if(isDriverEmpty==true) {
-                 url = new URL("http://websitename.com/app/addDriver.php");
-                isDriverEmpty=false;
-            }
-            else
-            {
-                 url = new URL("http://websitename.com/app/updateDriver.php");
-            }
-            String urlParams = "driverlicense=" + driverlicense + "&fname=" + fname + "&lname="
-                    + lname + "&gender=" + gender + "&insuranceNumber=" + insurancenumber + "&reportid=" + reportid;
 
-            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-            httpURLConnection.setDoOutput(true);
-            OutputStream os = httpURLConnection.getOutputStream();
-            os.write(urlParams.getBytes());
-            os.flush();
-            os.close();
-
-            InputStream is = httpURLConnection.getInputStream();
-            while ((tmp = is.read()) != -1) {
-                data += (char) tmp;
-            }
-
+            InputStream is = getContext().getAssets().open("car_makemodel.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
             is.close();
-            httpURLConnection.disconnect();
+            json = new String(buffer, "UTF-8");
 
-            return data;
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-            return "Exception: " + e.getMessage();
-        } catch (IOException e) {
-            e.printStackTrace();
-            return "Exception: " + e.getMessage();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+
+        return json;
+
+    }
+    private class ReverseGeoCodingTask extends AsyncTask<LatLng, Void, String>{
+        Context mContext;
+        public ReverseGeoCodingTask(Context context){
+            super();
+            mContext = context;
+        }
+
+        @Override
+        protected String doInBackground(LatLng... params){
+            Geocoder geocoder  = new Geocoder(mContext);
+            double latitude = params[0].latitude;
+            double longitude = params[0].longitude;
+
+            List<Address> addresses = null;
+
+            try {
+                addresses = geocoder.getFromLocation(latitude, longitude,1);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            if(addresses!= null && addresses.size() > 0 ) {
+                addressText = addresses.get(0).getAddressLine(0) +"," +
+                        addresses.get(0).getLocality() +"," + addresses.get(0).getPostalCode() +
+                        ", " +addresses.get(0).getCountryName();
+            }
+
+            return addressText;
+
+        }
+
+        @Override
+        protected void onPostExecute(String addressText) {
+            // Setting the title for the marker.
+            // This will be displayed on taping the marker
+            // Placing a marker on the touched position
+            tvReverseGeo.setText(addressText);
+
         }
     }
 
-    @Override
-    protected void onPostExecute(String s) {
-        String err = null;
-        //Log.e(TAG, "Response from url: " + s);
-        try {
-            JSONObject root = new JSONObject(s);
-            //JSONObject user_data = root.getJSONObject("User");
-            JSONObject car = root.getJSONObject("Driver");
+    /**
+     car make and model reference, arthurkao, github repository,
+     https://github.com/arthurkao/vehicle-make-model-data
+     **/
+    void executeAddCar()
+    {
+        PLATENUMBER = etPN.getText().toString();
+        CARMAKE = etBrand.getText().toString();
+        CARMODEL = etBrand.getText().toString();
+        CARYEAR = etYear.getText().toString();
+        AddCar a = new AddCar();
+        a.execute(PLATENUMBER, CARMAKE, CARMODEL, CARYEAR,reportid);
+    }
 
-            car.put("driverlicense", DRIVERLICENSE);
-            car.put("fname", FNAME);
-            car.put("lname", LNAME);
-            car.put("gender", GENDER);
-            car.put("insuranceNumber", INSURANCENUMBER);
-            car.put("reportid", reportid);
+    class AddCar extends AsyncTask<String, String, String> {
 
-        } catch (JSONException e) {
-            e.printStackTrace();
-            err = "Exception: " + e.getMessage();
+        @Override
+        protected String doInBackground(String... params) {
+            String platenumber = params[0];
+            String carmake = params[1];
+            String carmodel = params[2];
+            String caryear = params[3];
+            String reportid = params[4];
+            String data="";
+            int tmp;
+
+            try {
+                URL url;
+
+                if(isCarEmpty==true) {
+                    url = new URL("http://semjerome.com/app/addCar.php");
+                    isCarEmpty=false;
+                }
+                else
+                {
+                    url = new URL("http://semjerome.com/app/updateCar.php");
+                }
+
+                String urlParams = "platenumber="+platenumber+"&carmake="+carmake+"&carmodel="
+                        +carmodel+"&caryear="+caryear+"&reportid="+reportid;
+
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setDoOutput(true);
+                OutputStream os = httpURLConnection.getOutputStream();
+                os.write(urlParams.getBytes());
+                os.flush();
+                os.close();
+
+                InputStream is = httpURLConnection.getInputStream();
+                while((tmp=is.read())!=-1){
+                    data+= (char)tmp;
+                }
+
+                is.close();
+                httpURLConnection.disconnect();
+
+                return data;
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+                return "Exception: "+e.getMessage();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return "Exception: "+e.getMessage();
+            }
         }
-        if (DRIVERLICENSE != null) {
-            Log.d("Storing to JSON plate: ", DRIVERLICENSE);
-            Log.d("Storing to JSON make: ", FNAME);
-            Log.d("Storing to JSON model: ", LNAME);
-            Toast.makeText(getActivity(), "Stored!", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(getActivity(), "Fill in plate number", Toast.LENGTH_LONG).show();
 
+        @Override
+        protected void onPostExecute(String s) {
+            String err=null;
+
+            try {
+                JSONObject root = new JSONObject(s);
+                //JSONObject user_data = root.getJSONObject("User");
+
+                JSONObject car= root.getJSONObject("Car");
+
+                car.put("platenumber", PLATENUMBER);
+                car.put("carmake",CARMAKE);
+                car.put("carmodel",CARMODEL);
+                car.put("caryear",CARYEAR);
+                car.put("reportid",reportid);
+
+                Log.d("Storing to JSON plate: ", PLATENUMBER);
+                Log.d("Storing to JSON make: ", CARMAKE);
+                Log.d("Storing to JSON model: ", CARMODEL);
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+                err = "Exception: "+e.getMessage();
+            }
+            if(PLATENUMBER!=null) {
+                Toast.makeText(getActivity(), "Stored!", Toast.LENGTH_SHORT).show();
+            }
+            else{
+                Toast.makeText(getActivity(), "Fill in plate number", Toast.LENGTH_LONG).show();
+
+            }
         }
     }
-}
+
     //get Car
-    class GetDriver extends AsyncTask<String, Void, Void> {
+    class GetCar extends AsyncTask<String, Void, Void> {
 
         @Override
         protected void onPreExecute() {
@@ -2579,12 +2449,11 @@ class AddDriver extends AsyncTask<String, String, String> {
             String data = "";
             int tmp;
             // Making a request to url and getting response
-            //String uri = "http://websitename.com/app/incident.php";
+            //String uri = "http://semjerome.com/app/incident.php";
             //String jsonStr = sh.makeServiceCall(uri);
 
-
             try {
-                URL url = new URL("http://websitename.com/app/getDriver.php");
+                URL url = new URL("http://semjerome.com/app/getCar.php");
                 String urlParams = "reportid=" + reportid;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -2618,8 +2487,7 @@ class AddDriver extends AsyncTask<String, String, String> {
                     JSONObject mainJsonObject = new JSONObject(data);
                     // Log.d("JSON Data : ", mainJsonObject.toString());
 
-
-                    JSONArray mainArray = mainJsonObject.getJSONArray("Driver");
+                    JSONArray mainArray = mainJsonObject.getJSONArray("Car");
                     // Log.d("JSON Array : ", mainArray.toString());
 
                     for (int i = 0; i < mainArray.length(); i++) {
@@ -2628,25 +2496,23 @@ class AddDriver extends AsyncTask<String, String, String> {
 
                         if (incidentJsonObject != null) {
 
-                            String driverlicense = incidentJsonObject
-                                    .getString("driverlicense");
-                            String fname = incidentJsonObject
-                                    .getString("fname");
-                            String lname = incidentJsonObject
-                                    .getString("lname");
-                            String gender = incidentJsonObject
-                                    .getString("gender");
-                            String insurancenumber = incidentJsonObject
-                                    .getString("insuranceNumber");
-                                    
+                            String platenumber = incidentJsonObject
+                                    .getString("platenumber");
+                            String carmake = incidentJsonObject
+                                    .getString("carmake");
+                            String carmodel = incidentJsonObject
+                                    .getString("carmodel");
+                            String caryear = incidentJsonObject
+                                    .getString("caryear");
+
                             HashMap<String, String> info = new HashMap<>();
-                            info.put("driverlicense", driverlicense);
-                            info.put("fname", fname);
-                            info.put("lname", lname);
-                            info.put("gender", gender);
-                            info.put("insuranceNumber", insurancenumber);
+                            info.put("platenumber", platenumber);
+                            info.put("carmake", carmake);
+                            info.put("carmodel", carmodel);
+                            info.put("caryear", caryear);
+
                             // adding contact to contact list
-                            driverinfo.add(info);
+                            carinfo.add(info);
                         }
 
 
@@ -2670,41 +2536,265 @@ class AddDriver extends AsyncTask<String, String, String> {
             /**
              * Updating parsed JSON data into ListView
              **/
-            if (driverinfo.size() > 0) {
-                etLicense.setText(driverinfo.get(0).get("driverlicense").toString());
-                etFname.setText(driverinfo.get(0).get("fname").toString());
-                etLname.setText(driverinfo.get(0).get("lname").toString());
-                etGender.setText(driverinfo.get(0).get("gender").toString());
-                etInsurance.setText(driverinfo.get(0).get("insuranceNumber").toString());
-                isDriverEmpty=false;
+            if (carinfo.size() > 0) {
+                etPN.setText(carinfo.get(0).get("platenumber").toString());
+                etBrand.setText(carinfo.get(0).get("carmake").toString());
+                etModel.setText(carinfo.get(0).get("carmodel").toString());
+                etYear.setText(carinfo.get(0).get("caryear").toString());
+                isCarEmpty=false;
             }
             else
             {
-                isDriverEmpty=true;
+                isCarEmpty=true;
+            }
+
+        }
+        }
+
+    void executeDriverAdd()
+    {
+        //DRIVERLICENSE = null, FNAME=null,LNAME = null, GENDER = null, INSURANCENUMBER = null;
+        DRIVERLICENSE = etLicense.getText().toString();
+        FNAME = etFname.getText().toString();
+        LNAME = etLname.getText().toString();
+        GENDER = etGender.getText().toString();
+        INSURANCENUMBER = etInsurance.getText().toString();
+
+        AddDriver a = new AddDriver();
+        a.execute(DRIVERLICENSE, FNAME, FNAME, GENDER,INSURANCENUMBER,reportid);
+    }
+
+    //ADDING NEW DATA FOR DRIVER
+    class AddDriver extends AsyncTask<String, String, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+            String driverlicense = params[0];
+            String fname = params[1];
+            String lname = params[2];
+            String gender = params[3];
+            String insurancenumber = params[4];
+            String reportid = params[5];
+            String data = "";
+            int tmp;
+            URL url;
+            try {
+                if(isDriverEmpty==true) {
+                     url = new URL("http://semjerome.com/app/addDriver.php");
+                    isDriverEmpty=false;
+                }
+                else
+                {
+                     url = new URL("http://semjerome.com/app/updateDriver.php");
+                }
+                String urlParams = "driverlicense=" + driverlicense + "&fname=" + fname + "&lname="
+                        + lname + "&gender=" + gender + "&insuranceNumber=" + insurancenumber + "&reportid=" + reportid;
+
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setDoOutput(true);
+                OutputStream os = httpURLConnection.getOutputStream();
+                os.write(urlParams.getBytes());
+                os.flush();
+                os.close();
+
+                InputStream is = httpURLConnection.getInputStream();
+                while ((tmp = is.read()) != -1) {
+                    data += (char) tmp;
+                }
+
+                is.close();
+                httpURLConnection.disconnect();
+
+                return data;
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+                return "Exception: " + e.getMessage();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return "Exception: " + e.getMessage();
+            }
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            String err = null;
+            //Log.e(TAG, "Response from url: " + s);
+            try {
+                JSONObject root = new JSONObject(s);
+                //JSONObject user_data = root.getJSONObject("User");
+                JSONObject car = root.getJSONObject("Driver");
+
+                car.put("driverlicense", DRIVERLICENSE);
+                car.put("fname", FNAME);
+                car.put("lname", LNAME);
+                car.put("gender", GENDER);
+                car.put("insuranceNumber", INSURANCENUMBER);
+                car.put("reportid", reportid);
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+                err = "Exception: " + e.getMessage();
+            }
+            if (DRIVERLICENSE != null) {
+                Log.d("Storing to JSON plate: ", DRIVERLICENSE);
+                Log.d("Storing to JSON make: ", FNAME);
+                Log.d("Storing to JSON model: ", LNAME);
+                Toast.makeText(getActivity(), "Stored!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getActivity(), "Fill in plate number", Toast.LENGTH_LONG).show();
+
             }
         }
     }
-// Called when the user is performing an action which requires the app to read the
-    // user's contacts
-    public void getPermissionToReadUserContacts() {
-        // 1) Use the support library version ContextCompat.checkSelfPermission(...) to avoid
-        // checking the build version since Context.checkSelfPermission(...) is only available
-        // in Marshmallow
-        // 2) Always check for permission (even if permission has already been granted)
-        // since the user can revoke permissions at any time through Settings
-        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_CONTACTS)
-                != PackageManager.PERMISSION_GRANTED) {
-            // The permission is NOT already granted.
-            // Check if the user has been asked about this permission already and denied
-            // it. If so, we want to give more explanation about why the permission is needed.
-            // Fire off an async request to actually get the permission
-            // This will show the standard permission request dialog UI
+        //get Car
+        class GetDriver extends AsyncTask<String, Void, Void> {
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                // Showing progress dialog
+
+            }
+
+            @Override
+            protected Void doInBackground(String... params) {
+                String reportid = params[0];
+                HTTPHandler sh = new HTTPHandler();
+                String data = "";
+                int tmp;
+                // Making a request to url and getting response
+                //String uri = "http://semjerome.com/app/incident.php";
+                //String jsonStr = sh.makeServiceCall(uri);
+
+
+                try {
+                    URL url = new URL("http://semjerome.com/app/getDriver.php");
+                    String urlParams = "reportid=" + reportid;
+
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    httpURLConnection.setDoOutput(true);
+                    OutputStream os = httpURLConnection.getOutputStream();
+                    os.write(urlParams.getBytes());
+                    os.flush();
+                    os.close();
+
+                    InputStream is = httpURLConnection.getInputStream();
+                    while ((tmp = is.read()) != -1) {
+                        data += (char) tmp;
+                    }
+
+                    is.close();
+                    httpURLConnection.disconnect();
+
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                    //return "Exception: "+e.getMessage();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    // return "Exception: "+e.getMessage();
+                }
+
+                //Log.e(TAG, "Response from url: " + jsonStr);
+
+                if (data != null) {
+                    try {
+                        JSONObject mainJsonObject = new JSONObject(data);
+                        // Log.d("JSON Data : ", mainJsonObject.toString());
+
+
+                        JSONArray mainArray = mainJsonObject.getJSONArray("Driver");
+                        // Log.d("JSON Array : ", mainArray.toString());
+
+                        for (int i = 0; i < mainArray.length(); i++) {
+
+                            JSONObject incidentJsonObject = mainArray.getJSONObject(i);
+
+                            if (incidentJsonObject != null) {
+
+                                String driverlicense = incidentJsonObject
+                                        .getString("driverlicense");
+                                String fname = incidentJsonObject
+                                        .getString("fname");
+                                String lname = incidentJsonObject
+                                        .getString("lname");
+                                String gender = incidentJsonObject
+                                        .getString("gender");
+                                String insurancenumber = incidentJsonObject
+                                        .getString("insuranceNumber");
+
+
+                                HashMap<String, String> info = new HashMap<>();
+                                info.put("driverlicense", driverlicense);
+                                info.put("fname", fname);
+                                info.put("lname", lname);
+                                info.put("gender", gender);
+                                info.put("insuranceNumber", insurancenumber);
+                                // adding contact to contact list
+                                driverinfo.add(info);
+                            }
+
+
+                        }
+
+                    } catch (JSONException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+
+                }
+
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(Void result) {
+                super.onPostExecute(result);
+                // Dismiss the progress dialog
+
+                /**
+                 * Updating parsed JSON data into ListView
+                 **/
+                if (driverinfo.size() > 0) {
+                    etLicense.setText(driverinfo.get(0).get("driverlicense").toString());
+                    etFname.setText(driverinfo.get(0).get("fname").toString());
+                    etLname.setText(driverinfo.get(0).get("lname").toString());
+                    etGender.setText(driverinfo.get(0).get("gender").toString());
+                    etInsurance.setText(driverinfo.get(0).get("insuranceNumber").toString());
+                    isDriverEmpty=false;
+                }
+                else
+                {
+                    isDriverEmpty=true;
+                }
+            }
         }
+
+    // Called when the user is performing an action which requires the app to read the
+        // user's contacts
+        public void getPermissionToReadUserContacts() {
+            // 1) Use the support library version ContextCompat.checkSelfPermission(...) to avoid
+            // checking the build version since Context.checkSelfPermission(...) is only available
+            // in Marshmallow
+            // 2) Always check for permission (even if permission has already been granted)
+            // since the user can revoke permissions at any time through Settings
+            if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_CONTACTS)
+                    != PackageManager.PERMISSION_GRANTED) {
+
+                // The permission is NOT already granted.
+                // Check if the user has been asked about this permission already and denied
+                // it. If so, we want to give more explanation about why the permission is needed.
+
+                // Fire off an async request to actually get the permission
+                // This will show the standard permission request dialog UI
+            }
+        }
+
     }
+}  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-} " \~\~\~\~ Each page fragments: Driver's Information, Car Information,
-Location, Video file
+Each page fragments: Driver's Information, Car Information, Location, Video file
 
 ![Driver Info](documentation/driverinfo.png)
 
@@ -2863,11 +2953,11 @@ because add and update uses different sql statement.
 
 AddDriver.php
 
-UpdateDriver.php \~\~\~\~ ?php error_reporting(0); require "init.php";
+UpdateDriver.php \~\~\~\~ ?php error\_reporting(0); require "init.php";
 
-\$driverlicense = \$_POST["driverlicense"]; \$fname = \$_POST["fname"]; \$lname
-= \$_POST["lname"]; \$gender = \$_POST["gender"]; \$insuranceNumber =
-\$_POST["insuranceNumber"]; \$reportid = \$_POST["reportid"];
+\$driverlicense = \$\_POST["driverlicense"]; \$fname = \$\_POST["fname"];
+\$lname = \$\_POST["lname"]; \$gender = \$\_POST["gender"]; \$insuranceNumber =
+\$\_POST["insuranceNumber"]; \$reportid = \$\_POST["reportid"];
 
 $$sql = "UPDATE `Driver` SET
 `driverlicense`='".$$driverlicense."',`fname`='".$$fname."',`lname`='".$$lname."',`gender`='".$$gender."',`insuranceNumber`='".$$insuranceNumber."'
@@ -2890,7 +2980,11 @@ WHERE `reportid`='".$$reportid."';"; if(!mysqli_query($$con, \$sql)){ echo
 
 #### Variances
 
-This testing of the AutAccReport mobile application was supposed to be conducted alongside the hardware part of the project which would have allowed a wider testing opportunity. The testing was conducted on Android mobile phone on Android Version 6.0.1. All result were the same when performed on different Android devices
+This testing of the AutAccReport mobile application was supposed to be conducted
+alongside the hardware part of the project which would have allowed a wider
+testing opportunity. The testing was conducted on Android mobile phone on
+Android Version 6.0.1. All result were the same when performed on different
+Android devices
 
 \pagebreak
 
@@ -2922,9 +3016,9 @@ For Android Developers, I would recommend to have and create each fragments for
 video, location, driver and car in separate page fragments for clear readability
 and easy programmability of the application.
 
-The cache clearing issue should be a priority for the development team. The test showed that this issue make the client unable to access their user account personal information and report log.
-
-
+The cache clearing issue should be a priority for the development team. The test
+showed that this issue make the client unable to access their user account
+personal information and report log.
 
 \pagebreak
 
