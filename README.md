@@ -2791,7 +2791,7 @@ public class PageFragmentVid extends Fragment {
         }
 
     }
-}  
+}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each page fragments: Driver's Information, Car Information, Location, Video file
@@ -2833,6 +2833,55 @@ echo json_encode(array("User"=>$response));
  
 ?>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Since we are using WordPress to create our website, we must confirm the login information
+that matches the created or registered users in our website. WordPress uses MD-5 hashed password
+and because of this, we had trouble matching the login information that the user inputs in their 
+mobile device and what is on the database. The solution we found to authenticate user lies on
+one of the WordPress php files, it is called phpass.php. Authenticating the password from mobile 
+device and hashed password on database requires calling the authenticator in phpass.php.
+
+We can do this by first including the phpass.php in your login.php:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include("../wordpresstest/wp-includes/class-phpass.php"); 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Take the hashed password from the database via the user input, then we both pass the hashed
+password and password input by the user to CheckPassword function.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$hash_cost_log2 = 8;
+// Do we require the hashes to be portable to older systems (less secure)?
+$hash_portable = FALSE;
+
+//create new PasswordHash
+$hasher = new PasswordHash($hash_cost_log2, $hash_portable);
+
+//This is where we pass the user's password input and the hashed password from the DB
+if ($hasher->CheckPassword($password, $hash['user_pass'])) { //$hash is the hash retrieved from the DB 
+    $what = 'Authentication succeeded'; 
+
+//If authenticated succeeds, proceed with normal operation
+$sql = "SELECT * FROM `wp_users` WHERE  `user_pass`='".$hash['user_pass']."';";
+$result = mysqli_query($con, $sql);
+$response = array();
+ 
+while($row = mysqli_fetch_array($result)){
+    $response[0] = array("uid"=>$row[0],"username"=>$row[1],"password"=>$row[2]);
+}
+ 
+echo json_encode(array("User"=>$response));
+} else {
+    $what = 'Authentication failed';
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This has been a big issue for us in regards to authenticating users from outside 
+WordPress. WordPress provides you with easy designing and creation of the website
+but just beware of the plugins that might cause you some confusion as their 
+background processes/ php files might be different from the WordPress default
+background functions and processes.
 
 ##### Incident.php
 
